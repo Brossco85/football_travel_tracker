@@ -880,14 +880,102 @@
   },
 
   { 
+    "name": "Manchester United",
+    "code": "MUFC",
+    "website": "http://www.manutd.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/d/da/Manchester_United_FC.svg",
+    "stadium": "Old Trafford",
+    "latlng": [
+      53.430828,
+      -2.960847
+    ],
+    "pubs": [
+         {
+           "name": "The Printworks",
+           "address": "",
+           "phoneNumber": "",
+           "website": "",
+           "latlng": [
+             ,
+             
+           ],
+         },
+         {
+           "name": "Yates’s",
+           "address": "49 Portland St, Manchester M1 3LD",
+           "phoneNumber": "",
+           "website": "",
+           "latlng": [
+            ,
+            
+          ],
+         },
+         {
+           "name": "Summerbee Bar",
+           "address": "",
+           "phoneNumber": "",
+           "website": "",
+           "latlng": [
+             ,
+             
+           ],
+         }
+       ],
+    "foodOutlets": [
+      {
+        "name": "Red Marrakech - Morroccan restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Spices Of Kashmir (Old Trafford)",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Chesters Hotel & Restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Premier Inn Manchester Old Trafford",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
     "name": "",
     "code": "",
     "website": "",
     "crestURL": "",
     "stadium": "",
     "latlng": [
-      53.430828,
-      -2.960847
+      ,
+      
     ],
     "pubs": [
       {
@@ -965,5 +1053,5 @@
        ],
       }
     ]
-  }
+  },
 ]
