@@ -701,5 +701,93 @@
        ],
       }
     ]
+  },
+
+  { 
+    "name": "Liverpool",
+    "code": "LFC",
+    "website": "http://www.liverpoolfc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/0/0a/FC_Liverpool.svg",
+    "stadium": "Anfield",
+    "latlng": [
+      53.430828,
+      -2.960847
+    ],
+    "pubs": [
+      {
+        "name": "The Cavern Pub",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Richard John Blackler",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The Flat Iron",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Kemps Bistro",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Anfield Balti House",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel Anfield",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Stanley Park Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
   }
 ]
