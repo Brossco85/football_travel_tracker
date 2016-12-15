@@ -1144,6 +1144,94 @@
   },
 
   { 
+    "name": "Southampton ",
+    "code": "SFC",
+    "website": "https://southamptonfc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/c/c9/FC_Southampton.svg",
+    "stadium": "St Mary’s Stadium",
+    "latlng": [
+      50.905833,
+      -1.391111
+    ],
+    "pubs": [
+      {
+        "name": "Yates's",
+        "address": "113-117 Above Bar St, Southampton SO14 7FH",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Standing Order",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The Rockstone",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Turtle Bay Southampton",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Fusion Noodle Bar",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "The Star Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Jurys Inn Southampton",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
     "name": "",
     "code": "",
     "website": "",
