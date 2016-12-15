@@ -86,6 +86,7 @@
       }
     ]
   },
+
   { 
     "name": "Arsenal",
     "code": "AFC",
@@ -173,4 +174,180 @@
       }
     ]
   },
+
+  { 
+    "name": "Burnley",
+    "code": "BFC",
+    "website": "http://www.burnleyfootballclub.com/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/en/0/02/Burnley_FC_badge.png",
+    "stadium": "Turf Moor",
+    "latlng": [
+      53.789167, 
+      -2.230278
+    ],
+    "pubs": [
+      {
+        "name": "The Boot Inn",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Burnley Cricket Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The Bridge Bier Huis",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Bertram's Restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Red Lantern",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Travelodge Hotel - Burnley",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "BEST WESTERN Higher Trapp Country House Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
+    "name": "Chelsea",
+    "code": "CFC",
+    "website": "https://www.chelseafc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/5/5c/Chelsea_crest.svg",
+    "stadium": "Stamford Bridge",
+    "latlng": [
+      51.481667,
+      -0.191111
+    ],
+    "pubs": [
+      {
+        "name": "Courtfield",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Blackbird",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The Prince of Teck",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "KFC",
+        "address": "96-102 Uxbridge Rd, White City, London W12 8LR",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "McDonald's",
+        "address": "Broadway Shopping Centre, 7-8 Hammersmith Broadway, London W6 9YD",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Holiday Inn Express London - Earl's Court",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "La Reserve Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  }
 ]
