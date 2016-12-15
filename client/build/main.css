@@ -22,9 +22,10 @@ p {
 #map {
   justify-content: center;
   margin: 10px;
-  height: 100px;
+  height: 400px;
+  width: 500px;
   border: 5px solid;
-  padding: 200px;
+ /* padding: 200px;*/
   background-color: powderblue;
   flex-grow: 2;
 }
