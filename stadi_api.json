@@ -613,5 +613,93 @@
        ],
       }
     ]
+  },
+
+  { 
+    "name": "Leicester City",
+    "code": "LCFC",
+    "website": "http://www.lcfc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/en/6/63/Leicester02.png",
+    "stadium": "King Power Stadium",
+    "latlng": [
+      52.620278,
+      -1.142222
+    ],
+    "pubs": [
+      {
+        "name": "Soaring Eagle Spur Steak & Grill",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Local Hero Flaming Grill",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The Counting House",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "The White Peacock",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Shivalli",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Premier Inn Leicester North West",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Holiday Inn Express Leicester",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
   }
 ]
