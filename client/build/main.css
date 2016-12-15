@@ -1,0 +1,43 @@
+body {
+  font-family: helvetica;
+  background-color: #FFE4BC;
+}
+
+h1 {
+  color: DodgerBlue;
+}
+
+p {
+  font-size: 20px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.map {
+  margin: 20px;
+  border: 5px solid;
+  padding: 300px;
+}
+
+.fixtures {
+  margin: 20px;
+  border: 5px solid;
+  padding: 200px;
+}
+
+.table {
+  margin: 20px;
+  border: 5px solid;
+  padding: 100px;
+}
+
+.feeds {
+  margin: 20px;
+  border: 5px solid;
+  padding: 100px;
+}
