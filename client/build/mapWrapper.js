@@ -1,6 +1,6 @@
-var mapWrapper = function(container, center, zoom){
+var MapWrapper = function(container, center, zoom){
   this.googleMap = new google.maps.Map(container, {
-    center: center,
+    center: center, 
     zoom: zoom
   });
 }
