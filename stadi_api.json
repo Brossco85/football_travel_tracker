@@ -1408,6 +1408,94 @@
   },
 
   { 
+    "name": "Swansea City",
+    "code": "SWA",
+    "website": "http://www.swanseacity.net/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/a/ab/Swansea_City_Logo.svg",
+    "stadium": "Liberty Stadium",
+    "latlng": [
+      51.6422,
+      -3.9351
+    ],
+    "pubs": [
+      {
+        "name": "Bank Statement",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Yates’s",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The No Sign Bar",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Frankie & Bennys",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Harvester",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Mercure Swansea Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Grand Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
     "name": "",
     "code": "",
     "website": "",
