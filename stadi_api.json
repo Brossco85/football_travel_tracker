@@ -1496,6 +1496,94 @@
   },
 
   { 
+    "name": "Tottenham Hotspur",
+    "code": "THFC",
+    "website": "http://www.tottenhamhotspur.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/b/b4/Tottenham_Hotspur.svg",
+    "stadium": "White Hart Lane",
+    "latlng": [
+      51.603333,
+      -0.065833
+    ],
+    "pubs": [
+      {
+        "name": "Harringey Irish Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Three Compasses ",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The Elmhust",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Sakunthala's Pan Asia",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "White Hart Lane Jerk Centre",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Premier Inn London Edmonton",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Premier Inn London Tottenham Hale Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
     "name": "",
     "code": "",
     "website": "",
