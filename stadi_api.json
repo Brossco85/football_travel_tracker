@@ -1760,18 +1760,18 @@
   },
 
   { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
+    "name": "West Ham United",
+    "code": "WHU",
+    "website": "https://www.whufc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/e/e0/West_Ham_United_FC.svg",
+    "stadium": "London Stadium",
     "latlng": [
-      ,
-      
+      51.538611,
+      -0.016389
     ],
     "pubs": [
       {
-        "name": "",
+        "name": "Golden Grove",
         "address": "",
         "phoneNumber": "",
         "website": "",
@@ -1781,7 +1781,7 @@
         ],
       },
       {
-        "name": "",
+        "name": "J J Moon's",
         "address": "",
         "phoneNumber": "",
         "website": "",
@@ -1791,7 +1791,7 @@
        ],
       },
       {
-        "name": "",
+        "name": "The Langthorne",
         "address": "",
         "phoneNumber": "",
         "website": "",
@@ -1803,7 +1803,7 @@
     ],
     "foodOutlets": [
       {
-        "name": "",
+        "name": "Forman's",
         "address": "",
         "phoneNumber": "",
         "website": "",
@@ -1813,7 +1813,7 @@
         ],
       },
       {
-        "name": "",
+        "name": "The Podium Bar & Kitchen",
         "address": "",
         "phoneNumber": "",
         "website": "",
@@ -1825,7 +1825,7 @@
     ],
     "hotels": [
       {
-        "name": "",
+        "name": "Premier Inn London Wembley Stadium",
         "address": "",
         "phoneNumber": "",
         "website": "",
@@ -1835,7 +1835,7 @@
         ],
       },
       {
-        "name": "",
+        "name": "Holiday Inn London - Wembley",
         "address": "",
         "phoneNumber": "",
         "website": "",
