@@ -19,7 +19,7 @@ p {
   margin: 10px;
 }
 
-.map {
+#map {
   justify-content: center;
   margin: 10px;
   height: 100px;
