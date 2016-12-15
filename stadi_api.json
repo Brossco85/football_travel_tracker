@@ -1232,6 +1232,94 @@
   },
 
   { 
+    "name": "Stoke City",
+    "code": "SCFC",
+    "website": "http://www.stokecityfc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/a/a3/Stoke_City.svg",
+    "stadium": "bet365 Stadium",
+    "latlng": [
+      52.988333,
+      -2.175556
+    ],
+    "pubs": [
+      {
+        "name": "Longton Rugby Union Football Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Terrace",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The Glebe",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Harvester Trentham Lakes",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Frankie & Benny's",
+        "address": "Trentham Gardens, Stone Road, Stoke-on-Trent ST4 8AX",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Holiday Inn Express Stoke on Trent",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Plough Motel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
     "name": "",
     "code": "",
     "website": "",
