@@ -1,52 +1,52 @@
 [
   { 
-    "name": "AFC Bournemouth",
+    "name": "Bournemouth",
     "code": "AFCB",
     "website": "http://www.afcb.co.uk/",
     "crestURL": "https://upload.wikimedia.org/wikipedia/de/4/41/Afc_bournemouth.svg",
-    "stadium": "Dean Court",
+    "stadium": "Vitality Stadium",
     "latlng": [
       50.735278, 
       -1.838333
     ],
     "pubs": [
-              {
-                "name": "The George Tapps",
-                "address": "207-215 Old Christchurch Rd, Bournemouth BH1 1JZ",
-                "phoneNumber": "+44 1202 438001",
-                "website": "www.georgetappsbournemouth.co.uk",
-                "latlng": [
-                  50.7224269,
-                  -1.8705347
-                ],
-              },
-              {
-                "name": "The Queens Park Hotel",
-                "address": "482 Holdenhurst Road, Bournemouth BH8 9AR",
-                "phoneNumber": "+44 1202 397733",
-                "website": "",
-                "latlng": [
-                 50.7352099,
-                 -1.8470878
-                ],
-              },
-              {
-                "name": "The Bell",
-                "address": "915 Christchurch Rd, Bournemouth BH7 6AX",
-                "phoneNumber": "+44 1202 427762",
-                "website": "",
-                "latlng": [
-                  50.7307303,
-                  -1.8272306
-                ],
-              }
+      {
+        "name": "The George Tapps",
+        "address": "207-215 Old Christchurch Rd, Bournemouth BH1 1JZ",
+        "phoneNumber": "+44 1202 438001",
+        "website": "http://www.georgetappsbournemouth.co.uk/",
+        "latlng": [
+          50.7224269,
+          -1.8705347
+        ],
+      },
+      {
+        "name": "The Queens Park Hotel",
+        "address": "482 Holdenhurst Road, Bournemouth, BH8 9AR",
+        "phoneNumber": "+44 1202 397733",
+        "website": "",
+        "latlng": [
+         50.7352099,
+         -1.8470878
+       ],
+      },
+      {
+        "name": "The Bell",
+        "address": "915 Christchurch Rd, Bournemouth, BH7 6AX",
+        "phoneNumber": "+44 1202 427762",
+        "website": "",
+        "latlng": [
+          50.7307303,
+          -1.8272306
+        ],
+      }
     ],
     "foodOutlets": [
       {
         "name": "xxl food",
         "address": "512A Christchurch Rd, Bournemouth, BH1 4BE",
         "phoneNumber": "01202 914450",
-        "website": "xxlfood.co.uk",
+        "website": "http://xxlfood.co.uk/",
         "latlng": [
           50.7278517,
           -1.8815212
@@ -60,7 +60,7 @@
         "latlng": [
          50.7278517,
          -1.8815212
-        ],
+       ],
       }
     ],
     "hotels": [
@@ -82,476 +82,95 @@
         "latlng": [
          50.7352099,
          -1.8470878
-        ],
+       ],
       }
     ]
   },
   { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
+    "name": "Arsenal",
+    "code": "AFC",
+    "website": "http://www.arsenal.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
+    "stadium": "Emirates Stadium",
     "latlng": [
-      ,
-
+      51.555, 
+      -0.108611 
     ],
     "pubs": [
-      ,
-      ,
-
+      {
+        "name": "The Horatia",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Metro Holloway",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The Coronet",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
     ],
     "foodOutlets": [
-      ,
-      ,
-
+      {
+        "name": "Domino's Pizza - London - Highbury",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Burger King",
+        "address": "Nags Head Centre, Nags Head Shopping Centre, 408 Holloway Rd, London N7 6PZ",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
     ],
     "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
-    ]
-  },
-  { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
-    "latlng": [
-      ,
-
-    ],
-    "pubs": [
-      ,
-      ,
-
-    ],
-    "foodOutlets": [
-      ,
-      ,
-
-    ],
-    "hotels": [
-      ,
-      ,
-
+      {
+        "name": "Five Kings Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Finsbury Serviced Apartments",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
     ]
   },
 ]
