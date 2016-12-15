@@ -1320,6 +1320,94 @@
   },
 
   { 
+    "name": "Sunderland",
+    "code": "SUN",
+    "website": "https://www.safc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/6/60/AFC_Sunderland.svg",
+    "stadium": "Stadium of Light",
+    "latlng": [
+      54.9144,
+      -1.3882
+    ],
+    "pubs": [
+      {
+        "name": "The Victory PubThe New Democratic Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The New Democratic Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "The Cambridge",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Monsoon Kitchen",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Italian Kitchen",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hilton Garden Inn Sunderland",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Sunderland Marriott Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
     "name": "",
     "code": "",
     "website": "",
