@@ -525,5 +525,93 @@
        ],
       }
     ]
+  },
+
+  { 
+    "name": "Hull City",
+    "code": "HUL",
+    "website": "http://www.hullcitytigers.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/a/a9/Hull_City_AFC.svg",
+    "stadium": "KCOM Stadium",
+    "latlng": [
+      53.746111,
+      -0.367778
+    ],
+    "pubs": [
+      {
+        "name": "The Brickmakers",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Walton Street Social Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "Editorial Inn",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "The Madras Restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Bengal Lounge",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "The Gilson Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Kingston Theatre Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
   }
 ]
