@@ -789,5 +789,181 @@
        ],
       }
     ]
+  },
+
+  { 
+    "name": "Manchester City",
+    "code": "MCFC",
+    "website": "https://www.mancity.com/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+    "stadium": "The Etihad",
+    "latlng": [
+      53.483056,
+      -2.200278
+    ],
+    "pubs": [
+      {
+        "name": "The Printworks",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Yates’s",
+        "address": "49 Portland St, Manchester M1 3LD",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "Summerbee Bar",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Le Delicatezze Di Bruno",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Pieminister",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel ibis budget Manchester Centre Pollard Street",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Travelodge Hotel - Manchester Sportcity",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
+    "name": "",
+    "code": "",
+    "website": "",
+    "crestURL": "",
+    "stadium": "",
+    "latlng": [
+      53.430828,
+      -2.960847
+    ],
+    "pubs": [
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
   }
 ]
