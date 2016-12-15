@@ -1584,6 +1584,94 @@
   },
 
   { 
+    "name": "Watford",
+    "code": "WAT",
+    "website": "https://www.watfordfc.com/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/en/e/e2/Watford.svg",
+    "stadium": "Vicarage Road",
+    "latlng": [
+      51.649836,
+      -0.401486
+    ],
+    "pubs": [
+      {
+        "name": "The Oddfellows",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Moon Under Water",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "Yates's",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Kasturi",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Patwarls",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Premier Inn Watford Croxley Green",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Holiday Inn London - Watford Junction",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
     "name": "",
     "code": "",
     "website": "",
