@@ -3,6 +3,16 @@ var MapWrapper = function(container, center, zoom){
    center: center, 
    zoom: zoom
  });
+
+var map = this.googleMap;
+
+  google.maps.event.addDomListener(window, "resize", function() {
+    var center = map.getCenter();
+    console.log(center);
+    google.maps.event.trigger(map, "resize");
+    map.setCenter(center);
+  });
+
 }
 
 // var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
