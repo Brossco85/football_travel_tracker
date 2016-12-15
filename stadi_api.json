@@ -1054,4 +1054,180 @@
       }
     ]
   },
+
+  { 
+    "name": "Middlesbrough",
+    "code": "MID",
+    "website": "http://www.mfc.co.uk/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/en/2/2c/Middlesbrough_FC_crest.svg",
+    "stadium": "Riverside Stadium",
+    "latlng": [
+      54.578333,
+      -1.216944
+    ],
+    "pubs": [
+      {
+        "name": "The Isaac Wilson",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Dr Browns",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "Lord Byron",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Brasserie Hudson Quay Bar-Restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Six Medals",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Holiday Inn Express Middlesbrough - Centre Square",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Baltimore Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  },
+
+  { 
+    "name": "",
+    "code": "",
+    "website": "",
+    "crestURL": "",
+    "stadium": "",
+    "latlng": [
+      ,
+      
+    ],
+    "pubs": [
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
+  }
 ]
