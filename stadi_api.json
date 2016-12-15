@@ -349,5 +349,93 @@
        ],
       }
     ]
+  },
+
+  { 
+    "name": "Crystal Palace",
+    "code": "CRY",
+    "website": "http://www.cpfc.co.uk/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/b/bf/Crystal_Palace_F.C._logo_(2013).png",
+    "stadium": "Selhurst Park",
+    "latlng": [
+      51.398333,
+      -0.085556
+    ],
+    "pubs": [
+      {
+        "name": "The William Stanley",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "The Ship",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      },
+      {
+        "name": "Flora Sandes",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Karachi Cuisine",
+        "address": "96-102 Uxbridge Rd, White City, London W12 8LR",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "cappadocia",
+        "address": "Broadway Shopping Centre, 7-8 Hammersmith Broadway, London W6 9YD",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+        
+       ],
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Atini Guest House",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          ,
+          
+        ],
+      },
+      {
+        "name": "Hotel ibis Styles London Croydon",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         ,
+         
+       ],
+      }
+    ]
   }
 ]
