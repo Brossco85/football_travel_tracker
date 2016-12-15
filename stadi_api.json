@@ -1,28 +1,89 @@
 [
   { 
-    "name": "",
-    "code": "",
-    "website": "",
-    "crestURL": "",
-    "stadium": "",
+    "name": "AFC Bournemouth",
+    "code": "AFCB",
+    "website": "http://www.afcb.co.uk/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/de/4/41/Afc_bournemouth.svg",
+    "stadium": "Dean Court",
     "latlng": [
-      ,
-
+      50.735278, 
+      -1.838333
     ],
     "pubs": [
-      ,
-      ,
-
+              {
+                "name": "The George Tapps",
+                "address": "207-215 Old Christchurch Rd, Bournemouth BH1 1JZ",
+                "phoneNumber": "+44 1202 438001",
+                "website": "www.georgetappsbournemouth.co.uk",
+                "latlng": [
+                  50.7224269,
+                  -1.8705347
+                ],
+              },
+              {
+                "name": "The Queens Park Hotel",
+                "address": "482 Holdenhurst Road, Bournemouth BH8 9AR",
+                "phoneNumber": "+44 1202 397733",
+                "website": "",
+                "latlng": [
+                 50.7352099,
+                 -1.8470878
+                ],
+              },
+              {
+                "name": "The Bell",
+                "address": "915 Christchurch Rd, Bournemouth BH7 6AX",
+                "phoneNumber": "+44 1202 427762",
+                "website": "",
+                "latlng": [
+                  50.7307303,
+                  -1.8272306
+                ],
+              }
     ],
     "foodOutlets": [
-      ,
-      ,
-
+      {
+        "name": "xxl food",
+        "address": "512A Christchurch Rd, Bournemouth, BH1 4BE",
+        "phoneNumber": "01202 914450",
+        "website": "xxlfood.co.uk",
+        "latlng": [
+          50.7278517,
+          -1.8815212
+        ],
+      },
+      {
+        "name": "Cafe Culture",
+        "address": "668 Christchurch Rd, Bournemouth, BH7 6BT",
+        "phoneNumber": "01202 395144",
+        "website": "",
+        "latlng": [
+         50.7278517,
+         -1.8815212
+        ],
+      }
     ],
     "hotels": [
-      ,
-      ,
-
+      {
+        "name": "The Portman Hotel",
+        "address": "97 Ashley Rd, Bournemouth, BH1 4LT",
+        "phoneNumber": "01202 397114",
+        "website": "",
+        "latlng": [
+          50.7303588,
+          -1.8427474
+        ],
+      },
+      {
+        "name": "The Queens Park Hotel",
+        "address": "482 Holdenhurst Road, Bournemouth, BH8 9AR",
+        "phoneNumber": "+44 1202 397733",
+        "website": "",
+        "latlng": [
+         50.7352099,
+         -1.8470878
+        ],
+      }
     ]
   },
   { 
