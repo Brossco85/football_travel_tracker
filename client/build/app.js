@@ -3,7 +3,7 @@ window.onload = function() {
   var coords = {lat: 51.6032, lng: 0.0657};  
   var mainMap = new MapWrapper(container, coords, 6);
 
-  mainMap.setLocation(coords);
+  // mainMap.setLocation(coords);
 
   var url = 'http://localhost:3000/api/accounts';
   makeRequest(url, function(){
@@ -13,7 +13,13 @@ window.onload = function() {
   var allStadiums = getStadiumData(stadiums); 
 
   for(var stadium of allStadiums){
-    mainMap.addMarker(stadium.latlng);
+    var icon = {
+              url: stadium.crest, // url
+              scaledSize: new google.maps.Size(20, 30), // scaled size
+              origin: new google.maps.Point(0,0), // origin
+              anchor: new google.maps.Point(0, 0) // anchor
+            };
+    mainMap.addMarker(stadium.latlng, icon);
   };
     })
   }

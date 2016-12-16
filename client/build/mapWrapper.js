@@ -26,15 +26,15 @@ var MapWrapper = function(container, center, zoom){
 //  }
 // };
 
-var icon = {
-          url: 'https://upload.wikimedia.org/wikipedia/de/b/b4/Tottenham_Hotspur.svg', // url
-          scaledSize: new google.maps.Size(30, 40), // scaled size
-          origin: new google.maps.Point(0,0), // origin
-          anchor: new google.maps.Point(0, 0) // anchor
-        };
+// var icon = {
+//           url: 'https://upload.wikimedia.org/wikipedia/de/b/b4/Tottenham_Hotspur.svg', // url
+//           scaledSize: new google.maps.Size(30, 40), // scaled size
+//           origin: new google.maps.Point(0,0), // origin
+//           anchor: new google.maps.Point(0, 0) // anchor
+//         };
 
         MapWrapper.prototype = {
-         addMarker: function(coords){
+         addMarker: function(coords, icon){
            var marker = new google.maps.Marker({
              position: coords,
              icon: icon,
