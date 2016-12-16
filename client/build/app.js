@@ -5,4 +5,5 @@ window.onload = function() {
 
   mainMap.setLocation(coords);
 
+  var table = new PremierLeagueTable();
 }
