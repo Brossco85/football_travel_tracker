@@ -4,12 +4,18 @@ var MapWrapper = function(container, center, zoom){
    zoom: zoom
  });
 
-  google.maps.event.addDomListener(window, "resize", function() {
-    var center = this.googleMap.getCenter();
-    console.log(center);
-    google.maps.event.trigger(this.googleMap, "resize");
-    this.googleMap.setCenter(center);
-  }.bind(this));
+ google.maps.event.addDomListener(window, "resize", function() {
+  var center = this.googleMap.getCenter();
+  console.log(center);
+  google.maps.event.trigger(this.googleMap, "resize");
+  this.googleMap.setCenter(center);
+}.bind(this));
+
+
+  var directionsService = new google.maps.DirectionsService;
+  var directionsDisplay = new google.maps.DirectionsRenderer;
+  directionsDisplay.setMap(this.googleMap);
+
 
 }
 
@@ -46,8 +52,27 @@ var icon = {
          },
          setLocation: function(coords){
            this.addMarker(coords);
-           this.setCenter(coords);
-         }
+           // this.setCenter(coords);
+         },
+         
+        calculateAndDisplayRoute: function() {
+              this.directionsService.route({
+                origin: {lat: 51.603333, lng: -0.065833},
+                destination: {lat: 50.735278, lng: -1.838333},
+                travelMode: 'DRIVING'
+              }, function(response, status) {
+                if (status === 'OK') {
+                  this.directionsDisplay.setDirections(response);
+                } else {
+                  window.alert('Directions request failed due to ' + status);
+                }
+              }.bind(this));
+            }
+          }
 
-       }
+         
+
+
+         
+      
 

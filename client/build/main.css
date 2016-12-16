@@ -33,8 +33,10 @@ p {
 .fixtures {
   justify-content: center;
   margin: 10px;
+  height: 400px;
+  width: 500px;
   border: 5px solid;
-  padding: 150px;
+  /*padding: 150px;*/
   background-color: grey;
   flex-grow: 1;
 }
