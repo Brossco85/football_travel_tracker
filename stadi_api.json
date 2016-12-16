@@ -1,0 +1,1760 @@
+[
+  { 
+    "name": "Bournemouth",
+    "code": "AFCB",
+    "website": "http://www.afcb.co.uk/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/de/4/41/Afc_bournemouth.svg",
+    "stadium": "Vitality Stadium",
+    "latlng": [
+      50.735278, 
+      -1.838333
+    ],
+    "pubs": [
+      {
+        "name": "The George Tapps",
+        "address": "207-215 Old Christchurch Rd, Bournemouth BH1 1JZ",
+        "phoneNumber": "+44 1202 438001",
+        "website": "http://www.georgetappsbournemouth.co.uk/",
+        "latlng": [
+          50.7224269,
+          -1.8705347
+        ]
+      },
+      {
+        "name": "The Queens Park Hotel",
+        "address": "482 Holdenhurst Road, Bournemouth, BH8 9AR",
+        "phoneNumber": "+44 1202 397733",
+        "website": "",
+        "latlng": [
+         50.7352099,
+         -1.8470878
+       ]
+      },
+      {
+        "name": "The Bell",
+        "address": "915 Christchurch Rd, Bournemouth, BH7 6AX",
+        "phoneNumber": "+44 1202 427762",
+        "website": "",
+        "latlng": [
+          50.7307303,
+          -1.8272306
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "xxl food",
+        "address": "512A Christchurch Rd, Bournemouth, BH1 4BE",
+        "phoneNumber": "01202 914450",
+        "website": "http://xxlfood.co.uk/",
+        "latlng": [
+          50.7278517,
+          -1.8815212
+        ]
+      },
+      {
+        "name": "Cafe Culture",
+        "address": "668 Christchurch Rd, Bournemouth, BH7 6BT",
+        "phoneNumber": "01202 395144",
+        "website": "",
+        "latlng": [
+         50.7278517,
+         -1.8815212
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "The Portman Hotel",
+        "address": "97 Ashley Rd, Bournemouth, BH1 4LT",
+        "phoneNumber": "01202 397114",
+        "website": "",
+        "latlng": [
+          50.7303588,
+          -1.8427474
+        ]
+      },
+      {
+        "name": "The Queens Park Hotel",
+        "address": "482 Holdenhurst Road, Bournemouth, BH8 9AR",
+        "phoneNumber": "+44 1202 397733",
+        "website": "",
+        "latlng": [
+         50.7352099,
+         -1.8470878
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Arsenal",
+    "code": "AFC",
+    "website": "http://www.arsenal.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
+    "stadium": "Emirates Stadium",
+    "latlng": [
+      51.555, 
+      -0.108611 
+    ],
+    "pubs": [
+      {
+        "name": "The Horatia",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+      
+        ]
+      },
+      {
+        "name": "Metro Holloway",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Coronet",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Domino's Pizza - London - Highbury",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Burger King",
+        "address": "Nags Head Centre, Nags Head Shopping Centre, 408 Holloway Rd, London N7 6PZ",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Five Kings Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Finsbury Serviced Apartments",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Burnley",
+    "code": "BFC",
+    "website": "http://www.burnleyfootballclub.com/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/en/0/02/Burnley_FC_badge.png",
+    "stadium": "Turf Moor",
+    "latlng": [
+      53.789167, 
+      -2.230278
+    ],
+    "pubs": [
+      {
+        "name": "The Boot Inn",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Burnley Cricket Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Bridge Bier Huis",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Bertram's Restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Red Lantern",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Travelodge Hotel - Burnley",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "BEST WESTERN Higher Trapp Country House Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Chelsea",
+    "code": "CFC",
+    "website": "https://www.chelseafc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/5/5c/Chelsea_crest.svg",
+    "stadium": "Stamford Bridge",
+    "latlng": [
+      51.481667,
+      -0.191111
+    ],
+    "pubs": [
+      {
+        "name": "Courtfield",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Blackbird",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Prince of Teck",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "KFC",
+        "address": "96-102 Uxbridge Rd, White City, London W12 8LR",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "McDonald's",
+        "address": "Broadway Shopping Centre, 7-8 Hammersmith Broadway, London W6 9YD",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Holiday Inn Express London - Earl's Court",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "La Reserve Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Crystal Palace",
+    "code": "CRY",
+    "website": "http://www.cpfc.co.uk/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/b/bf/Crystal_Palace_F.C._logo_(2013).png",
+    "stadium": "Selhurst Park",
+    "latlng": [
+      51.398333,
+      -0.085556
+    ],
+    "pubs": [
+      {
+        "name": "The William Stanley",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Ship",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "Flora Sandes",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Karachi Cuisine",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "cappadocia",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Atini Guest House",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Hotel ibis Styles London Croydon",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Everton",
+    "code": "EFC",
+    "website": "http://www.evertonfc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/f/f9/Everton_FC.svg",
+    "stadium": "Goodison Park",
+    "latlng": [
+      53.438889,
+      -2.966389
+    ],
+    "pubs": [
+      {
+        "name": "The Thomas Frost Pub",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Bradleys Wine Bar",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Richard John Blackler",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "The Boot Room Sports Cafe – Anfield",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Hot Wok",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Stanley Park Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Hotel ibis Styles Liverpool Centre Dale Street",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Hull City",
+    "code": "HUL",
+    "website": "http://www.hullcitytigers.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/a/a9/Hull_City_AFC.svg",
+    "stadium": "KCOM Stadium",
+    "latlng": [
+      53.746111,
+      -0.367778
+    ],
+    "pubs": [
+      {
+        "name": "The Brickmakers",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Walton Street Social Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "Editorial Inn",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "The Madras Restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Bengal Lounge",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "The Gilson Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Kingston Theatre Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Leicester City",
+    "code": "LCFC",
+    "website": "http://www.lcfc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/en/6/63/Leicester02.png",
+    "stadium": "King Power Stadium",
+    "latlng": [
+      52.620278,
+      -1.142222
+    ],
+    "pubs": [
+      {
+        "name": "Soaring Eagle Spur Steak & Grill",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Local Hero Flaming Grill",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Counting House",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "The White Peacock",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Shivalli",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Premier Inn Leicester North West",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Holiday Inn Express Leicester",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Liverpool",
+    "code": "LFC",
+    "website": "http://www.liverpoolfc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/0/0a/FC_Liverpool.svg",
+    "stadium": "Anfield",
+    "latlng": [
+      53.430828,
+      -2.960847
+    ],
+    "pubs": [
+      {
+        "name": "The Cavern Pub",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Richard John Blackler",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Flat Iron",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Kemps Bistro",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Anfield Balti House",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel Anfield",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Stanley Park Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Manchester City",
+    "code": "MCFC",
+    "website": "https://www.mancity.com/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
+    "stadium": "The Etihad",
+    "latlng": [
+      53.483056,
+      -2.200278
+    ],
+    "pubs": [
+      {
+        "name": "The Printworks",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Yates’s",
+        "address": "49 Portland St, Manchester M1 3LD",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "Summerbee Bar",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Le Delicatezze Di Bruno",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Pieminister",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hotel ibis budget Manchester Centre Pollard Street",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Travelodge Hotel - Manchester Sportcity",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Manchester United",
+    "code": "MUFC",
+    "website": "http://www.manutd.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/d/da/Manchester_United_FC.svg",
+    "stadium": "Old Trafford",
+    "latlng": [
+      53.430828,
+      -2.960847
+    ],
+    "pubs": [
+         {
+           "name": "The Printworks",
+           "address": "",
+           "phoneNumber": "",
+           "website": "",
+           "latlng": [
+             
+             
+           ]
+         },
+         {
+           "name": "Yates’s",
+           "address": "49 Portland St, Manchester M1 3LD",
+           "phoneNumber": "",
+           "website": "",
+           "latlng": [
+            
+            
+          ]
+         },
+         {
+           "name": "Summerbee Bar",
+           "address": "",
+           "phoneNumber": "",
+           "website": "",
+           "latlng": [
+             
+             
+           ]
+         }
+       ],
+    "foodOutlets": [
+      {
+        "name": "Red Marrakech - Morroccan restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Spices Of Kashmir (Old Trafford)",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Chesters Hotel & Restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Premier Inn Manchester Old Trafford",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Middlesbrough",
+    "code": "MID",
+    "website": "http://www.mfc.co.uk/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/en/2/2c/Middlesbrough_FC_crest.svg",
+    "stadium": "Riverside Stadium",
+    "latlng": [
+      54.578333,
+      -1.216944
+    ],
+    "pubs": [
+      {
+        "name": "The Isaac Wilson",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Dr Browns",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "Lord Byron",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Brasserie Hudson Quay Bar-Restaurant",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Six Medals",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Holiday Inn Express Middlesbrough - Centre Square",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Baltimore Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Southampton ",
+    "code": "SFC",
+    "website": "https://southamptonfc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/c/c9/FC_Southampton.svg",
+    "stadium": "St Mary’s Stadium",
+    "latlng": [
+      50.905833,
+      -1.391111
+    ],
+    "pubs": [
+      {
+        "name": "Yates's",
+        "address": "113-117 Above Bar St, Southampton SO14 7FH",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Standing Order",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Rockstone",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Turtle Bay Southampton",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Fusion Noodle Bar",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "The Star Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Jurys Inn Southampton",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Stoke City",
+    "code": "SCFC",
+    "website": "http://www.stokecityfc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/a/a3/Stoke_City.svg",
+    "stadium": "bet365 Stadium",
+    "latlng": [
+      52.988333,
+      -2.175556
+    ],
+    "pubs": [
+      {
+        "name": "Longton Rugby Union Football Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Terrace",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Glebe",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Harvester Trentham Lakes",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Frankie & Benny's",
+        "address": "Trentham Gardens, Stone Road, Stoke-on-Trent ST4 8AX",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Holiday Inn Express Stoke on Trent",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Plough Motel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Sunderland",
+    "code": "SUN",
+    "website": "https://www.safc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/6/60/AFC_Sunderland.svg",
+    "stadium": "Stadium of Light",
+    "latlng": [
+      54.9144,
+      -1.3882
+    ],
+    "pubs": [
+      {
+        "name": "The Victory PubThe New Democratic Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The New Democratic Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Cambridge",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Monsoon Kitchen",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Italian Kitchen",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Hilton Garden Inn Sunderland",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Sunderland Marriott Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Swansea City",
+    "code": "SWA",
+    "website": "http://www.swanseacity.net/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/a/ab/Swansea_City_Logo.svg",
+    "stadium": "Liberty Stadium",
+    "latlng": [
+      51.6422,
+      -3.9351
+    ],
+    "pubs": [
+      {
+        "name": "Bank Statement",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Yates’s",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The No Sign Bar",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Frankie & Bennys",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Harvester",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Mercure Swansea Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Grand Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Tottenham Hotspur",
+    "code": "THFC",
+    "website": "http://www.tottenhamhotspur.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/b/b4/Tottenham_Hotspur.svg",
+    "stadium": "White Hart Lane",
+    "latlng": [
+      51.603333,
+      -0.065833
+    ],
+    "pubs": [
+      {
+        "name": "Harringey Irish Club",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Three Compasses ",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Elmhust",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Sakunthala's Pan Asia",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "White Hart Lane Jerk Centre",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Premier Inn London Edmonton",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Premier Inn London Tottenham Hale Hotel",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "Watford",
+    "code": "WAT",
+    "website": "https://www.watfordfc.com/",
+    "crestURL": "https://upload.wikimedia.org/wikipedia/en/e/e2/Watford.svg",
+    "stadium": "Vicarage Road",
+    "latlng": [
+      51.649836,
+      -0.401486
+    ],
+    "pubs": [
+      {
+        "name": "The Oddfellows",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Moon Under Water",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "Yates's",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Kasturi",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Patwarls",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Premier Inn Watford Croxley Green",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Holiday Inn London - Watford Junction",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "West Bromwich Albion",
+    "code": "WBA",
+    "website": "http://www.wba.co.uk/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/8/8b/West_Bromwich_Albion.svg",
+    "stadium": "The Hawthorns",
+    "latlng": [
+      52.509167,
+      -1.963889
+    ],
+    "pubs": [
+      {
+        "name": "The Royal Oak",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Park Inn",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Vine",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "McDonald's",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Kebub",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Park Inn",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Premier Inn West Bromwich Central",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  },
+
+  { 
+    "name": "West Ham United",
+    "code": "WHU",
+    "website": "https://www.whufc.com/",
+    "crestURL": "http://upload.wikimedia.org/wikipedia/de/e/e0/West_Ham_United_FC.svg",
+    "stadium": "London Stadium",
+    "latlng": [
+      51.538611,
+      -0.016389
+    ],
+    "pubs": [
+      {
+        "name": "Golden Grove",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "J J Moon's",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      },
+      {
+        "name": "The Langthorne",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      }
+    ],
+    "foodOutlets": [
+      {
+        "name": "Forman's",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "The Podium Bar & Kitchen",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+        
+       ]
+      }
+    ],
+    "hotels": [
+      {
+        "name": "Premier Inn London Wembley Stadium",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+          
+          
+        ]
+      },
+      {
+        "name": "Holiday Inn London - Wembley",
+        "address": "",
+        "phoneNumber": "",
+        "website": "",
+        "latlng": [
+         
+         
+       ]
+      }
+    ]
+  }
+]

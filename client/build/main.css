@@ -30,7 +30,7 @@ p {
   flex-grow: 2;
 }
 
-.fixtures {
+#fixtures {
   justify-content: center;
   margin: 10px;
   border: 5px solid;
@@ -39,7 +39,7 @@ p {
   flex-grow: 1;
 }
 
-.table {
+#table {
   justify-content: center;
   margin: 10px;
   border: 5px solid;
@@ -48,7 +48,7 @@ p {
   flex-grow: 1;
 }
 
-.feeds {
+#feeds {
   justify-content: center;
   margin: 10px;
   border: 5px solid;
