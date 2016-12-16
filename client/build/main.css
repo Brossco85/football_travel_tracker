@@ -1,0 +1,58 @@
+body {
+  font-family: helvetica;
+  background-color: #FFE4BC;
+}
+
+h1 {
+  color: DodgerBlue;
+  margin: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+#map {
+  justify-content: center;
+  margin: 10px;
+  height: 400px;
+  width: 500px;
+  border: 5px solid;
+ /* padding: 200px;*/
+  background-color: powderblue;
+  flex-grow: 2;
+}
+
+.fixtures {
+  justify-content: center;
+  margin: 10px;
+  border: 5px solid;
+  padding: 150px;
+  background-color: grey;
+  flex-grow: 1;
+}
+
+.table {
+  justify-content: center;
+  margin: 10px;
+  border: 5px solid;
+  padding: 100px;
+  background-color: #B7ECD7;
+  flex-grow: 1;
+}
+
+.feeds {
+  justify-content: center;
+  margin: 10px;
+  border: 5px solid;
+  padding: 100px;
+  background-color: #ECB7C9;
+  flex-grow: 1;
+}
