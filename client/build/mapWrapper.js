@@ -6,7 +6,6 @@ var MapWrapper = function(container, center, zoom){
 
   google.maps.event.addDomListener(window, "resize", function() {
     var center = this.googleMap.getCenter();
-    console.log(center);
     google.maps.event.trigger(this.googleMap, "resize");
     this.googleMap.setCenter(center);
   }.bind(this));

@@ -17,6 +17,19 @@ var requestComplete = function(){
   if (this.status !== 200) return;
   var jsonString = this.responseText;
   var league = JSON.parse(jsonString);
-  console.log(league);
+  createLeagueTable(league);
+}
+
+var createLeagueTable = function(leagueData){
+  var standing = leagueData.standing;
+  var select = document.getElementById('table');
+
+    for (i = 0; i < standing.length; i++) {
+      var li = document.createElement('li');
+      var team = standing[i];
+      console.log(team);
+      li.innerText = team.teamName;
+      table.appendChild(li);
+    }
 }
 
