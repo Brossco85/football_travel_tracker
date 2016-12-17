@@ -12,6 +12,11 @@ p {
   font-size: 20px;
 }
 
+img {
+  width: 20px;
+  height: 20px;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -22,7 +27,9 @@ p {
 #map {
   justify-content: center;
   margin: 10px;
-  height: 400px;
+  height: 70%;
+  width: 70%;
+  height: 700px;
   width: 500px;
   border: 5px solid;
  /* padding: 200px;*/
@@ -30,25 +37,35 @@ p {
   flex-grow: 2;
 }
 
-.fixtures {
+#fixtures {
   justify-content: center;
   margin: 10px;
   border: 5px solid;
-  padding: 150px;
-  background-color: grey;
+  padding: 10px;
+  background-color: #C8ECF6;
   flex-grow: 1;
 }
 
-.table {
+#table {
   justify-content: center;
+  flex-wrap: wrap;
   margin: 10px;
   border: 5px solid;
-  padding: 100px;
+  padding: 10px;
   background-color: #B7ECD7;
   flex-grow: 1;
 }
 
-.feeds {
+#table-element {
+  justify-content: center;
+  width: 10%;
+  margin: 10px;
+  border: 2px solid;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+#feeds {
   justify-content: center;
   margin: 10px;
   border: 5px solid;
@@ -56,9 +73,15 @@ p {
   background-color: #ECB7C9;
   flex-grow: 1;
 }
+
 /*BR Added*/
 #warnings-panel {
         width: 100%;
         height:10%;
         text-align: center;
       }
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+

@@ -10,6 +10,7 @@
   <script src ="app.js"></script>
   <script src ="premierLeagueData.js"></script>
   <script src ="PLStadiums.js"></script>
+  <script src ="premierLeagueFixtures.js"></script>
   <script src ="mapWrapper.js"></script>
   
 </head>
@@ -34,24 +35,55 @@
     <!-- BR Added -->
     <div id="warnings-panel"></div>
 
-    <div class="fixtures">
+    <div id="fixtures">
 
       <p>Fixtures</p>
 
+      <table id="fixture-elements">
+        <tr>
+          <th>Week</th>
+          <th></th>
+          <th>Date</th>
+          <th></th>
+          <th>Home</th>
+          <th></th>
+          <th>Away</th>
+          <th></th>
+          <th>Time</th>
+        </tr>
+      </table>
+
     </div>
 
-    <div class="feeds">
+    <div id="feeds">
 
       <p>Live feeds</p>
 
     </div>
 
-    <div class="table">
+    <div id="table">
 
       <p>League Table</p>
 
+      <table id="table-elements">
+        <tr>
+          <th>Position</th>
+          <th></th>
+          <th>Club</th>
+          <th>Played</th>
+          <th>Won</th>
+          <th>Drawn</th>
+          <th>Lost</th>
+          <th>GF</th>
+          <th>GA</th>
+          <th>GD</th>
+          <th>Points</th>
+        </tr>
+      </table>
+
     </div>
 
+  </div>
   </div>
 
   </body>

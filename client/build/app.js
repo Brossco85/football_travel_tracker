@@ -6,7 +6,8 @@ window.onload = function() {
   // mainMap.setLocation(coords);
 
 
-
+  var table = new PremierLeagueTable();
+  var fixtures = new PremierLeagueFixtures();
 
 
   var url = 'http://localhost:3000/api/accounts';
@@ -83,4 +84,6 @@ var getClubNames = function(stadiums){
     coords = {lat: allStadiums[index].latlng[0], lng: allStadiums[index].latlng[0]};
     return coords;
   }
+
+
 }

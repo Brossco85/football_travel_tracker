@@ -4,12 +4,11 @@ var MapWrapper = function(container, center, zoom){
    zoom: zoom
  });
 
- google.maps.event.addDomListener(window, "resize", function() {
-  var center = this.googleMap.getCenter();
-  console.log(center);
-  google.maps.event.trigger(this.googleMap, "resize");
-  this.googleMap.setCenter(center);
-}.bind(this));
+  google.maps.event.addDomListener(window, "resize", function() {
+    var center = this.googleMap.getCenter();
+    google.maps.event.trigger(this.googleMap, "resize");
+    this.googleMap.setCenter(center);
+  }.bind(this));
 
 }
 
