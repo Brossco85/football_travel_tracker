@@ -1,7 +1,6 @@
 var PremierLeagueTable = function(){
   var url = 'http://api.football-data.org/v1/competitions/426/leagueTable';
   makeRequest(url, requestComplete);
-
 }
 
 
@@ -22,7 +21,6 @@ var requestComplete = function(){
 
 var createLeagueTable = function(leagueData){
   var standing = leagueData.standing;
-  console.log(standing);
   var table = document.getElementById('table-elements');
     for (i = 0; i < standing.length; i++) {
       var tr = document.createElement('tr');
