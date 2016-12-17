@@ -63,14 +63,6 @@ p {
   flex-grow: 1;
 }
 
-#table-element {
-  justify-content: center;
-  width: 10%;
-  margin: 10px;
-  padding: 10px;
-  flex-grow: 1;
-}
-
 #feeds {
   justify-content: center;
   margin: 10px;
