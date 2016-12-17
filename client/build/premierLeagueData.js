@@ -37,9 +37,11 @@ var createLeagueTable = function(leagueData){
       var td9 = document.createElement('td');
       var td10 = document.createElement('td');
       var td11 = document.createElement('td');
+      var img = document.createElement('img');
       var team = standing[i];
+      img.setAttribute("src", team.crestURI);
       td1.innerText = i + 1;
-      // td2.innerText = team.;
+      td2.appendChild(img);
       td3.innerText = team.teamName;
       td4.innerText = team.playedGames;
       td5.innerText = team.wins;
