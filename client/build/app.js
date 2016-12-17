@@ -5,12 +5,14 @@ window.onload = function() {
 
   // mainMap.setLocation(coords);
 
+
   var url = 'http://localhost:3000/api/accounts';
   makeRequest(url, function(){
     if (this.status !== 200) return;
   var jsonString = this.responseText;
   var stadiums = JSON.parse(jsonString);
-  var allStadiums = getStadiumData(stadiums); 
+  var allStadiums = getStadiumData(stadiums);
+  getClubNames(allStadiums);
 
   for(var stadium of allStadiums){
     var icon = {
@@ -21,6 +23,7 @@ window.onload = function() {
             };
     mainMap.addMarker(stadium.latlng, icon);
   };
+
     })
 
   mainMap.initDirections();
@@ -50,4 +53,15 @@ var getStadiumData = function(stadiums){
 
   })
     return data;
+}
+
+var getClubNames = function(stadiums){
+  // var clubNames = stadiums.pokemon_entries;
+  var select = document.querySelector('#team');
+  for (var i = 0; i < stadiums.length; i++) {
+    var option = document.createElement('option') ;
+    option.innerText = stadiums[i].name;
+    option.value = stadiums[i];
+    select.appendChild(option); 
+  }
 }
