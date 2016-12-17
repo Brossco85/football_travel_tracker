@@ -38,6 +38,7 @@ var createLeagueTable = function(leagueData){
       var img = document.createElement('img');
       var team = standing[i];
       img.setAttribute("src", team.crestURI);
+      img.setAttribute("id", "crest-picture")
       td1.innerText = i + 1;
       td2.appendChild(img);
       td3.innerText = team.teamName;
