@@ -12,9 +12,18 @@ p {
   font-size: 20px;
 }
 
-img {
+#crest-picture {
   width: 20px;
   height: 20px;
+}
+
+#football-photo {
+  width: 500px;
+}
+
+#story-title {
+  font-size: 25px;
+  font-weight: strong;
 }
 
 .main {
@@ -27,20 +36,17 @@ img {
 #map {
   justify-content: center;
   margin: 10px;
-  height: 70%;
-  width: 70%;
   height: 700px;
-  width: 500px;
-  border: 5px solid;
- /* padding: 200px;*/
-  background-color: powderblue;
-  flex-grow: 2;
+  width: 100px;
+  flex-grow: 1;
 }
 
 #fixtures {
   justify-content: center;
-  margin: 10px;
-  border: 5px solid;
+  max-width: 600px;
+  max-height: 300px;
+  overflow: auto;
+  margin: 20px;
   padding: 10px;
   background-color: #C8ECF6;
   flex-grow: 1;
@@ -48,29 +54,24 @@ img {
 
 #table {
   justify-content: center;
+  max-width: 600px;
+  overflow: auto;
   flex-wrap: wrap;
   margin: 10px;
-  border: 5px solid;
-  padding: 10px;
-  background-color: #B7ECD7;
-  flex-grow: 1;
-}
-
-#table-element {
-  justify-content: center;
-  width: 10%;
-  margin: 10px;
-  border: 2px solid;
-  padding: 10px;
+  padding: 20px;
+  background-color: #E0F3D4;
   flex-grow: 1;
 }
 
 #feeds {
   justify-content: center;
   margin: 10px;
-  border: 5px solid;
-  padding: 100px;
-  background-color: #ECB7C9;
+  max-width: 500px;
+  max-height: 600px;
+  overflow: auto;
+  position: relative;
+  padding: 20px;
+  background-color: #E3EBEE;
   flex-grow: 1;
 }
 

@@ -20,7 +20,6 @@ var requestComplete2 = function(){
 
 var createFixturesTable = function(fixturesData){
   var fixtures = fixturesData.fixtures;
-  console.log(fixtures);
   var table = document.getElementById('fixture-elements');
     for (i = 0; i < fixtures.length; i++) {
       var tr = document.createElement('tr');
@@ -36,13 +35,7 @@ var createFixturesTable = function(fixturesData){
       var img = document.createElement('img');
       var fixture = fixtures[i];
       var dateAndTime = fixture.date;
-      // console.log(dateAndTime);
       var date = new Date(dateAndTime);
-      // console.log(date);
-      console.log(date);
-
-      // var date = dateAndTime.getDate();
-      // console.log(dateAndTime);
       td1.innerText = fixture.matchday;
       td2.innerText = "";
       td3.innerText = date.toDateString();

@@ -8,6 +8,7 @@ window.onload = function() {
 
   var table = new PremierLeagueTable();
   var fixtures = new PremierLeagueFixtures();
+  var feed = new FootballFeed();
 
 
   var url = 'http://localhost:3000/api/accounts';
