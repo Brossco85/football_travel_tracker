@@ -84,3 +84,5 @@ function showSteps(directionResult, markerArray, stepDisplay, map) {
         stepDisplay.open(map, marker);
       });
     }
+
+    
