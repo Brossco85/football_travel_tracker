@@ -22,6 +22,8 @@ window.onload = function() {
     mainMap.addMarker(stadium.latlng, icon);
   };
     })
+
+  mainMap.initDirections();
   }
 
 
