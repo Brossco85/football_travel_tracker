@@ -40,6 +40,10 @@ MapWrapper.prototype = {
 // document.getElementById('start').addEventListener('change', onChangeHandler);
 // document.getElementById('end').addEventListener('change', onChangeHandler);
 
+},
+satelliteCloseUp: function(){
+  this.googleMap.setMapTypeId('satellite');
+  this.googleMap.setZoom(17);
 }
 
 }

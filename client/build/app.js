@@ -33,14 +33,9 @@ window.onload = function() {
 
   mainMap.initDirections();
 
-  // console.log(getStadiumCoords(1));
-
   var select = document.querySelector('#team');
-  select.addEventListener('change', function(e){
-    console.log(e.target.value)
-    var coords = getStadiumCoords(1);
-    mainMap.setCenter(coords);
-  })
+  select.addEventListener('change', function(e){getStadiumCoords(e.target.value, mainMap)
+    })
 
 
   }
@@ -76,15 +71,24 @@ var getClubNames = function(stadiums){
   for (var i = 0; i < stadiums.length; i++) {
     var option = document.createElement('option') ;
     option.innerText = stadiums[i].name;
-    option.value = stadiums[i];
+    option.value = i;
+    console.log(option.value)
     select.appendChild(option); 
   }
-
-  var getStadiumCoords = function(index){
-    var coords = {};
-    coords = {lat: allStadiums[index].latlng[0], lng: allStadiums[index].latlng[0]};
-    return coords;
-  }
-
-
 }
+
+  var getStadiumCoords = function(index, map){
+    var url = 'http://localhost:3000/api/accounts';
+    makeRequest(url, function(){
+      if (this.status !== 200) return;
+    var jsonString = this.responseText;
+    var stadiums = JSON.parse(jsonString);
+    var allStadiums = getStadiumData(stadiums);
+    console.log(allStadiums[index].latlng.lat)
+    var coords = {};
+    coords = {lat: allStadiums[index].latlng.lat, lng: allStadiums[index].latlng.lng};
+    map.setCenter(coords);
+    map.satelliteCloseUp();
+  })
+}
+
