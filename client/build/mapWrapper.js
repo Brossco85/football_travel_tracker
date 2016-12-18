@@ -31,7 +31,7 @@ MapWrapper.prototype = {
   
   var markerArray = [];
   var directionsService = new google.maps.DirectionsService;
-  var directionsDisplay = new google.maps.DirectionsRenderer({map: this.googleMap});
+  var directionsDisplay = null;
   var stepDisplay = new google.maps.InfoWindow;
   calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, this.googleMap, origin, destination);
 
@@ -51,11 +51,11 @@ satelliteCloseUp: function(){
 
 
 function calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map, origin, destination) {
-    // directionsDisplay.setMap(null);
-
-  // if(directionsDisplay){
-  //             directionsDisplay.setMap(null);
-          // }
+    if (directionsDisplay != null)
+       {
+           directionsDisplay.setMap(null);
+           directionsDisplay = null;
+       }
  //  for (var i = 0; i < markerArray.length; i++) {
  //   markerArray[i].setMap(null);
  // }
@@ -65,6 +65,7 @@ function calculateAndDisplayRoute(directionsDisplay, directionsService, markerAr
   if (status === 'OK') {
     document.getElementById('warnings-panel').innerHTML =
     '<b>' + response.routes[0].warnings + '</b>';
+  directionsDisplay = new google.maps.DirectionsRenderer({map: map});
     directionsDisplay.setDirections(response);
     // showSteps(response, markerArray, stepDisplay, map);
   } else {

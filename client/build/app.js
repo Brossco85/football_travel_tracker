@@ -21,24 +21,49 @@ window.onload = function() {
 
     for(var stadium of allStadiums){
       var icon = {
-              url: stadium.crest, // url
-              scaledSize: new google.maps.Size(20, 30), // scaled size
-              origin: new google.maps.Point(0,0), // origin
-              anchor: new google.maps.Point(0, 0) // anchor
-            };
-            mainMap.addMarker(stadium.latlng, icon);
-          };
+                  url: stadium.crest, // url
+                  scaledSize: new google.maps.Size(20, 30), // scaled size
+                  origin: new google.maps.Point(0,0), // origin
+                  anchor: new google.maps.Point(0, 0) // anchor
+                };
+                mainMap.addMarker(stadium.latlng, icon);
+              };
 
-        })
+            })
 
-  // mainMap.initDirections();
 
   var select = document.querySelector('#team');
   select.addEventListener('change', function(e){getStadiumCoords(e.target.value, mainMap)
   })
 
 
+  // var tables = document.getElementById("fixture-elements");
+
 }
+
+
+
+
+
+
+    // console.log(table.rows.length);
+    //     for (var i = 0; i < table.rows.length; i++) {
+    //         table.rows[i].onclick = function () {
+    //             console.log(this.value);
+    //         };
+    //     }
+    // }
+
+
+  // rows.addEventListener('click', function(e){console.log(e.target.value);getStadiumCoords(e.target.value, mainMap)})
+  // for (var row in rows) {
+  //   row.addEventListener('click', function(e){getStadiumCoords(e.target.value, mainMap);
+  // var tableRow = document.querySelector('#away-team')
+  // tableRow.addEventListener('click', function(e){getStadiumCoords(e.target.value, mainMap)})
+
+// })
+
+
 
 
 var makeRequest = function(url, callback){
@@ -88,13 +113,11 @@ var getStadiumCoords = function(index, map){
     var coords = {};
     coords = {lat: allStadiums[index].latlng.lat, lng: allStadiums[index].latlng.lng};
     map.setCenter(coords);
-    // map.satelliteCloseUp();
-    var origin = {lat: 51.6032, lng: 0.0657};
-    var destination = coords;
-    map.initDirections(origin, destination);
-
-
-
+    map.satelliteCloseUp();
+    // var origin = {lat: 51.6032, lng: 0.0657};
+    // var destination = coords;
+    // map.initDirections(origin, destination);
   })
 }
+
 
