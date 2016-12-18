@@ -1,4 +1,4 @@
-window.onload = function() {
+var app = function() {
   var container = document.getElementById('map');
   var coords = {lat: 51.6032, lng: 0.0657};  
   var mainMap = new MapWrapper(container, coords, 6);
@@ -37,22 +37,15 @@ window.onload = function() {
   })
 
 
-  // var tables = document.getElementById("fixture-elements");
+  var tables = document.getElementById("fixture-elements");
+    console.log(tables.rows.length);
+        for (var i = 0; i < tables.rows.length; i++) {
+            tables.rows[i].onclick = function () {
+                console.log(this.value);
+            };
+        }
+    }
 
-}
-
-
-
-
-
-
-    // console.log(table.rows.length);
-    //     for (var i = 0; i < table.rows.length; i++) {
-    //         table.rows[i].onclick = function () {
-    //             console.log(this.value);
-    //         };
-    //     }
-    // }
 
 
   // rows.addEventListener('click', function(e){console.log(e.target.value);getStadiumCoords(e.target.value, mainMap)})
@@ -113,11 +106,13 @@ var getStadiumCoords = function(index, map){
     var coords = {};
     coords = {lat: allStadiums[index].latlng.lat, lng: allStadiums[index].latlng.lng};
     map.setCenter(coords);
-    map.satelliteCloseUp();
-    // var origin = {lat: 51.6032, lng: 0.0657};
-    // var destination = coords;
-    // map.initDirections(origin, destination);
+    // map.satelliteCloseUp();
+    var origin = {lat: 51.6032, lng: 0.0657};
+    var destination = coords;
+    map.initDirections(origin, destination);
   })
 }
 
+
+window.onload = app;
 

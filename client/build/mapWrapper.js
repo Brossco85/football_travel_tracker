@@ -4,13 +4,20 @@ var MapWrapper = function(container, center, zoom){
    zoom: zoom
  });
 
+directionsService = new google.maps.DirectionsService;
+  directionsDisplay = new google.maps.DirectionsRenderer;
+   directionsDisplay.setMap(this.googleMap);
+
   google.maps.event.addDomListener(window, "resize", function() {
     var center = this.googleMap.getCenter();
     google.maps.event.trigger(this.googleMap, "resize");
     this.googleMap.setCenter(center);
   }.bind(this));
 
+
 }
+
+
 
 MapWrapper.prototype = {
  addMarker: function(coords, icon){
@@ -28,12 +35,13 @@ MapWrapper.prototype = {
    this.setCenter(coords);
  },
  initDirections: function(origin, destination){
+
   
   var markerArray = [];
-  var directionsService = new google.maps.DirectionsService;
-  var directionsDisplay = null;
+  // var directionsService = new google.maps.DirectionsService;
+  // var directionsDisplay = null;
   var stepDisplay = new google.maps.InfoWindow;
-  calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, this.googleMap, origin, destination);
+  calculateAndDisplayRoute(markerArray, stepDisplay, this.googleMap, origin, destination);
 
 // var onChangeHandler = function() {
 //   calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map);
@@ -50,12 +58,12 @@ satelliteCloseUp: function(){
 }
 
 
-function calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map, origin, destination) {
-    if (directionsDisplay != null)
-       {
-           directionsDisplay.setMap(null);
-           directionsDisplay = null;
-       }
+function calculateAndDisplayRoute(markerArray, stepDisplay, map, origin, destination) {
+    // if (directionsDisplay != null)
+    //    {
+    //        directionsDisplay.setMap(null);
+    //        directionsDisplay = null;
+    //    }
  //  for (var i = 0; i < markerArray.length; i++) {
  //   markerArray[i].setMap(null);
  // }
@@ -65,7 +73,7 @@ function calculateAndDisplayRoute(directionsDisplay, directionsService, markerAr
   if (status === 'OK') {
     document.getElementById('warnings-panel').innerHTML =
     '<b>' + response.routes[0].warnings + '</b>';
-  directionsDisplay = new google.maps.DirectionsRenderer({map: map});
+  // directionsDisplay = new google.maps.DirectionsRenderer({map: map});
     directionsDisplay.setDirections(response);
     // showSteps(response, markerArray, stepDisplay, map);
   } else {
