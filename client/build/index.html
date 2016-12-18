@@ -4,13 +4,22 @@
   <title>Football Travel Tracker</title>
   <link rel="stylesheet" type="text/css" href="main.css">
   <!-- <script src='https://maps.googleapis.com/maps/api/js'></script> -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap"></script>
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLvACi91tcdtNd9BFtYe2aW_xyEOhFamQ">
+      </script>
   <script src ="app.js"></script>
+  <script src ="premierLeagueData.js"></script>
+  <script src ="PLStadiums.js"></script>
+  <script src ="premierLeagueFixtures.js"></script>
+  <script src ="footballFeed.js"></script>
   <script src ="mapWrapper.js"></script>
+  <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
   
 </head>
 
 <body>
+<!-- bobby added -->
+<select id="team"></select>
   <div class="container">
     <div class="nav">
 
@@ -26,24 +35,62 @@
 
     </div>
 
-    <div class="fixtures">
+    <!-- BR Added -->
+    <div id="directions">
+
+    </div>
+    <!-- BR Added -->
+    <div id="warnings-panel"></div>
+
+    <div id="fixtures">
 
       <p>Fixtures</p>
 
+      <table id="fixture-elements">
+        <tr>
+          <th>Week</th>
+          <th></th>
+          <th>Date</th>
+          <th></th>
+          <th>Home</th>
+          <th></th>
+          <th>Away</th>
+          <th></th>
+          <th>Time</th>
+        </tr>
+      </table>
+
     </div>
 
-    <div class="feeds">
+    <div id="feeds">
 
-      <p>Live feeds</p>
+      <table id="feed-list"></table>
 
     </div>
 
-    <div class="table">
+    <div id="table">
 
       <p>League Table</p>
 
+      <table id="table-elements">
+        <tr>
+          <th>Position</th>
+          <th></th>
+          <th>Club</th>
+          <th>Played</th>
+          <th>Won</th>
+          <th>Drawn</th>
+          <th>Lost</th>
+          <th>GF</th>
+          <th>GA</th>
+          <th>GD</th>
+          <th>Points</th>
+        </tr>
+      </table>
+
     </div>
 
+  </div>
   </div>
 
   </body>

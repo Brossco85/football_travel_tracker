@@ -12,6 +12,20 @@ p {
   font-size: 20px;
 }
 
+#crest-picture {
+  width: 20px;
+  height: 20px;
+}
+
+#football-photo {
+  width: 500px;
+}
+
+#story-title {
+  font-size: 25px;
+  font-weight: strong;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -22,39 +36,62 @@ p {
 #map {
   justify-content: center;
   margin: 10px;
-  height: 400px;
-  width: 500px;
-  border: 5px solid;
- /* padding: 200px;*/
-  background-color: powderblue;
-  flex-grow: 2;
-}
-
-.fixtures {
-  justify-content: center;
-  margin: 10px;
-  height: 400px;
-  width: 500px;
-  border: 5px solid;
-  /*padding: 150px;*/
-  background-color: grey;
+  height: 700px;
+  width: 100px;
   flex-grow: 1;
 }
 
-.table {
+/*Bobby Added*/
+#directions {
   justify-content: center;
   margin: 10px;
-  border: 5px solid;
-  padding: 100px;
-  background-color: #B7ECD7;
+  height: 700px;
+  width: 100px;
   flex-grow: 1;
 }
 
-.feeds {
+#fixtures {
   justify-content: center;
-  margin: 10px;
-  border: 5px solid;
-  padding: 100px;
-  background-color: #ECB7C9;
+  max-width: 600px;
+  max-height: 300px;
+  overflow: auto;
+  margin: 20px;
+  padding: 10px;
+  background-color: #C8ECF6;
   flex-grow: 1;
 }
+
+#table {
+  justify-content: center;
+  max-width: 600px;
+  overflow: auto;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 20px;
+  background-color: #E0F3D4;
+  flex-grow: 1;
+}
+
+#feeds {
+  justify-content: center;
+  margin: 10px;
+  max-width: 500px;
+  max-height: 600px;
+  overflow: auto;
+  position: relative;
+  padding: 20px;
+  background-color: #E3EBEE;
+  flex-grow: 1;
+}
+
+/*BR Added*/
+#warnings-panel {
+        width: 100%;
+        height:10%;
+        text-align: center;
+      }
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+

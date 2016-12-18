@@ -4,75 +4,104 @@ var MapWrapper = function(container, center, zoom){
    zoom: zoom
  });
 
- google.maps.event.addDomListener(window, "resize", function() {
-  var center = this.googleMap.getCenter();
-  console.log(center);
-  google.maps.event.trigger(this.googleMap, "resize");
-  this.googleMap.setCenter(center);
-}.bind(this));
+directionsService = new google.maps.DirectionsService;
+  directionsDisplay = new google.maps.DirectionsRenderer;
+   directionsDisplay.setMap(this.googleMap);
+   directionsDisplay.setPanel(document.getElementById('directions'));
 
-
-  var directionsService = new google.maps.DirectionsService;
-  var directionsDisplay = new google.maps.DirectionsRenderer;
-  directionsDisplay.setMap(this.googleMap);
+  google.maps.event.addDomListener(window, "resize", function() {
+    var center = this.googleMap.getCenter();
+    google.maps.event.trigger(this.googleMap, "resize");
+    this.googleMap.setCenter(center);
+  }.bind(this));
 
 
 }
 
-// var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-// var icons = {
-//  parking: {
-//    icon: iconBase + 'parking_lot_maps.png'
-//  },
-//  library: {
-//    icon: iconBase + 'library_maps.png'
-//  },
-//  info: {
-//    icon: iconBase + 'info-i_maps.png'
-//  }
+
+
+MapWrapper.prototype = {
+ addMarker: function(coords, icon){
+   var marker = new google.maps.Marker({
+     position: coords,
+     icon: icon,
+     map: this.googleMap
+   })
+ },
+ setCenter: function(coords){
+   this.googleMap.setCenter(coords);
+ },
+ setLocation: function(coords){
+   this.addMarker(coords);
+   this.setCenter(coords);
+ },
+ initDirections: function(origin, destination){
+
+  
+  var markerArray = [];
+  // var directionsService = new google.maps.DirectionsService;
+  // var directionsDisplay = null;
+  var stepDisplay = new google.maps.InfoWindow;
+  calculateAndDisplayRoute(markerArray, stepDisplay, this.googleMap, origin, destination);
+
+// var onChangeHandler = function() {
+//   calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map);
 // };
+// document.getElementById('start').addEventListener('change', onChangeHandler);
+// document.getElementById('end').addEventListener('change', onChangeHandler);
 
-var icon = {
-          url: 'https://upload.wikimedia.org/wikipedia/de/b/b4/Tottenham_Hotspur.svg', // url
-          scaledSize: new google.maps.Size(30, 40), // scaled size
-          origin: new google.maps.Point(0,0), // origin
-          anchor: new google.maps.Point(0, 0) // anchor
-        };
+},
+satelliteCloseUp: function(){
+  this.googleMap.setMapTypeId('satellite');
+  this.googleMap.setZoom(17);
+}
 
-        MapWrapper.prototype = {
-         addMarker: function(coords){
-           var marker = new google.maps.Marker({
-             position: coords,
-             icon: icon,
-             map: this.googleMap
-           })
-         },
-         setCenter: function(coords){
-           this.googleMap.setCenter(coords);
-         },
-         setLocation: function(coords){
-           this.addMarker(coords);
-           // this.setCenter(coords);
-         },
-         
-        calculateAndDisplayRoute: function() {
-              this.directionsService.route({
-                origin: {lat: 51.603333, lng: -0.065833},
-                destination: {lat: 50.735278, lng: -1.838333},
-                travelMode: 'DRIVING'
-              }, function(response, status) {
-                if (status === 'OK') {
-                  this.directionsDisplay.setDirections(response);
-                } else {
-                  window.alert('Directions request failed due to ' + status);
-                }
-              }.bind(this));
-            }
-          }
-
-         
+}
 
 
-         
-      
+function calculateAndDisplayRoute(markerArray, stepDisplay, map, origin, destination) {
+    // if (directionsDisplay != null)
+    //    {
+    //        directionsDisplay.setMap(null);
+    //        directionsDisplay = null;
+    //    }
+ //  for (var i = 0; i < markerArray.length; i++) {
+ //   markerArray[i].setMap(null);
+ // }
+ directionsService.route({origin: origin, destination: destination,
+   travelMode: 'DRIVING'
+ }, function(response, status) {
+  if (status === 'OK') {
+    document.getElementById('warnings-panel').innerHTML =
+    '<b>' + response.routes[0].warnings + '</b>';
+  // directionsDisplay = new google.maps.DirectionsRenderer({map: map});
+    directionsDisplay.setDirections(response);
+    // showSteps(response, markerArray, stepDisplay, map);
+  } else {
+    window.alert('Directions request failed due to ' + status);
+  }
+});
+}
+function showSteps(directionResult, markerArray, stepDisplay, map) {
+      // For each step, place a marker, and add the text to the marker's infowindow.
+      // Also attach the marker to an array so we can keep track of it and remove it
+      // when calculating new routes.
+      var myRoute = directionResult.routes[0].legs[0];
+      for (var i = 0; i < myRoute.steps.length; i++) {
+        var marker = markerArray[i] = markerArray[i] || new google.maps.Marker;
+        marker.setMap(map);
+        marker.setPosition(myRoute.steps[i].start_location);
+        attachInstructionText(stepDisplay, marker, myRoute.steps[i].instructions, map);
+      }
+    }
 
+    function attachInstructionText(stepDisplay, marker, text, map) {
+      google.maps.event.addListener(marker, 'click', function() {
+        // Open an info window when the marker is clicked on, containing the text
+        // of the step.
+        stepDisplay.setContent(text);
+        stepDisplay.open(map, marker);
+      });
+    }
+
+    
