@@ -41,6 +41,15 @@ p {
   flex-grow: 1;
 }
 
+/*Bobby Added*/
+#directions {
+  justify-content: center;
+  margin: 10px;
+  height: 700px;
+  width: 100px;
+  flex-grow: 1;
+}
+
 #fixtures {
   justify-content: center;
   max-width: 600px;

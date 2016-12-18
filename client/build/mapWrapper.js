@@ -7,6 +7,7 @@ var MapWrapper = function(container, center, zoom){
 directionsService = new google.maps.DirectionsService;
   directionsDisplay = new google.maps.DirectionsRenderer;
    directionsDisplay.setMap(this.googleMap);
+   directionsDisplay.setPanel(document.getElementById('directions'));
 
   google.maps.event.addDomListener(window, "resize", function() {
     var center = this.googleMap.getCenter();
