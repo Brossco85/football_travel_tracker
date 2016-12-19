@@ -19,4 +19,8 @@ describe('planner', function() {
     assert.equal(planner.planner.length, 2);
   });
 
+  it("should find itinerary by user", function(){
+    assert.deepEqual(itinerary2, planner.findItineraryByUser("Euan"));
+  })
+
 });
