@@ -1595,76 +1595,76 @@
     "pubs": [
       {
         "name": "The Royal Oak",
-        "address": "",
+        "address": "Royal Oak, 14 Newton St, West Bromwich B71",
         "phoneNumber": "",
         "website": "",
         "latlng": [
-          
-          
+          52.5367479,
+          -1.9845849
         ]
       },
       {
-        "name": "Park Inn",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "name": "The Sportsmans Club",
+        "address": "13 High St, West Bromwich B70 6PP",
+        "phoneNumber": "0121 553 1353",
+        "website": "http://www.thesportsmanclub.co.uk/",
         "latlng": [
-         
-         
-       ]
+         52.5132808,
+         -1.9921036
+        ]
       },
       {
         "name": "The Vine",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "The Vine, 152 Roebuck St, West Bromwich B70 6RD",
+        "phoneNumber": "0121 553 2866",
+        "website": "http://www.thevine.co.uk/",
         "latlng": [
-          
-          
+          52.5132834,
+          -1.9921036
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "McDonald's",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "152 Holyhead Road, Handsworth, Sandwell B21 0AP",
+        "phoneNumber": "0121 525 2885",
+        "website": "http://www.mcdonalds.co.uk/ukhome/menu.html",
         "latlng": [
-          
-          
+          52.510092,
+          -1.9640435
         ]
       },
       {
         "name": "Kebub",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "White Swan, 34 Bromford Ln, West Bromwich B70 7HW",
+        "phoneNumber": "0121 500 6211",
+        "website": "http://www.kebub.co.uk/",
         "latlng": [
-         
-        
-       ]
+         52.5143814,
+         -2.0033741
+        ]
       }
     ],
     "hotels": [
       {
-        "name": "Park Inn",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "name": "Park Inn by Radisson Birmingham West",
+        "address": "M5 Jct1, Birmingham Rd, West Bromwich B70 6RS",
+        "phoneNumber": "0121 609 9988",
+        "website": "https://www.parkinn.co.uk/hotel-birminghamwest",
         "latlng": [
-          
-          
+          52.513985,
+          -1.9783625
         ]
       },
       {
         "name": "Premier Inn West Bromwich Central",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "144 High St, West Bromwich B70 6JJ",
+        "phoneNumber": "0871 527 9150",
+        "website": "http://www.premierinn.com/gb/en/hotels/england/west-midlands/west-bromwich/west-bromwich-central.html?cid=GLBC_WESBRO",
         "latlng": [
-         
-         
+         52.5157033,
+         -1.9917227
        ]
       }
     ]
