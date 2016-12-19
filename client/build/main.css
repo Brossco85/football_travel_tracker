@@ -104,6 +104,18 @@ p {
 /*  flex: 1 1 auto;*/
 }
 
+.click-fixture {
+  cursor: pointer;
+}
+
+.click-fixture:hover{
+  background-color: yellow;
+}
+
+.click-fixture:active{
+  background-color: #B0B0B0;
+}
+
 #itinerary {
   min-width: 0;
   justify-content: center;
