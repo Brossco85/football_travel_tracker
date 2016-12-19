@@ -5,7 +5,6 @@ var FootballFeed = function(){
     var table = document.getElementById('feed-list');
     feednami.load(url).then(feed => {
       var stories = feed.entries;
-      console.log(stories);
         for (i = 0; i < stories.length; i++) {
           var tr = document.createElement('tr');
           var td = document.createElement('td');

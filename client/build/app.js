@@ -31,7 +31,10 @@ var app = function() {
 
 
   var select = document.querySelector('#team');
-  select.addEventListener('change', function(e){getStadiumCoords(e.target.value, mainMap)
+  // var directionsBox = document.getElementById('directions');
+  
+  select.addEventListener('change', function(e){
+    getStadiumCoords(e.target.value, mainMap);
   })
 
 }
