@@ -58,6 +58,27 @@ satelliteCloseUp: function(){
 
 }
 
+function getLocation() {
+  var container = document.getElementById('map');
+  if (!navigator.geolocation){
+    output.innerHTML = "<p>Geolocation is not supported by your browser</p>";
+    return;
+  }
+  function success(position) {
+    var latitude  = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    var location = {lat: latitude, lng: longitude};
+    var mainMap = new MapWrapper(container, location, 10);
+    mainMap.addMarker(location);
+  }
+
+  function error() {
+    container.innerHTML = "Unable to retrieve your location";
+  }
+  container.innerHTML = "<p>Locating…</p>";
+  navigator.geolocation.getCurrentPosition(success, error);
+}
+
 
 function calculateAndDisplayRoute(markerArray, stepDisplay, map, origin, destination) {
     // if (directionsDisplay != null)
