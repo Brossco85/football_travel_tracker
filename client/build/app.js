@@ -38,12 +38,25 @@ var app = function() {
 
 
   var tables = document.getElementById("fixture-elements");
-    console.log(tables.rows.length);
-        for (var i = 0; i < tables.rows.length; i++) {
-            tables.rows[i].onclick = function () {
-                console.log(this.value);
-            };
-        }
+      cells = tables.getElementsByTagName('tr');
+
+  for (var i=0,len=cells.length; i<len; i++){
+      cells[i].onclick = function(){
+          console.log(this.innerHTML);
+          /* if you know it's going to be numeric:
+          console.log(parseInt(this.innerHTML),10);
+          */
+      }
+  }
+
+
+  // var tables = document.getElementById("fixture-elements");
+  //   console.log(tables.rows.length);
+  //       for (var i = 0; i < tables.rows.length; i++) {
+  //           tables.rows[i].onclick = function (e) {
+  //               console.log(e.target.value);
+  //           };
+  //       }
     }
 
 
