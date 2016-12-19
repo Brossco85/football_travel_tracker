@@ -17,3 +17,5 @@ Planner.prototype = {
   }
 
 }
+
+module.exports = Planner;
