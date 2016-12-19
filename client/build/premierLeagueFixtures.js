@@ -146,6 +146,7 @@ var assignOnClick =function (){
       var home = this.children[4].innerText;
       var away = this.children[6].innerText;
       getFixtureDirections(home, away);
+      getHotspots(home);
       }
     }
   }
@@ -157,12 +158,35 @@ var assignOnClick =function (){
     request.send();
   }
 
+  var getHotspots = function(homeTeam) {
+    var url = 'http://localhost:3000/api/accounts';
+    makeRequest(url, function(){
+    if (this.status !== 200) return;
+    var jsonString = this.responseText;
+    var stadiums = JSON.parse(jsonString);
+    for (var stadium of stadiums) {
+      if (stadium.name == homeTeam) {
+        for (pub of stadium.pubs) {
+          console.log(pub.name);
+        }
+        for (foodOutlet of stadium.foodOutlets) {
+          console.log(foodOutlet.name);
+        }
+        for (hotel of stadium.hotels) {
+          console.log(hotel.name);
+        }
+      }
+    }
+  })
+}
+
   var getFixtureDirections = function(homeTeam, awayTeam){
     var url = 'http://localhost:3000/api/accounts';
     makeRequest(url, function(){
       if (this.status !== 200) return;
       var jsonString = this.responseText;
       var stadiums = JSON.parse(jsonString);
+      console.log(stadiums);
       var allStadiums = getStadiumData(stadiums);
       var homeCoords = {};
       var awayCoords = {};
