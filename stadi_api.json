@@ -1330,77 +1330,77 @@
     ],
     "pubs": [
       {
-        "name": "Bank Statement",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "name": "The Bank Statement",
+        "address": "57-58 Wind St, Swansea SA1 1EP",
+        "phoneNumber": "01792 455477",
+        "website": "https://www.jdwetherspoon.com/",
         "latlng": [
-          
-          
+          51.6193476,
+          -3.9426823
         ]
       },
       {
         "name": "Yates’s",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "1-4 Caer St, Swansea SA1 3PP",
+        "phoneNumber": "01792 472440",
+        "website": "http://www.weareyates.co.uk/swansea/",
         "latlng": [
-         
-         
+         51.619983,
+         -3.9437182
        ]
       },
       {
         "name": "The No Sign Bar",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "56 Wind St, Swansea SA1 1EG",
+        "phoneNumber": "01792 465300",
+        "website": "http://nosignwinebar.com/",
         "latlng": [
-          
-          
+          51.6193146,
+          -3.9425307
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "Frankie & Bennys",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Morfa Shopping Park, Brunel Way, Plasmarl, Swansea SA1 2FB",
+        "phoneNumber": "01792 657420",
+        "website": "http://www.frankieandbennys.com/",
         "latlng": [
-          
-          
+          51.6192989,
+          -3.9753614
         ]
       },
       {
         "name": "Harvester",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Morfa Shopping Park, Brunel Way, Bon-y-maen, Plasmarl, Swansea SA1 7BP",
+        "phoneNumber": "01792 475605",
+        "website": "http://www.harvester.co.uk/restaurants/wales/themorfaparcswansea",
         "latlng": [
-         
-        
+         51.641274,
+         -3.9374277
        ]
       }
     ],
     "hotels": [
       {
         "name": "Mercure Swansea Hotel",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Phoenix Way, Llansamlet, Swansea SA7 9EG",
+        "phoneNumber": "0844 815 9081",
+        "website": "http://www.accorhotels.com/gb/hotel-8332-mercure-swansea-hotel/index.shtml",
         "latlng": [
-          
-          
+          51.6547544,
+          -3.914587
         ]
       },
       {
         "name": "The Grand Hotel",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Ivey Place, High Street, Swansea SA1 1NX",
+        "phoneNumber": "01792 645898",
+        "website": "http://www.thegrandhotelswansea.co.uk/",
         "latlng": [
-         
-         
+         51.6337655,
+         -3.9466539
        ]
       }
     ]
