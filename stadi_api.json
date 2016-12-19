@@ -538,78 +538,78 @@
     ],
     "pubs": [
       {
-        "name": "The Brickmakers",
-        "address": "",
-        "phoneNumber": "",
+        "name": "Brickmakers Arms",
+        "address": "57-65 Walton St, Hull HU3 6JB",
+        "phoneNumber": "01482 508913",
         "website": "",
         "latlng": [
-          
-          
+          53.7455791,
+          -0.3765638
         ]
       },
       {
-        "name": "Walton Street Social Club",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "name": "The Bowery",
+        "address": "30-32 Princes Ave, Hull HU5 3QA",
+        "phoneNumber": "01482 441126",
+        "website": "http://www.marstons.co.uk/pubs/finder/",
         "latlng": [
-         
-         
-       ]
+         53.7539751,
+         -0.3618384
+        ]
       },
       {
         "name": "Editorial Inn",
-        "address": "",
-        "phoneNumber": "",
+        "address": "48 Spring Bank, Hull HU3 1AB",
+        "phoneNumber": "01482 327738",
         "website": "",
         "latlng": [
-          
-          
+          53.7491836,
+          -0.3515977
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "The Madras Restaurant",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "249-251 Anlaby Rd, Hull HU3 2SE",
+        "phoneNumber": "01482 213321",
+        "website": "http://www.the-madras.com/",
         "latlng": [
-          
-          
+          53.7431439,
+          -0.3630857
         ]
       },
       {
         "name": "Bengal Lounge",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "31-33 Princes Ave, Hull HU5 3RX",
+        "phoneNumber": "01482 473945",
+        "website": "http://www.bengalloungeindian.co.uk/",
         "latlng": [
-         
-        
-       ]
+         53.7525583,
+         -0.3631223
+        ]
       }
     ],
     "hotels": [
       {
         "name": "The Gilson Hotel",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "11 Anlaby Rd, Hull HU1 2PJ",
+        "phoneNumber": "01482 323299",
+        "website": "http://www.gilsonhotel.co.uk/",
         "latlng": [
-          
-          
+          53.7431099,
+          -0.3471989
         ]
       },
       {
         "name": "The Kingston Theatre Hotel",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "1-2 Kingston Square, Hull HU2 8DA",
+        "phoneNumber": "01482 225828",
+        "website": "http://www.kingstontheatrehotel.com/",
         "latlng": [
-         
-         
-       ]
+         53.7476569,
+         -0.3411236
+        ]
       }
     ]
   },
