@@ -75,6 +75,7 @@ var createFixturesTable = function(fixturesData, callback){
     tr.appendChild(td13);
     tr.value = fixture.awayTeamName;
     console.log(tr.value)
+    callback();
   }
 
 }
@@ -119,7 +120,7 @@ var getFixtureDirections = function(homeTeam, awayTeam){
     var container = document.getElementById('map');
     var coords = {lat: 51.6032, lng: 0.0657};  
     var mainMap = new MapWrapper(container, coords, 6);
-    
+
     mainMap.initDirections(awayCoords, homeCoords);
   })
 }
