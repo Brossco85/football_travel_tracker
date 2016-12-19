@@ -100,76 +100,77 @@
     "pubs": [
       {
         "name": "The Horatia",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "98-102 Holloway Rd, Highbury East, London N7 8JE",
+        "phoneNumber": "020 7682 4857",
+        "website": "http://www.thehoratia.co.uk/",
         "latlng": [
-      
+          51.5499799,
+          -0.1106777
         ]
       },
       {
-        "name": "Metro Holloway",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "name": "The Drayton Arms",
+        "address": "153 Old Brompton Rd, Kensington, London SW5 0LJ",
+        "phoneNumber": "020 7835 2301",
+        "website": "http://www.thedraytonarmssw5.co.uk/",
         "latlng": [
-         
-         
-       ]
+         51.5215936,
+         -0.1793754
+        ]
       },
       {
         "name": "The Coronet",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "28 New Kent Rd, London SE1 6TJ",
+        "phoneNumber": "020 7701 1500",
+        "website": "http://www.coronettheatre.co.uk/",
         "latlng": [
-          
-          
+          51.4946616,
+          -0.1008805
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "Domino's Pizza - London - Highbury",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "92 Hornsey Rd, London N7 7NN",
+        "phoneNumber": "020 7700 3666",
+        "website": "https://www.dominos.co.uk/pizzaservice/london-highbury.aspx",
         "latlng": [
-          
-          
+          51.5562416,
+          -0.113135
         ]
       },
       {
         "name": "Burger King",
         "address": "Nags Head Centre, Nags Head Shopping Centre, 408 Holloway Rd, London N7 6PZ",
-        "phoneNumber": "",
-        "website": "",
+        "phoneNumber": "020 7607 3725",
+        "website": "http://www.burgerking.co.uk/",
         "latlng": [
-         
-        
-       ]
+         51.5452293,
+         -0.1780442
+        ]
       }
     ],
     "hotels": [
       {
         "name": "Five Kings Hotel",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "59 Anson Rd, London N7 0AR",
+        "phoneNumber": "020 7607 3996",
+        "website": "http://www.fivekingshotel.co.uk/",
         "latlng": [
-          
-          
+          51.5553057,
+          -0.1324028
         ]
       },
       {
         "name": "Finsbury Serviced Apartments",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "13 Goodwin St, London N4 3HQ",
+        "phoneNumber": "020 7272 0248",
+        "website": "http://www.finsburyapartments.com/",
         "latlng": [
-         
-         
-       ]
+         51.5641801,
+         -0.110131
+        ]
       }
     ]
   },
@@ -187,12 +188,12 @@
     "pubs": [
       {
         "name": "The Boot Inn",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "18 St James's Ln, Burnley BB11 1NG",
+        "phoneNumber": "01282 463720",
+        "website": "https://www.jdwetherspoon.com/pubs/all-pubs/england/lancashire/the-boot-inn-burnley",
         "latlng": [
-          
-          
+          53.7889462,
+          -2.2430587
         ]
       },
       {
