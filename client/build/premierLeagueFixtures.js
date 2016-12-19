@@ -164,19 +164,30 @@ var assignOnClick =function (){
     if (this.status !== 200) return;
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
+
+    var itinerary = document.getElementById('itinerary');
     for (var stadium of stadiums) {
       if (stadium.name == homeTeam) {
         for (pub of stadium.pubs) {
-          console.log(pub.name);
+          var li1 = document.createElement('li');
+          li1.innerText = pub.name;
+          console.log(li1);
         }
         for (foodOutlet of stadium.foodOutlets) {
-          console.log(foodOutlet.name);
+          var li2 = document.createElement('li');
+          li2.innerText = foodOutlet.name;
+          console.log(li2);
         }
         for (hotel of stadium.hotels) {
-          console.log(hotel.name);
+          var li3 = document.createElement('li');
+          li3.innerText = hotel.name;
+          console.log(li3);
         }
       }
     }
+    itinerary.appendChild(li1);
+    itinerary.appendChild(li2);
+    itinerary.appendChild(li3);
   })
 }
 
