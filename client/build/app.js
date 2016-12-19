@@ -3,8 +3,6 @@ var app = function() {
   var coords = {lat: 51.6032, lng: 0.0657};  
   var mainMap = new MapWrapper(container, coords, 6);
 
-  // mainMap.setLocation(coords);
-
 
   var table = new PremierLeagueTable();
   var fixtures = new PremierLeagueFixtures();
@@ -33,28 +31,14 @@ var app = function() {
 
 
   var select = document.querySelector('#team');
-  select.addEventListener('change', function(e){getStadiumCoords(e.target.value, mainMap)
+  // var directionsBox = document.getElementById('directions');
+  
+  select.addEventListener('change', function(e){
+    getStadiumCoords(e.target.value, mainMap);
   })
 
+}
 
-  var tables = document.getElementById("fixture-elements");
-    console.log(tables.rows.length);
-        for (var i = 0; i < tables.rows.length; i++) {
-            tables.rows[i].onclick = function () {
-                console.log(this.value);
-            };
-        }
-    }
-
-
-
-  // rows.addEventListener('click', function(e){console.log(e.target.value);getStadiumCoords(e.target.value, mainMap)})
-  // for (var row in rows) {
-  //   row.addEventListener('click', function(e){getStadiumCoords(e.target.value, mainMap);
-  // var tableRow = document.querySelector('#away-team')
-  // tableRow.addEventListener('click', function(e){getStadiumCoords(e.target.value, mainMap)})
-
-// })
 
 
 
