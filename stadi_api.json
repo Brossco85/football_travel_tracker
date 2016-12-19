@@ -88,7 +88,7 @@
   },
 
   { 
-    "name": "Arsenal",
+    "name": "Arsenal FC",
     "code": "AFC",
     "website": "http://www.arsenal.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg",
@@ -1242,78 +1242,78 @@
     ],
     "pubs": [
       {
-        "name": "The Victory PubThe New Democratic Club",
-        "address": "",
-        "phoneNumber": "",
+        "name": "The Victory",
+        "address": "39-41 North Bridge St, Sunderland SR5 1AH",
+        "phoneNumber": "0191 565 9209",
         "website": "",
         "latlng": [
-          
-          
+          54.9135562,
+          -1.3855084
         ]
       },
       {
-        "name": "The New Democratic Club",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "name": "The William Jameson",
+        "address": "30-32 Fawcett St, Sunderland SR1 1RH",
+        "phoneNumber": "+44 191 514 5016",
+        "website": "https://www.jdwetherspoon.com/pubs/all-pubs/england/tyne-and-wear/the-william-jameson-sunderland",
         "latlng": [
-         
-         
+         54.9046272,
+         -1.3831937
        ]
       },
       {
         "name": "The Cambridge",
-        "address": "",
-        "phoneNumber": "",
+        "address": "88 Fulwell Rd, Sunderland SR6 0JB",
+        "phoneNumber": "0191 567 0188",
         "website": "",
         "latlng": [
-          
-          
+          54.9192451,
+          -1.3816824
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "Monsoon Kitchen",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "1 North Bridge St, Sunderland SR5 1AD",
+        "phoneNumber": "0191 514 4222",
+        "website": "http://www.monsoon-kitchen.co.uk/",
         "latlng": [
-          
-          
+          54.9141522,
+          -1.3846931
         ]
       },
       {
         "name": "Italian Kitchen",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Thompson Rd, Sunderland SR5 2SQ",
+        "phoneNumber": "0191 548 6004",
+        "website": "http://www.theitalian-kitchen.co.uk/",
         "latlng": [
-         
-        
+         54.923121,
+         -1.3987093
        ]
       }
     ],
     "hotels": [
       {
         "name": "Hilton Garden Inn Sunderland",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Vaux Brewery Way, Sunderland SR5 1SN",
+        "phoneNumber": "0191 500 9494",
+        "website": "http://hiltongardeninn3.hilton.com/en/hotels/united-kingdom/hilton-garden-inn-sunderland-NCLGIGI/index.html?WT.mc_id=zELWAKN0EMEA1GI2DMH3LocalSearch4DGGenericx6NCLGIGI",
         "latlng": [
-          
-          
+          54.9157107,
+          -1.3892738
         ]
       },
       {
         "name": "Sunderland Marriott Hotel",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Queen's Ave, Sunderland SR6 8DB",
+        "phoneNumber": "0191 529 2041",
+        "website": "http://www.marriott.com/hotels/travel/nclsl-sunderland-marriott-hotel/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2",
         "latlng": [
-         
-         
-       ]
+         54.933693,
+         -1.3706507
+        ]
       }
     ]
   },
