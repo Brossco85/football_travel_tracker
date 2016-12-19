@@ -34,38 +34,8 @@ var app = function() {
   select.addEventListener('change', function(e){getStadiumCoords(e.target.value, mainMap)
   })
 
+}
 
-  var tables = document.getElementById("fixture-elements");
-      cells = tables.getElementsByTagName('tr');
-
-  for (var i=0,len=cells.length; i<len; i++){
-      cells[i].onclick = function(){
-          console.log(this.innerHTML);
-          /* if you know it's going to be numeric:
-          console.log(parseInt(this.innerHTML),10);
-          */
-      }
-  }
-
-
-  // var tables = document.getElementById("fixture-elements");
-  //   console.log(tables.rows.length);
-  //       for (var i = 0; i < tables.rows.length; i++) {
-  //           tables.rows[i].onclick = function (e) {
-  //               console.log(e.target.value);
-  //           };
-  //       }
-    }
-
-
-
-  // rows.addEventListener('click', function(e){console.log(e.target.value);getStadiumCoords(e.target.value, mainMap)})
-  // for (var row in rows) {
-  //   row.addEventListener('click', function(e){getStadiumCoords(e.target.value, mainMap);
-  // var tableRow = document.querySelector('#away-team')
-  // tableRow.addEventListener('click', function(e){getStadiumCoords(e.target.value, mainMap)})
-
-// })
 
 
 

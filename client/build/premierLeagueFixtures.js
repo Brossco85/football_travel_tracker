@@ -93,18 +93,15 @@ var assignOnClick =function (){
       var homeCoords = {};
       var awayCoords = {};
       for (var stadium of allStadiums){  
-        console.log(stadium.name === homeTeam)
         if (stadium.name === homeTeam){
           var homeCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
         } else if (stadium.name === awayTeam){
           var awayCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
         }
       }
-
       var container = document.getElementById('map');
       var coords = {lat: 51.6032, lng: 0.0657};  
       var mainMap = new MapWrapper(container, coords, 6);
-      console.log(homeCoords)
   
       mainMap.initDirections(homeCoords, awayCoords);
     })
