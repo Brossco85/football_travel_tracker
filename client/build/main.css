@@ -34,14 +34,16 @@ p {
 }
 
 #map {
+  min-width: 0;
   justify-content: center;
   margin: 10px;
   height: 700px;
-  width: 100px;
-  flex-grow: 1;
+  max-width: 500px;
+  flex: 1 1 auto;
 }
 
 #fixtures {
+  min-width: 0;
   justify-content: center;
   max-width: 600px;
   max-height: 300px;
@@ -49,10 +51,11 @@ p {
   margin: 20px;
   padding: 10px;
   background-color: #C8ECF6;
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 #table {
+  min-width: 0;
   justify-content: center;
   max-width: 600px;
   overflow: auto;
@@ -60,10 +63,11 @@ p {
   margin: 10px;
   padding: 20px;
   background-color: #E0F3D4;
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 #feeds {
+  min-width: 0;
   justify-content: center;
   margin: 10px;
   max-width: 500px;
@@ -72,7 +76,7 @@ p {
   position: relative;
   padding: 20px;
   background-color: #E3EBEE;
-  flex-grow: 1;
+  flex: 1 1 auto;
 }
 
 /*BR Added*/
