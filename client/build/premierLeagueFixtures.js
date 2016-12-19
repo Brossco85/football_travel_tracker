@@ -165,6 +165,11 @@ var assignOnClick =function (){
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
 
+    document.getElementById('bars').innerHTML = "";
+    document.getElementById('food').innerHTML = "";
+    document.getElementById('hotels').innerHTML = "";
+
+
     var bars = document.getElementById('bars');
     var foodOutlets = document.getElementById('food');
     var hotels = document.getElementById('hotels');
