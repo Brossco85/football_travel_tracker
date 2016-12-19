@@ -1507,76 +1507,76 @@
     "pubs": [
       {
         "name": "The Oddfellows",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "14 Fearnley St, Watford WD18 0RD",
+        "phoneNumber": "01923 225766",
+        "website": "http://oddfellowswatford.co.uk/",
         "latlng": [
-          
-          
+          51.6524219,
+          -0.4029258
         ]
       },
       {
         "name": "Moon Under Water",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "44 High St, Watford WD17 2BS",
+        "phoneNumber": "01923 223559",
+        "website": "https://www.jdwetherspoon.com/pubs/all-pubs/england/hertfordshire/the-moon-under-water-watford",
         "latlng": [
-         
-         
-       ]
+         51.6219345,
+         -0.3943334 
+        ]
       },
       {
-        "name": "Yates's",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "name": "Bosleys",
+        "address": "107-115 The Parade, High St, Watford WD17 1LU",
+        "phoneNumber": "01923 239422",
+        "website": "http://www.bosleysbar.co.uk/",
         "latlng": [
-          
-          
+          51.658853,
+          -0.4025997
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "Kasturi",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "56C Vicarage Rd, Watford WD18 0EN",
+        "phoneNumber": "01923 630530",
+        "website": "http://www.kasturi-watford.com/",
         "latlng": [
-          
-          
+          51.6514294,
+          -0.4031156
         ]
       },
       {
         "name": "Patwarls",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "99 Vicarage Rd, Watford WD18 0EB",
+        "phoneNumber": "01923 235940",
+        "website": "http://www.patwarlsrestaurant.co.uk/",
         "latlng": [
-         
-        
-       ]
+         51.6519473,
+         -0.4027712
+        ]
       }
     ],
     "hotels": [
       {
         "name": "Premier Inn Watford Croxley Green",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "2 Ascot Rd, Watford WD18 8AD",
+        "phoneNumber": "0871 527 9138",
+        "website": "http://www.premierinn.com/gb/en/hotels/england/hertfordshire/watford/watford-croxley-green.html?cid=GLBC_WATBRE",
         "latlng": [
-          
-          
+          51.6514885,
+          -0.4263264
         ]
       },
       {
         "name": "Holiday Inn London - Watford Junction",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "67, 65 Clarendon Rd, Watford WD17 1DS",
+        "phoneNumber": "01923 227274",
+        "website": "https://www.ihg.com/holidayinn/hotels/gb/en/watford/lonju/hoteldetail?cm_mmc=GoogleMaps-_-HI-_-GBR-_-LONJU",
         "latlng": [
-         
-         
+         51.6635954,
+         -0.4000738
        ]
       }
     ]
