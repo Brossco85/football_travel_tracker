@@ -103,7 +103,7 @@ var assignOnClick =function (){
       var coords = {lat: 51.6032, lng: 0.0657};  
       var mainMap = new MapWrapper(container, coords, 6);
   
-      mainMap.initDirections(homeCoords, awayCoords);
+      mainMap.initDirections(awayCoords, homeCoords);
     })
   }
 
