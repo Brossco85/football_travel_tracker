@@ -803,77 +803,77 @@
     "pubs": [
       {
         "name": "The Printworks",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "27 Withy Grove, Manchester M4 2BS",
+        "phoneNumber": "0161 829 8000",
+        "website": "http://www.theprintworks.com/",
         "latlng": [
-          
-          
+          53.4852858,
+          -2.242947
         ]
       },
       {
         "name": "Yates’s",
         "address": "49 Portland St, Manchester M1 3LD",
-        "phoneNumber": "",
-        "website": "",
+        "phoneNumber": "0161 228 0162",
+        "website": "http://www.weareyates.co.uk/manchester/",
         "latlng": [
-         
-         
+         53.4784835,
+         -2.2402708
        ]
       },
       {
-        "name": "Summerbee Bar",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "name": "The Green",
+        "address": "Bridge House, 26 Ducie St, Manchester M1 2DQ",
+        "phoneNumber": "0161 228 0681",
+        "website": "http://www.thegreenmanchester.com/",
         "latlng": [
-          
-          
+          53.4796791,
+          -2.2283444
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "Le Delicatezze Di Bruno",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "564 Ashton New Rd, Manchester M11 4RP",
+        "phoneNumber": "0161 231 8349",
+        "website": "http://ledelicatezzedibruno.com/",
         "latlng": [
-          
-          
+          53.4831205,
+          -2.1900953
         ]
       },
       {
         "name": "Pieminister",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "53 Church St, Manchester M4 1PD",
+        "phoneNumber": "0161 819 1279",
+        "website": "http://www.pieminister.co.uk/",
         "latlng": [
-         
-        
-       ]
+         53.4827994,
+         -2.2382085
+        ]
       }
     ],
     "hotels": [
       {
         "name": "Hotel ibis budget Manchester Centre Pollard Street",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "2 Pollard St, Manchester M4 7DB",
+        "phoneNumber": "0161 272 2020",
+        "website": "http://www.accorhotels.com/gb/hotel-6943-ibis-budget-manchester-centre-pollard-street/index.shtml",
         "latlng": [
-          
-          
+          53.4794203,
+          -2.2241538
         ]
       },
       {
         "name": "Travelodge Hotel - Manchester Sportcity",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Birch Street, Manchester M12 5NT",
+        "phoneNumber": "0871 984 6293",
+        "website": "https://www.travelodge.co.uk/hotels/285/Manchester-Sportcity-hotel?WT.tsrc=GHA_Organic&utm_campaign=GHA_Manchester%20Sportcity&utm_medium=GHA_Organic&utm_source=google",
         "latlng": [
-         
-         
-       ]
+         53.4655036,
+         -2.1956044
+        ]
       }
     ]
   },
