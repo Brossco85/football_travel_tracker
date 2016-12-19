@@ -55,8 +55,8 @@ var createFixturesTable = function(fixturesData, callback){
     tr.appendChild(td7);
     tr.appendChild(td8);
     tr.appendChild(td9);
-    tr.value = fixture.awayTeamName;
-    console.log(tr.value)
+    // tr.value = fixture.awayTeamName;
+    // console.log(tr.value)
     callback();
   }
 
@@ -69,11 +69,9 @@ var assignOnClick =function (){
   // console.log(cells);
   for (var i=0,len=cells.length; i<len; i++){
     cells[i].onclick = function(){
-      console.log(this.children[4]);
-      console.log(this.children[6]);
-        /* if you know it's going to be numeric:
-        console.log(parseInt(this.innerHTML),10);
-        */
+      var home = this.children[4].innerText;
+      var away = this.children[6].innerText;
+      getFixtureDirections(home, away);
       }
     }
   }
@@ -95,19 +93,20 @@ var assignOnClick =function (){
       var homeCoords = {};
       var awayCoords = {};
       for (var stadium of allStadiums){  
+        console.log(stadium.name === homeTeam)
         if (stadium.name === homeTeam){
           var homeCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
         } else if (stadium.name === awayTeam){
           var awayCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
         }
       }
-      // var coords = {};
-      // coords = {lat: allStadiums[index].latlng.lat, lng: allStadiums[index].latlng.lng};
-      // map.setCenter(coords);
-      // // map.satelliteCloseUp();
-      // var origin = {lat: 51.6032, lng: 0.0657};
-      // var destination = coords;
-      map.initDirections(homeCoords, awayCoords);
+
+      var container = document.getElementById('map');
+      var coords = {lat: 51.6032, lng: 0.0657};  
+      var mainMap = new MapWrapper(container, coords, 6);
+      console.log(homeCoords)
+  
+      mainMap.initDirections(homeCoords, awayCoords);
     })
   }
 
