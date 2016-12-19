@@ -4,5 +4,7 @@ var Itinerary = function(params){
   this.startTime = params.startTime;
   this.pubs = params.pubs;
   this.eateries = params.eateries;
-  this.hotels = hotels;
-}
+  this.hotels = params.hotels;
+};
+
+module.exports = Itinerary;
