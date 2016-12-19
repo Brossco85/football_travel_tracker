@@ -626,78 +626,78 @@
     ],
     "pubs": [
       {
-        "name": "Soaring Eagle Spur Steak & Grill",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "name": "Soar Point",
+        "address": "The Newarke, Leicester LE2 7BY",
+        "phoneNumber": "0116 204 4911",
+        "website": "http://www.thesoarpointleicester.co.uk/",
         "latlng": [
-          
-          
+          52.6310089,
+          -1.1506833
         ]
       },
       {
         "name": "Local Hero Flaming Grill",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "84 Aylestone Rd, Leicester LE2 7LB",
+        "phoneNumber": "0116 275 5330",
+        "website": "http://www.flaminggrillpubs.com/pub/local-hero-leicester/m6948/?utm_source=g_places&utm_medium=link&utm_campaign=places&utm_content=m6948",
         "latlng": [
-         
-         
-       ]
+         52.6208262,
+         -1.1377255
+        ]
       },
       {
         "name": "The Counting House",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "40 Almond Rd, Leicester LE2 7LH",
+        "phoneNumber": "0116 275 5527",
+        "website": "http://www.gkmeetandeat.co.uk/locations/counting-house-leicester/?utm_source=g_places&utm_medium=locations&utm_campaign=counting-house-leicester",
         "latlng": [
-          
-          
+          52.6211501,
+          -1.1352943
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "The White Peacock",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "16 King St, Leicester LE1 6RJ",
+        "phoneNumber": "0116 254 7663",
+        "website": "http://www.the-white-peacock.co.uk/",
         "latlng": [
-          
-          
+          52.6313461,
+          -1.1342948
         ]
       },
       {
         "name": "Shivalli",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "21 Welford Rd, Leicester LE2 7AD",
+        "phoneNumber": "0116 255 0137",
+        "website": "http://www.shivallirestaurant.com/",
         "latlng": [
-         
-        
-       ]
+         52.6309976,
+         -1.1360767
+        ]
       }
     ],
     "hotels": [
       {
         "name": "Premier Inn Leicester North West",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Leicester Road, Leicester LE3 8HB",
+        "phoneNumber": "0871 527 8598",
+        "website": "http://www.premierinn.com/gb/en/hotels/england/leicestershire/leicester/leicester-north-west.html?cid=GLBC_LEIGYN",
         "latlng": [
-          
-          
+          52.6574987,
+          -1.1936447
         ]
       },
       {
         "name": "Holiday Inn Express Leicester",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Filbert Way, Leicester LE2 7FL",
+        "phoneNumber": "0116 249 4590",
+        "website": "https://www.ihg.com/holidayinnexpress/hotels/gb/en/leicester/lctws/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-GBR-_-LCTWS",
         "latlng": [
-         
-         
-       ]
+         52.6217523,
+         -1.1450723
+        ]
       }
     ]
   },
