@@ -891,77 +891,77 @@
     "pubs": [
          {
            "name": "The Printworks",
-           "address": "",
-           "phoneNumber": "",
-           "website": "",
+           "address": "27 Withy Grove, Manchester M4 2BS",
+           "phoneNumber": "0161 829 8000",
+           "website": "http://www.theprintworks.com/",
            "latlng": [
-             
-             
+             53.4852858,
+             -2.242947
            ]
          },
+        {
+          "name": "Yates’s",
+          "address": "49 Portland St, Manchester M1 3LD",
+          "phoneNumber": "0161 228 0162",
+          "website": "http://www.weareyates.co.uk/manchester/",
+          "latlng": [
+           53.4784835,
+           -2.2402708
+         ]
+        },
          {
-           "name": "Yates’s",
-           "address": "49 Portland St, Manchester M1 3LD",
-           "phoneNumber": "",
-           "website": "",
+           "name": "The Green",
+           "address": "Bridge House, 26 Ducie St, Manchester M1 2DQ",
+           "phoneNumber": "0161 228 0681",
+           "website": "http://www.thegreenmanchester.com/",
            "latlng": [
-            
-            
-          ]
-         },
-         {
-           "name": "Summerbee Bar",
-           "address": "",
-           "phoneNumber": "",
-           "website": "",
-           "latlng": [
-             
-             
+             53.4796791,
+             -2.2283444
            ]
          }
        ],
     "foodOutlets": [
       {
         "name": "Red Marrakech - Morroccan restaurant",
-        "address": "",
-        "phoneNumber": "",
+        "address": "97 Ayres Rd, Stretford, Old Trafford M16 7GS",
+        "phoneNumber": "0161 637 6161",
         "website": "",
         "latlng": [
-          
-          
+          53.4584434,
+          -2.2700304
         ]
       },
       {
         "name": "Spices Of Kashmir (Old Trafford)",
-        "address": "",
-        "phoneNumber": "",
+        "address": "89 Ayres Rd, Stretford, Manchester M16 7GS",
+        "phoneNumber": "0161 232 0478",
         "website": "",
         "latlng": [
-         
-        
-       ]
+         53.4585388,
+         -2.2695162
+        ]
       }
     ],
     "hotels": [
       {
         "name": "Chesters Hotel & Restaurant",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "730 Chester Rd, Stretford, Manchester M32 0RS",
+        "phoneNumber": "0161 877 5375",
+        "website": "http://chestershotel.co.uk/",
         "latlng": [
-          
-          
+          53.4601552,
+          -2.2932261
         ]
       },
       {
         "name": "Premier Inn Manchester Old Trafford",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Sir Alex Ferguson Way, Trafford Park, Manchester M17 1WS",
+        "phoneNumber": "0871 527 8750",
+        "website": "http://www.premierinn.com/gb/en/hotels/england/greater-manchester/manchester/manchester-old-trafford.html?cid=GLBC_MANOLD",
         "latlng": [
-         
-         
-       ]
+         53.4657643,
+         -2.2908157
+        ]
       }
     ]
   },
