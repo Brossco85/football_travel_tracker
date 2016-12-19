@@ -55,6 +55,8 @@ var createFixturesTable = function(fixturesData){
       tr.appendChild(td7);
       tr.appendChild(td8);
       tr.appendChild(td9);
+      tr.value = fixture.awayTeamName;
+      console.log(tr.value)
     }
 
 }

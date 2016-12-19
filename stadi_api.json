@@ -1,6 +1,6 @@
 [
   { 
-    "name": "Bournemouth",
+    "name": "AFC Bournemouth",
     "code": "AFCB",
     "website": "http://www.afcb.co.uk/",
     "crestURL": "https://upload.wikimedia.org/wikipedia/de/4/41/Afc_bournemouth.svg",
@@ -175,7 +175,7 @@
   },
 
   { 
-    "name": "Burnley",
+    "name": "Burnley FC",
     "code": "BFC",
     "website": "http://www.burnleyfootballclub.com/",
     "crestURL": "https://upload.wikimedia.org/wikipedia/en/0/02/Burnley_FC_badge.png",
@@ -263,7 +263,7 @@
   },
 
   { 
-    "name": "Chelsea",
+    "name": "Chelsea FC",
     "code": "CFC",
     "website": "https://www.chelseafc.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/5/5c/Chelsea_crest.svg",
@@ -351,7 +351,7 @@
   },
 
   { 
-    "name": "Crystal Palace",
+    "name": "Crystal Palace FC",
     "code": "CRY",
     "website": "http://www.cpfc.co.uk/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/b/bf/Crystal_Palace_F.C._logo_(2013).png",
@@ -439,7 +439,7 @@
   },
 
   { 
-    "name": "Everton",
+    "name": "Everton FC",
     "code": "EFC",
     "website": "http://www.evertonfc.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/f/f9/Everton_FC.svg",
@@ -527,7 +527,7 @@
   },
 
   { 
-    "name": "Hull City",
+    "name": "Hull City FC",
     "code": "HUL",
     "website": "http://www.hullcitytigers.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/a/a9/Hull_City_AFC.svg",
@@ -615,7 +615,7 @@
   },
 
   { 
-    "name": "Leicester City",
+    "name": "Leicester City FC",
     "code": "LCFC",
     "website": "http://www.lcfc.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/en/6/63/Leicester02.png",
@@ -703,7 +703,7 @@
   },
 
   { 
-    "name": "Liverpool",
+    "name": "Liverpool FC",
     "code": "LFC",
     "website": "http://www.liverpoolfc.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/0/0a/FC_Liverpool.svg",
@@ -791,7 +791,7 @@
   },
 
   { 
-    "name": "Manchester City",
+    "name": "Manchester City FC",
     "code": "MCFC",
     "website": "https://www.mancity.com/",
     "crestURL": "https://upload.wikimedia.org/wikipedia/en/e/eb/Manchester_City_FC_badge.svg",
@@ -879,7 +879,7 @@
   },
 
   { 
-    "name": "Manchester United",
+    "name": "Manchester United FC",
     "code": "MUFC",
     "website": "http://www.manutd.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/d/da/Manchester_United_FC.svg",
@@ -967,7 +967,7 @@
   },
 
   { 
-    "name": "Middlesbrough",
+    "name": "Middlesbrough FC",
     "code": "MID",
     "website": "http://www.mfc.co.uk/",
     "crestURL": "https://upload.wikimedia.org/wikipedia/en/2/2c/Middlesbrough_FC_crest.svg",
@@ -1055,7 +1055,7 @@
   },
 
   { 
-    "name": "Southampton ",
+    "name": "Southampton FC",
     "code": "SFC",
     "website": "https://southamptonfc.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/c/c9/FC_Southampton.svg",
@@ -1143,7 +1143,7 @@
   },
 
   { 
-    "name": "Stoke City",
+    "name": "Stoke City FC",
     "code": "SCFC",
     "website": "http://www.stokecityfc.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/a/a3/Stoke_City.svg",
@@ -1231,7 +1231,7 @@
   },
 
   { 
-    "name": "Sunderland",
+    "name": "Sunderland AFC",
     "code": "SUN",
     "website": "https://www.safc.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/6/60/AFC_Sunderland.svg",
@@ -1319,7 +1319,7 @@
   },
 
   { 
-    "name": "Swansea City",
+    "name": "Swansea City FC",
     "code": "SWA",
     "website": "http://www.swanseacity.net/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/a/ab/Swansea_City_Logo.svg",
@@ -1407,7 +1407,7 @@
   },
 
   { 
-    "name": "Tottenham Hotspur",
+    "name": "Tottenham Hotspur FC",
     "code": "THFC",
     "website": "http://www.tottenhamhotspur.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/b/b4/Tottenham_Hotspur.svg",
@@ -1495,7 +1495,7 @@
   },
 
   { 
-    "name": "Watford",
+    "name": "Watford FC",
     "code": "WAT",
     "website": "https://www.watfordfc.com/",
     "crestURL": "https://upload.wikimedia.org/wikipedia/en/e/e2/Watford.svg",
@@ -1583,7 +1583,7 @@
   },
 
   { 
-    "name": "West Bromwich Albion",
+    "name": "West Bromwich Albion FC",
     "code": "WBA",
     "website": "http://www.wba.co.uk/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/8/8b/West_Bromwich_Albion.svg",
@@ -1671,7 +1671,7 @@
   },
 
   { 
-    "name": "West Ham United",
+    "name": "West Ham United FC",
     "code": "WHU",
     "website": "https://www.whufc.com/",
     "crestURL": "http://upload.wikimedia.org/wikipedia/de/e/e0/West_Ham_United_FC.svg",

@@ -4,13 +4,21 @@ var MapWrapper = function(container, center, zoom){
    zoom: zoom
  });
 
+directionsService = new google.maps.DirectionsService;
+  directionsDisplay = new google.maps.DirectionsRenderer;
+   directionsDisplay.setMap(this.googleMap);
+   directionsDisplay.setPanel(document.getElementById('directions'));
+
   google.maps.event.addDomListener(window, "resize", function() {
     var center = this.googleMap.getCenter();
     google.maps.event.trigger(this.googleMap, "resize");
     this.googleMap.setCenter(center);
   }.bind(this));
 
+
 }
+
+
 
 MapWrapper.prototype = {
  addMarker: function(coords, icon){
@@ -27,12 +35,14 @@ MapWrapper.prototype = {
    this.addMarker(coords);
    this.setCenter(coords);
  },
- initDirections: function(){
+ initDirections: function(origin, destination){
+
+  
   var markerArray = [];
-  var directionsService = new google.maps.DirectionsService;
-  var directionsDisplay = new google.maps.DirectionsRenderer({map: this.googleMap});
+  // var directionsService = new google.maps.DirectionsService;
+  // var directionsDisplay = null;
   var stepDisplay = new google.maps.InfoWindow;
-  calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, this.googleMap);
+  calculateAndDisplayRoute(markerArray, stepDisplay, this.googleMap, origin, destination);
 
 // var onChangeHandler = function() {
 //   calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map);
@@ -49,18 +59,24 @@ satelliteCloseUp: function(){
 }
 
 
-function calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map) {
-  for (var i = 0; i < markerArray.length; i++) {
-   markerArray[i].setMap(null);
- }
- directionsService.route({origin: {lat: 51.6032, lng: 0.0657}, destination: {lat: 53.6032, lng: 0.0657},
+function calculateAndDisplayRoute(markerArray, stepDisplay, map, origin, destination) {
+    // if (directionsDisplay != null)
+    //    {
+    //        directionsDisplay.setMap(null);
+    //        directionsDisplay = null;
+    //    }
+ //  for (var i = 0; i < markerArray.length; i++) {
+ //   markerArray[i].setMap(null);
+ // }
+ directionsService.route({origin: origin, destination: destination,
    travelMode: 'DRIVING'
  }, function(response, status) {
   if (status === 'OK') {
     document.getElementById('warnings-panel').innerHTML =
     '<b>' + response.routes[0].warnings + '</b>';
+  // directionsDisplay = new google.maps.DirectionsRenderer({map: map});
     directionsDisplay.setDirections(response);
-    showSteps(response, markerArray, stepDisplay, map);
+    // showSteps(response, markerArray, stepDisplay, map);
   } else {
     window.alert('Directions request failed due to ' + status);
   }
