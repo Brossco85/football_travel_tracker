@@ -198,67 +198,67 @@
       },
       {
         "name": "Burnley Cricket Club",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Belvedere Rd, Burnley BB10 4BN",
+        "phoneNumber": "01282 422089",
+        "website": "http://www.burnleycricketclub.com/",
         "latlng": [
-         
-         
+         53.7897664,
+         -2.2349331
        ]
       },
       {
         "name": "The Bridge Bier Huis",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "2 Bank Parade, Burnley BB11 1UH",
+        "phoneNumber": "01282 411304",
+        "website": "http://www.thebridgebierhuis.co.uk/",
         "latlng": [
-          
-          
+          53.7901741,
+          -2.2438903
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "Bertram's Restaurant",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Royle Lodge, Crow Wood, Burnley BB12 0RT",
+        "phoneNumber": "01282 471930",
+        "website": "http://bertramsrestaurant.com/",
         "latlng": [
-          
-          
+          53.8013733,
+          -2.255594
         ]
       },
       {
         "name": "The Red Lantern",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "9 Bank Parade, Burnley BB11 1UH",
+        "phoneNumber": "01282 426848",
+        "website": "http://www.theredlantern.net/",
         "latlng": [
-         
-        
+         53.7900527,
+         -2.2435639
        ]
       }
     ],
     "hotels": [
       {
         "name": "Travelodge Hotel - Burnley",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Barracks Rd, Burnley BB11 4SB",
+        "phoneNumber": "0871 984 6125",
+        "website": "https://www.travelodge.co.uk/hotels/118/Burnley-hotel?WT.tsrc=GHA_Organic&utm_campaign=GHA_Burnley&utm_medium=GHA_Organic&utm_source=google",
         "latlng": [
-          
-          
+          53.7894941,
+          -2.2627454
         ]
       },
       {
         "name": "BEST WESTERN Higher Trapp Country House Hotel",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Trapp Ln, Simonstone, Burnley BB12 7QW",
+        "phoneNumber": "01282 772781",
+        "website": "http://www.lavenderhotels.co.uk/Higher-Trapp",
         "latlng": [
-         
-         
-       ]
+         53.816603,
+         -2.3412237
+        ]
       }
     ]
   },
