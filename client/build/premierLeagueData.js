@@ -17,6 +17,7 @@ var requestComplete = function(){
   var jsonString = this.responseText;
   var league = JSON.parse(jsonString);
   createLeagueTable(league);
+  console.log(league);
 }
 
 var createLeagueTable = function(leagueData){
