@@ -36,6 +36,9 @@ var app = function() {
     getStadiumCoords(e.target.value, mainMap);
   })
 
+  var locationButton = document.querySelector('#location-button');
+  locationButton.onclick = getLocation;
+
 }
 
 
