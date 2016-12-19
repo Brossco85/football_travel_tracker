@@ -15,9 +15,11 @@ var FootballFeed = function(){
           var img = document.createElement('img');
           var story = stories[i];
           var dateAndTime = new Date(story.pubdate);
+          a.setAttribute("class", "story-link");
           a.innerHTML = story.title;
           a.href = story.permalink;
-          a.setAttribute("id", "story-title")
+          a.setAttribute("id", "story-title");
+          p.setAttribute("class", "story-link");
           p.innerText = story.description;
           spacer.innerText = "";
           img.setAttribute("id", "football-photo");

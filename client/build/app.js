@@ -8,7 +8,6 @@ var app = function() {
   var fixtures = new PremierLeagueFixtures();
   var feed = new FootballFeed();
 
-
   var url = 'http://localhost:3000/api/accounts';
   makeRequest(url, function(){
     if (this.status !== 200) return;
