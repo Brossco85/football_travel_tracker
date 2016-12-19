@@ -1155,77 +1155,77 @@
     "pubs": [
       {
         "name": "Longton Rugby Union Football Club",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Sir Stanley Matthews Way, Stoke-on-Trent ST4 8WG",
+        "phoneNumber": "01782 594016",
+        "website": "http://www.longtonrugby.co.uk/",
         "latlng": [
-          
-          
+          52.978496,
+          -2.1702327
         ]
       },
       {
         "name": "The Terrace",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "185 Leek Rd, Stoke on Trent ST4 2BW",
+        "phoneNumber": "01782 848021",
+        "website": "http://www.theterrace-stoke.co.uk/",
         "latlng": [
-         
-         
+         53.0049044,
+         -2.1900039
        ]
       },
       {
         "name": "The Glebe",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "35 Glebe St, Stoke-on-Trent, Staffordshire ST4 1HG",
+        "phoneNumber": "01782 860670",
+        "website": "http://www.joulesbrewery.co.uk/pubs/pub_details.php?id=9",
         "latlng": [
-          
-          
+          53.0049054,
+          -2.1834378
         ]
       }
     ],
     "foodOutlets": [
       {
         "name": "Harvester Trentham Lakes",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Trentham Lakes District Centre, Stanley Matthews Way, Stoke-on-Trent ST4 8AD",
+        "phoneNumber": "01782 331234",
+        "website": "http://www.harvester.co.uk/restaurants/eastandwestmidlands/harvestertrenthamlakesstokeontrent",
         "latlng": [
-          
-          
+          52.989372,
+          -2.1754817
         ]
       },
       {
         "name": "Frankie & Benny's",
         "address": "Trentham Gardens, Stone Road, Stoke-on-Trent ST4 8AX",
-        "phoneNumber": "",
-        "website": "",
+        "phoneNumber": "01782 645180",
+        "website": "http://www.frankieandbennys.com/",
         "latlng": [
-         
-        
-       ]
+         52.9893514,
+         -2.2433326
+        ]
       }
     ],
     "hotels": [
       {
         "name": "Holiday Inn Express Stoke on Trent",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Stanley Matthews Way, Trentham Lakes, Stoke-on-Trent ST4 4EG",
+        "phoneNumber": "0871 902 1629",
+        "website": "https://www.ihg.com/holidayinnexpress/hotels/gb/en/stoke-on-trent/xwhuk/hoteldetail?cm_mmc=GoogleMaps-_-EX-_-GBR-_-XWHUK&_PMID=99300950",
         "latlng": [
-          
-          
+          52.9895887,
+          -2.1737209
         ]
       },
       {
         "name": "The Plough Motel",
-        "address": "",
-        "phoneNumber": "",
-        "website": "",
+        "address": "Campbell Rd, Stoke-on-Trent ST4 4EN",
+        "phoneNumber": "01782 414685",
+        "website": "http://www.ploughmotelstoke.com/",
         "latlng": [
-         
-         
-       ]
+         52.9939429,
+         -2.1869044
+        ]
       }
     ]
   },
