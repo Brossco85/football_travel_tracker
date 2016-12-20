@@ -67,7 +67,6 @@ var getDirectionsLocation = function(homeTeam, awayTeam){
     if (this.status !== 200) return;
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
-// <<<<<<< HEAD
     var allStadiums = getStadiumData(stadiums);
     var homeCoords = {};
     var awayCoords = {};
