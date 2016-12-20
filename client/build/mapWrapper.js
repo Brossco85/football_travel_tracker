@@ -81,23 +81,13 @@ function getLocation() {
 
 
 function calculateAndDisplayRoute(markerArray, stepDisplay, map, origin, destination) {
-    // if (directionsDisplay != null)
-    //    {
-    //        directionsDisplay.setMap(null);
-    //        directionsDisplay = null;
-    //    }
- //  for (var i = 0; i < markerArray.length; i++) {
- //   markerArray[i].setMap(null);
- // }
  directionsService.route({origin: origin, destination: destination,
    travelMode: 'DRIVING'
  }, function(response, status) {
   if (status === 'OK') {
     document.getElementById('warnings-panel').innerHTML =
     '<b>' + response.routes[0].warnings + '</b>';
-  // directionsDisplay = new google.maps.DirectionsRenderer({map: map});
     directionsDisplay.setDirections(response);
-    // showSteps(response, markerArray, stepDisplay, map);
   } else {
     window.alert('Directions request failed due to ' + status);
   }
