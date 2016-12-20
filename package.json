@@ -24,7 +24,9 @@
   "homepage": "https://github.com/Brossco85/football_travel_tracker#readme",
   "devDependencies": {
     "express": "^4.14.0",
-    "webpack": "^1.14.0"
+    "webpack": "^1.14.0",
+    "mongodb": "^2.2.15"
+    
   }
 
 }
