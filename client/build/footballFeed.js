@@ -19,6 +19,7 @@ var FootballFeed = function(){
           a.innerHTML = story.title;
           a.href = story.permalink;
           a.setAttribute("id", "story-title");
+          a.setAttribute("target", "_blank");
           p.setAttribute("class", "story-link");
           p.innerText = story.description;
           spacer.innerText = "";

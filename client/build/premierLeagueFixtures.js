@@ -1,5 +1,5 @@
 var PremierLeagueFixtures = function(){
-  var url2 = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=17';
+  var url2 = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=18';
   makeRequest2(url2, requestComplete2);
 }
 
@@ -41,6 +41,7 @@ var createFixturesTable = function(fixturesData, callback){
     var add = document.createElement('button');
     var view = document.createElement('button');
     var fixture = fixtures[i];
+    console.log(fixture);
     var dateAndTime = fixture.date;
     var date = new Date(dateAndTime);
     td1.innerText = fixture.matchday;
@@ -75,7 +76,6 @@ var createFixturesTable = function(fixturesData, callback){
     tr.appendChild(td12);
     tr.appendChild(td13);
     tr.value = fixture.awayTeamName;
-    console.log(tr.value)
     callback();
   }
 }
@@ -84,7 +84,6 @@ var assignOnClick =function (){
   tables = document.getElementById("fixture-elements");
   cells = tables.getElementsByTagName('tr');
   rows = tables.getElementsByTagName('td');
-  // console.log(cells);
   for (var i=0,len=cells.length; i<len; i++){
     cells[i].onclick = function(){
       var home = this.children[4].innerText;
