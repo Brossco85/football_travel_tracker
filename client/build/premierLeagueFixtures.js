@@ -232,6 +232,7 @@ var getFixtureDirections = function(homeTeam, awayTeam){
 }
 
 var viewButton = function() {
-      // alert("I am an alert box!");
+    var popup = document.getElementById('myPopup');
+        popup.classList.toggle('show');;
 }
 
