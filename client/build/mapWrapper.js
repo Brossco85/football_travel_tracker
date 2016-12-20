@@ -56,11 +56,20 @@ satelliteCloseUp: function(){
   this.googleMap.setZoom(17);
 },
 
-itineraryMarker: function(coords) {
+itineraryMarker: function(coords, place, address, phone) {
   var marker = new google.maps.Marker({
     position: coords,
     map: this.googleMap
-  })
+  });
+  this.addInfoWindow(place, address, phone).open(marker.map, marker);
+},
+
+addInfoWindow: function(place, address, phone) {
+  var contentString = place + "<br />" + address + "<br />" + phone;
+  var window = new google.maps.InfoWindow({
+    content: contentString
+  });
+  return window;
 }
 
 }

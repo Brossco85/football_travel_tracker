@@ -239,19 +239,16 @@ var showHotspots = function(homeTeam) {
     for (var stadium of stadiums) {
       if (stadium.name == homeTeam) {
         var coords = {lat: stadium.latlng[0], lng: stadium.latlng[1]};
-        var pubsArray = []
-        var foodOutletsArray = []
-        var hotelsArray = []
         var itineraryMap = new MapWrapper(container, coords, 11);
 
         for (i = 0; i < stadium.pubs.length; i++) {
-          itineraryMap.itineraryMarker({lat: stadium.pubs[i].latlng[0], lng: stadium.pubs[i].latlng[1]});
+          itineraryMap.itineraryMarker({lat: stadium.pubs[i].latlng[0], lng: stadium.pubs[i].latlng[1]}, stadium.pubs[i].name, stadium.pubs[i].address, stadium.pubs[i].phoneNumber);
         }
         for (i = 0; i < stadium.foodOutlets.length; i++) {
-          itineraryMap.itineraryMarker({lat: stadium.foodOutlets[i].latlng[0], lng: stadium.foodOutlets[i].latlng[1]});
+          itineraryMap.itineraryMarker({lat: stadium.foodOutlets[i].latlng[0], lng: stadium.foodOutlets[i].latlng[1]}, stadium.foodOutlets[i].name, stadium.foodOutlets[i].address, stadium.foodOutlets[i].phoneNumber);
         }
         for (i = 0; i < stadium.hotels.length; i++) {
-          itineraryMap.itineraryMarker({lat: stadium.hotels[i].latlng[0], lng: stadium.hotels[i].latlng[1]});
+          itineraryMap.itineraryMarker({lat: stadium.hotels[i].latlng[0], lng: stadium.hotels[i].latlng[1]}, stadium.hotels[i].name, stadium.hotels[i].address, stadium.hotels[i].phoneNumber);
         }
       }
     }
