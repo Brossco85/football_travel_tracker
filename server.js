@@ -34,6 +34,28 @@ app.get('/itineraries', function(req, res){
 })
 });
 
+app.post('/itineraries', function(req, res){
+ var url = 'mongodb://localhost:27017/premier_planner';
+ MongoClient.connect(url, function(err, db){
+  var collection = db.collection('planners');
+  collection.insert(
+  {
+    user: req.body.user,
+    match:req.body.match,
+    startTime: req.body.start,
+    pubs: req.body.pubs,
+    eateries: req.body.eateries,
+    hotels: req.body.hotels
+  }
+    // "owner": req.body.owner,
+    // "amount": req.body.amount,
+    // "type": req.body.type
+
+  );
+  res.status(200).end();
+});
+})
+
 app.use(express.static('client/build'));
 
 
