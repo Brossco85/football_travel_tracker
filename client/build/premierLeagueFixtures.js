@@ -96,9 +96,13 @@ var assignOnClick =function (){
       var away = this.children[6].innerText;
       getFixtureDirections(home, away);
       getHotspots(home);
+  loopHotspots();
+
     }
   }
 }
+
+
 
 var makeRequest = function(url, callback){
   var request = new XMLHttpRequest();
@@ -112,7 +116,7 @@ var createCheckbox = function(name) {
   checkbox.type = "checkbox";
   checkbox.name = "name";
   checkbox.value = "value";
-  checkbox.id = "id";
+  checkbox.id = "name";
 
   var label = document.createElement('label')
   label.htmlFor = "id";
@@ -228,4 +232,5 @@ var getFixtureDirections = function(homeTeam, awayTeam){
     mainMap.initDirections(awayCoords, homeCoords);
   })
 }
+
 
