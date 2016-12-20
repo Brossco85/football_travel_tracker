@@ -21,13 +21,25 @@
 <!-- bobby added -->
 <select id="team"></select>
   <div class="container">
-    <div class="nav">
+
+  <div class="main">
+
+    <div class="header">
 
       <h1>Premier Planner</h1>
 
     </div>
 
-  <div class="main">
+    <div class="nav">
+      <ul id="nav-bar">
+        <li class="nav-item"><a class="nav-label" href="#football">Football</a></li>
+        <li class="nav-item"><a class="nav-label" href="#rugby">Rugby</a></li>
+        <li class="nav-item"><a class="nav-label" href="#formula1">Formula 1</a></li>
+        <li class="nav-item"><a class="nav-label" href="#golf">Golf</a></li>
+      </ul>
+    </div>
+    
+    <button id='location-button' onclick="locationButton()">Show my location</button>
 
     <div id="map">
 
@@ -64,7 +76,11 @@
 
     <div id="itinerary">
 
-      <table id="itinerary-list"></table>
+      <ul id="itinerary-list"></ul>
+        <h3>Match day itineray</h3>
+        <h5 id="bars">Bars</h5>
+        <h5 id="food">Food</h5>
+        <h5 id="hotels">Hotels</h5>
 
     </div>
 

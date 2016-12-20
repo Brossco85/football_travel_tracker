@@ -8,7 +8,6 @@ var app = function() {
   var fixtures = new PremierLeagueFixtures();
   var feed = new FootballFeed();
 
-
   var url = 'http://localhost:3000/api/accounts';
   makeRequest(url, function(){
     if (this.status !== 200) return;
@@ -36,6 +35,9 @@ var app = function() {
   select.addEventListener('change', function(e){
     getStadiumCoords(e.target.value, mainMap);
   })
+
+  var locationButton = document.querySelector('#location-button');
+  locationButton.onclick = getLocation;
 
 }
 

@@ -23,6 +23,7 @@ var createFixturesTable = function(fixturesData, callback){
   var table = document.getElementById('fixture-elements');
   for (i = 0; i < fixtures.length; i++) {
     var tr = document.createElement('tr');
+    tr.setAttribute("class", "click-fixture");
     var td1 = document.createElement('td');
     var td2 = document.createElement('td');
     var td3 = document.createElement('td');
@@ -100,6 +101,21 @@ var makeRequest = function(url, callback){
   request.onload = callback;
   request.send();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var getFixtureDirections = function(homeTeam, awayTeam){
   var url = 'http://localhost:3000/api/accounts';

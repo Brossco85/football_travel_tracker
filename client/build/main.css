@@ -1,10 +1,8 @@
 body {
   font-family: helvetica;
 /*  background-color: #FFE4BC;*/
-  background-image: url("http://img1.cfstatic.com/wallpapers/07d837e2dc8d513c19a96462ade1dbaa_large.jpeg");
+  background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2015/12/soccer-field-wallpaper-48947-50584-hd-wallpapers.jpg");
 }
-
-
 
 h1 {
   color: black;
@@ -17,7 +15,28 @@ p {
   font-size: 20px;
 }
 
-.nav {
+#nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-label {
+  font-size: 30px;
+  background-color: #F9F9F9;
+  padding: 30px;
+  margin: 20px;
+  text-align: center; 
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+.header {
   background-color: #F9F9F9;
   width: 100%;
   max-width: 700px;
@@ -85,6 +104,18 @@ p {
 /*  flex: 1 1 auto;*/
 }
 
+.click-fixture {
+  cursor: pointer;
+}
+
+.click-fixture:hover{
+  background-color: yellow;
+}
+
+.click-fixture:active{
+  background-color: #B0B0B0;
+}
+
 #itinerary {
   min-width: 0;
   justify-content: center;
@@ -121,6 +152,11 @@ p {
   padding: 20px;
   background-color: #E3EBEE;
   flex: 1 1 auto;
+}
+
+.story-link {
+  text-decoration: none;
+  color: black;
 }
 
 /*BR Added*/
