@@ -3,7 +3,6 @@ var PremierLeagueTable = function(){
   makeRequest(url, requestComplete);
 }
 
-
 var makeRequest = function(url, callback){
   var request = new XMLHttpRequest();
   request.open("GET", url);
@@ -15,9 +14,9 @@ var makeRequest = function(url, callback){
 var requestComplete = function(){
   if (this.status !== 200) return;
   var jsonString = this.responseText;
+  console.log(jsonString);
   var league = JSON.parse(jsonString);
   createLeagueTable(league);
-  console.log(league);
 }
 
 var createLeagueTable = function(leagueData){

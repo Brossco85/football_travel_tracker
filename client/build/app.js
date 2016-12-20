@@ -30,14 +30,12 @@ var app = function() {
 
 
   var select = document.querySelector('#team');
-  // var directionsBox = document.getElementById('directions');
-  
   select.addEventListener('change', function(e){
     getStadiumCoords(e.target.value, mainMap);
   })
 
-  var locationButton = document.querySelector('#location-button');
-  locationButton.onclick = getLocation;
+  // var locationButton = document.querySelector('#location-button');
+  // locationButton.onclick = getLocation;
 
 }
 
