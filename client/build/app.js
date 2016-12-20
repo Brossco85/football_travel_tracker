@@ -4,7 +4,7 @@ var app = function() {
   var mainMap = new MapWrapper(container, coords, 6);
 
 
-  // var table = new PremierLeagueTable();
+  var table = new PremierLeagueTable();
   var fixtures = new PremierLeagueFixtures();
   var feed = new FootballFeed();
 
@@ -34,13 +34,7 @@ var app = function() {
     getStadiumCoords(e.target.value, mainMap);
   })
 
-  // var locationButton = document.querySelector('#location-button');
-  // locationButton.onclick = getLocation;
-
 }
-
-
-
 
 
 var makeRequest = function(url, callback){

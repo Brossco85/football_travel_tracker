@@ -1,6 +1,9 @@
 var PremierLeagueFixtures = function(){
   var url2 = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=18';
   makeRequest2(url2, requestComplete2);
+
+  var locationButton = document.querySelector('#location-button');
+  locationButton.onclick = getLocation;
 }
 
 var makeRequest2 = function(url, callback){
@@ -114,7 +117,7 @@ var createCheckbox = function(name) {
   checkbox.type = "checkbox";
   checkbox.name = "name";
   checkbox.value = "value";
-  checkbox.id = "id";
+  checkbox.id = "name";
 
   var label = document.createElement('label')
   label.htmlFor = "id";
@@ -135,11 +138,19 @@ var getHotspots = function(homeTeam, fixture) {
     var bars = document.getElementById('bars');
     var foodOutlets = document.getElementById('food');
     var hotels = document.getElementById('hotels');
+    var locationButton = document.getElementById('location-button');
+    var tickets = document.getElementById('tickets');
     var itineraryList = document.getElementById('itinerary-list');
     itineraryList.innerText = fixture;
     
     for (var stadium of stadiums) {
       if (stadium.name == homeTeam) {
+      var latitude  = stadium.latlng[0];
+      var longitude = stadium.latlng[1];
+      var location = {lat: latitude, lng: longitude};
+      locationButton.data = JSON.stringify(location);
+      tickets.setAttribute("onclick", "window.open(" + "'" + stadium.website + "'" + ")");
+
         for (i = 0; i < stadium.pubs.length; i++) {
           var li1 = document.createElement('li');
           var li1Return = createCheckbox(stadium.pubs[0].name)
@@ -221,6 +232,7 @@ var getFixtureDirections = function(homeTeam, awayTeam){
     mainMap.initDirections(awayCoords, homeCoords);
   })
 }
+
 
 var viewButton = function() {
     var popup = document.getElementById('myPopup');

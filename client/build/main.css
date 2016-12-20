@@ -52,6 +52,11 @@ a:active{
   margin: 20px;
 }
 
+.itinerary-button {
+  font-size: 15px;
+
+}
+
 #crest-picture {
   width: 20px;
   height: 20px;
@@ -109,7 +114,6 @@ a:active{
   margin: 20px;
   padding: 10px;
   background-color: #C8ECF6;
-/*  flex: 1 1 auto;*/
 }
 
 .click-fixture {
@@ -128,13 +132,13 @@ a:active{
   min-width: 0;
   justify-content: center;
   margin: 10px;
-  width: 400px;
+  width: 500px;
   max-height: 600px;
   overflow: auto;
   position: relative;
   padding: 20px;
   background-color: #F9F9F9;
-  flex: 1 1 auto;
+ /* flex: 1 1 auto;*/
   font-family: Zapf Chancery, cursive;
   font-size: 20px;
 }
