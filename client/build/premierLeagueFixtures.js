@@ -128,7 +128,7 @@ var getHotspots = function(homeTeam) {
     var bars = document.getElementById('bars');
     var foodOutlets = document.getElementById('food');
     var hotels = document.getElementById('hotels');
-    var container = document.getElementById('itinerary-list');
+    // var container = document.getElementById('itinerary-list');
     
     for (var stadium of stadiums) {
       if (stadium.name == homeTeam) { 
@@ -206,7 +206,6 @@ var getFixtureDirections = function(homeTeam, awayTeam){
     if (this.status !== 200) return;
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
-// <<<<<<< HEAD
     var allStadiums = getStadiumData(stadiums);
     var homeCoords = {};
     var awayCoords = {};
