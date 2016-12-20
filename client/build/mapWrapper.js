@@ -68,8 +68,13 @@ function getLocation() {
     var latitude  = position.coords.latitude;
     var longitude = position.coords.longitude;
     var location = {lat: latitude, lng: longitude};
-    var mainMap = new MapWrapper(container, location, 10);
-    mainMap.addMarker(location);
+    var locationButton = document.querySelector('#location-button');
+    var clubLocation = JSON.parse(locationButton.data);
+    var container = document.getElementById('map');
+    var coords = {lat: 51.6032, lng: 0.0657}; 
+    var mainMap = new MapWrapper(container, coords, 6);
+
+    mainMap.initDirections(location, clubLocation);
   }
 
   function error() {
