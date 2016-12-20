@@ -35,10 +35,6 @@ var createFixturesTable = function(fixturesData, callback){
     var td9 = document.createElement('td');
     var img = document.createElement('img');
     var fixture = fixtures[i];
-<<<<<<< HEAD
-=======
-    // console.log(fixture);
->>>>>>> develop
     var dateAndTime = fixture.date;
     var date = new Date(dateAndTime);
     td1.innerText = fixture.matchday;
