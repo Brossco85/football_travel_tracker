@@ -1,6 +1,9 @@
 var PremierLeagueFixtures = function(){
   var url2 = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=18';
   makeRequest2(url2, requestComplete2);
+
+  var locationButton = document.querySelector('#location-button');
+  locationButton.onclick = getLocation;
 }
 
 var makeRequest2 = function(url, callback){
@@ -133,10 +136,16 @@ var getHotspots = function(homeTeam) {
     var bars = document.getElementById('bars');
     var foodOutlets = document.getElementById('food');
     var hotels = document.getElementById('hotels');
+    var location = document.getElementById('location-button');
+    var tickets = document.getElementById('tickets');
     // var container = document.getElementById('itinerary-list');
     
     for (var stadium of stadiums) {
-      if (stadium.name == homeTeam) { 
+      if (stadium.name == homeTeam) {
+      location.value = stadium.latlng;
+      tickets.setAttribute("onclick", "window.open(" + "'" + stadium.website + "'" + ")");
+      console.log(tickets);
+
         for (i = 0; i < stadium.pubs.length; i++) {
           var li1 = document.createElement('li');
           var li1Return = createCheckbox(stadium.pubs[0].name)

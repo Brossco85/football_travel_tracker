@@ -34,13 +34,7 @@ var app = function() {
     getStadiumCoords(e.target.value, mainMap);
   })
 
-  // var locationButton = document.querySelector('#location-button');
-  // locationButton.onclick = getLocation;
-
 }
-
-
-
 
 
 var makeRequest = function(url, callback){

@@ -70,6 +70,9 @@ function getLocation() {
     var location = {lat: latitude, lng: longitude};
     var mainMap = new MapWrapper(container, location, 10);
     mainMap.addMarker(location);
+    var locationButton = document.querySelector('#location-button');
+    locationButton.value = locationButton.value += location;
+    console.log(locationButton);
   }
 
   function error() {
