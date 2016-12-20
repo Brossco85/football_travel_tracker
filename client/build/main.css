@@ -15,6 +15,14 @@ p {
   font-size: 20px;
 }
 
+a:hover{
+  background-color: yellow;
+}
+
+a:active{
+  background-color: #B0B0B0;
+}
+
 #nav-bar {
   list-style-type: none;
   margin: 0;
@@ -50,7 +58,7 @@ p {
 }
 
 #football-photo {
-  width: 500px;
+  width: 600px;
 }
 
 #story-title {
@@ -147,7 +155,7 @@ p {
   min-width: 0;
   justify-content: center;
   margin: 10px;
-  max-width: 500px;
+  max-width: 600px;
   max-height: 600px;
   overflow: auto;
   position: relative;

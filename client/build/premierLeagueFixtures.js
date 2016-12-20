@@ -1,5 +1,5 @@
 var PremierLeagueFixtures = function(){
-  var url2 = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=17';
+  var url2 = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=18';
   makeRequest2(url2, requestComplete2);
 }
 
@@ -41,6 +41,7 @@ var createFixturesTable = function(fixturesData, callback){
     var add = document.createElement('button');
     var view = document.createElement('button');
     var fixture = fixtures[i];
+    // console.log(fixture);
     var dateAndTime = fixture.date;
     var date = new Date(dateAndTime);
     td1.innerText = fixture.matchday;
@@ -75,7 +76,6 @@ var createFixturesTable = function(fixturesData, callback){
     tr.appendChild(td12);
     tr.appendChild(td13);
     tr.value = fixture.awayTeamName;
-    console.log(tr.value)
     callback();
   }
 
@@ -85,7 +85,6 @@ var assignOnClick =function (){
   tables = document.getElementById("fixture-elements");
   cells = tables.getElementsByTagName('tr');
   rows = tables.getElementsByTagName('td');
-  // console.log(cells);
   for (var i=0,len=cells.length; i<len; i++){
     cells[i].onclick = function(){
       var home = this.children[4].innerText;
@@ -103,6 +102,19 @@ var makeRequest = function(url, callback){
   request.send();
 }
 
+var createCheckbox = function(name) {
+  var checkbox = document.createElement('input');
+  checkbox.type = "checkbox";
+  checkbox.name = "name";
+  checkbox.value = "value";
+  checkbox.id = "id";
+
+  var label = document.createElement('label')
+  label.htmlFor = "id";
+  label.appendChild(document.createTextNode(name));
+
+  return [checkbox, label];
+}
 
 var getHotspots = function(homeTeam) {
     var url = 'http://localhost:3000/api/accounts';
@@ -117,31 +129,67 @@ var getHotspots = function(homeTeam) {
     var foodOutlets = document.getElementById('food');
     var hotels = document.getElementById('hotels');
     // var container = document.getElementById('itinerary-list');
+    
     for (var stadium of stadiums) {
       if (stadium.name == homeTeam) { 
         for (i = 0; i < stadium.pubs.length; i++) {
           var li1 = document.createElement('li');
+          var li1Return = createCheckbox(stadium.pubs[0].name)
+
           var li2 = document.createElement('li');
+          var li2Return = createCheckbox(stadium.pubs[1].name);
+
           var li3 = document.createElement('li');
-          console.log(stadium.pubs[i].name); 
-          li1.innerText = stadium.pubs[0].name;
-          li2.innerText = stadium.pubs[1].name;
-          li3.innerText = stadium.pubs[2].name;
+          var li3Return = createCheckbox(stadium.pubs[2].name);
+          
+          // li1.innerText = stadium.pubs[0].name;
+          // li2.innerText = stadium.pubs[1].name;
+          // li3.innerText = stadium.pubs[2].name;
         }
         for (i = 0; i < stadium.foodOutlets.length; i++) {
           var li4 = document.createElement('li');
+          var li4Return = createCheckbox(stadium.foodOutlets[0].name);
+
           var li5 = document.createElement('li');
-          li4.innerText = stadium.foodOutlets[0].name;
-          li5.innerText = stadium.foodOutlets[1].name;
+          var li5Return = createCheckbox(stadium.foodOutlets[1].name);
+
+          // li4.innerText = stadium.foodOutlets[0].name;
+          // li5.innerText = stadium.foodOutlets[1].name;
         }
         for (i = 0; i < stadium.hotels.length; i++) {
           var li6 = document.createElement('li');
+          var li6Return = createCheckbox(stadium.hotels[0].name);
+
           var li7 = document.createElement('li');
-          li6.innerText = stadium.hotels[0].name;
-          li7.innerText = stadium.hotels[1].name;
+          var li7Return = createCheckbox(stadium.hotels[1].name);
+
+          // li6.innerText = stadium.hotels[0].name;
+          // li7.innerText = stadium.hotels[1].name;
         }
       }
     }
+    
+    li1.appendChild(li1Return[0]);
+    li1.appendChild(li1Return[1]);
+
+    li2.appendChild(li2Return[0]);
+    li2.appendChild(li2Return[1]);
+
+    li3.appendChild(li3Return[0]);
+    li3.appendChild(li3Return[1]);
+
+    li4.appendChild(li4Return[0]);
+    li4.appendChild(li4Return[1]);
+
+    li5.appendChild(li5Return[0]);
+    li5.appendChild(li5Return[1]);
+
+    li6.appendChild(li6Return[0]);
+    li6.appendChild(li6Return[1]);
+
+    li7.appendChild(li7Return[0]);
+    li7.appendChild(li7Return[1]);
+   
     bars.appendChild(li1);
     bars.appendChild(li2);
     bars.appendChild(li3);
@@ -152,25 +200,12 @@ var getHotspots = function(homeTeam) {
   })
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
 var getFixtureDirections = function(homeTeam, awayTeam){
   var url = 'http://localhost:3000/api/accounts';
   makeRequest(url, function(){
     if (this.status !== 200) return;
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
-// <<<<<<< HEAD
     var allStadiums = getStadiumData(stadiums);
     var homeCoords = {};
     var awayCoords = {};
@@ -189,75 +224,3 @@ var getFixtureDirections = function(homeTeam, awayTeam){
   })
 }
 
-
-
-
-// =======
-
-//     document.getElementById('bars').innerHTML = "";
-//     document.getElementById('food').innerHTML = "";
-//     document.getElementById('hotels').innerHTML = "";
-
-//     var bars = document.getElementById('bars');
-//     var foodOutlets = document.getElementById('food');
-//     var hotels = document.getElementById('hotels');
-//     // var container = document.getElementById('itinerary-list');
-//     for (var stadium of stadiums) {
-//       if (stadium.name == homeTeam) { 
-//         for (i = 0; i < stadium.pubs.length; i++) {
-//           var li1 = document.createElement('li');
-//           var li2 = document.createElement('li');
-//           var li3 = document.createElement('li');
-//           console.log(stadium.pubs[i].name); 
-//           li1.innerText = stadium.pubs[0].name;
-//           li2.innerText = stadium.pubs[1].name;
-//           li3.innerText = stadium.pubs[2].name;
-//         }
-//         for (i = 0; i < stadium.foodOutlets.length; i++) {
-//           var li4 = document.createElement('li');
-//           var li5 = document.createElement('li');
-//           li4.innerText = stadium.foodOutlets[0].name;
-//           li5.innerText = stadium.foodOutlets[1].name;
-//         }
-//         for (i = 0; i < stadium.hotels.length; i++) {
-//           var li6 = document.createElement('li');
-//           var li7 = document.createElement('li');
-//           li6.innerText = stadium.hotels[0].name;
-//           li7.innerText = stadium.hotels[1].name;
-//         }
-//       }
-//     }
-//     bars.appendChild(li1);
-//     bars.appendChild(li2);
-//     bars.appendChild(li3);
-//     foodOutlets.appendChild(li4);
-//     foodOutlets.appendChild(li5);
-//     hotels.appendChild(li6);
-//     hotels.appendChild(li7);
-//   })
-// }
-
-//   var getFixtureDirections = function(homeTeam, awayTeam){
-//     var url = 'http://localhost:3000/api/accounts';
-//     makeRequest(url, function(){
-//       if (this.status !== 200) return;
-//       var jsonString = this.responseText;
-//       var stadiums = JSON.parse(jsonString);
-//       var allStadiums = getStadiumData(stadiums);
-//       var homeCoords = {};
-//       var awayCoords = {};
-//       for (var stadium of allStadiums){  
-//         if (stadium.name === homeTeam){
-//           var homeCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
-//         } else if (stadium.name === awayTeam){
-//           var awayCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
-//         }
-//       }
-//       var container = document.getElementById('map');
-//       var coords = {lat: 51.6032, lng: 0.0657};  
-//       var mainMap = new MapWrapper(container, coords, 6);
-  
-//       mainMap.initDirections(awayCoords, homeCoords);
-//     })
-//   }
-// >>>>>>> develop
