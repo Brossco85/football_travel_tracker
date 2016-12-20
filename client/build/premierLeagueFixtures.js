@@ -99,10 +99,12 @@ var assignOnClick =function (){
       var away = this.children[6].innerText;
       var fixture = this.innerText;
       getFixtureDirections(home, away);
-      getHotspots(home, fixture);
+      getHotspots(home);
     }
   }
 }
+
+
 
 var makeRequest = function(url, callback){
   var request = new XMLHttpRequest();
@@ -116,7 +118,7 @@ var createCheckbox = function(name) {
   checkbox.type = "checkbox";
   checkbox.name = "name";
   checkbox.value = "value";
-  checkbox.id = "id";
+  checkbox.id = "name";
 
   var label = document.createElement('label')
   label.htmlFor = "id";
@@ -242,7 +244,9 @@ var getFixtureDirections = function(homeTeam, awayTeam){
   })
 }
 
+
 var viewButton = function() {
       // alert("I am an alert box!");
 }
+
 
