@@ -33,15 +33,8 @@ var createFixturesTable = function(fixturesData, callback){
     var td7 = document.createElement('td');
     var td8 = document.createElement('td');
     var td9 = document.createElement('td');
-    var td10 = document.createElement('td');
-    var td11 = document.createElement('td');
-    var td12 = document.createElement('td');
-    var td13 = document.createElement('td');
     var img = document.createElement('img');
-    var add = document.createElement('button');
-    var view = document.createElement('button');
     var fixture = fixtures[i];
-    console.log(fixture);
     var dateAndTime = fixture.date;
     var date = new Date(dateAndTime);
     td1.innerText = fixture.matchday;
@@ -53,14 +46,6 @@ var createFixturesTable = function(fixturesData, callback){
     td7.innerText = fixture.awayTeamName;
     td8.innerText = "";
     td9.innerText = date.toUTCString().slice(16,22);
-    td10.innerText = "";
-    td11.append(add);
-    td12.innerText = "";
-    td13.append(view);
-    add.setAttribute("type", "button");
-    add.innerText = "Add";
-    view.setAttribute("type", "button");
-    view.innerText = "View";
     table.appendChild(tr);
     tr.appendChild(td1);
     tr.appendChild(td2);
@@ -71,15 +56,36 @@ var createFixturesTable = function(fixturesData, callback){
     tr.appendChild(td7);
     tr.appendChild(td8);
     tr.appendChild(td9);
-    tr.appendChild(td10);
-    tr.appendChild(td11);
-    tr.appendChild(td12);
-    tr.appendChild(td13);
     tr.value = fixture.awayTeamName;
     callback();
   }
-
 }
+
+var getDirectionsLocation = function(homeTeam, awayTeam){
+  var url = 'http://localhost:3000/api/accounts';
+  makeRequest(url, function(){
+    if (this.status !== 200) return;
+    var jsonString = this.responseText;
+    var stadiums = JSON.parse(jsonString);
+// <<<<<<< HEAD
+    var allStadiums = getStadiumData(stadiums);
+    var homeCoords = {};
+    var awayCoords = {};
+    for (var stadium of allStadiums){  
+      if (stadium.name === homeTeam){
+        var homeCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
+      } else if (stadium.name === awayTeam){
+        var awayCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
+      }
+    }
+    var container = document.getElementById('map');
+    var coords = {lat: 51.6032, lng: 0.0657};  
+    var mainMap = new MapWrapper(container, coords, 6);
+
+    mainMap.initDirections(awayCoords, homeCoords);
+  })
+}
+
 
 var assignOnClick =function (){
   tables = document.getElementById("fixture-elements");
