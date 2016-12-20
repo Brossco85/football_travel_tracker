@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var fs = require('fs');
+var MongoClient = require('mongodb').MongoClient;
+
 
 
 
@@ -19,6 +21,39 @@ app.get('/api/accounts', function(req,res) {
     }
     res.json(JSON.parse(data))
   })
+})
+
+app.get('/itineraries', function(req, res){
+ var url = 'mongodb://localhost:27017/premier_planner';
+ MongoClient.connect(url, function(err, db){
+  var collection = db.collection('planners');
+  collection.find({}).toArray(function(err, docs){
+    res.json(docs);
+    db.close();
+  })
+})
+});
+
+app.post('/itineraries', function(req, res){
+ var url = 'mongodb://localhost:27017/premier_planner';
+ MongoClient.connect(url, function(err, db){
+  var collection = db.collection('planners');
+  collection.insert(
+  {
+    user: req.body.user,
+    match:req.body.match,
+    startTime: req.body.start,
+    pubs: req.body.pubs,
+    eateries: req.body.eateries,
+    hotels: req.body.hotels
+  }
+    // "owner": req.body.owner,
+    // "amount": req.body.amount,
+    // "type": req.body.type
+
+  );
+  res.status(200).end();
+});
 })
 
 app.use(express.static('client/build'));

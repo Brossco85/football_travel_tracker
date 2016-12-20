@@ -90,6 +90,7 @@ function calculateAndDisplayRoute(markerArray, stepDisplay, map, origin, destina
   if (status === 'OK') {
     document.getElementById('warnings-panel').innerHTML =
     '<b>' + response.routes[0].warnings + '</b>';
+    document.getElementById("directions").innerHTML = "";
     directionsDisplay.setDirections(response);
   } else {
     window.alert('Directions request failed due to ' + status);
