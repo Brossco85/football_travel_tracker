@@ -95,8 +95,9 @@ var assignOnClick =function (){
       var home = this.children[4].innerText;
       var away = this.children[6].innerText;
       var fixture = this.innerText;
-      getFixtureDirections(home, away);
       getHotspots(home, fixture);
+      showHotspots(home);
+      getFixtureDirections(home, away);
     }
   }
 }
@@ -134,11 +135,11 @@ var getHotspots = function(homeTeam, fixture) {
     var bars = document.getElementById('bars');
     var foodOutlets = document.getElementById('food');
     var hotels = document.getElementById('hotels');
-    var container = document.getElementById('itinerary-list');
-    container.innerText = fixture;
+    var itineraryList = document.getElementById('itinerary-list');
+    itineraryList.innerText = fixture;
     
     for (var stadium of stadiums) {
-      if (stadium.name == homeTeam) { 
+      if (stadium.name == homeTeam) {
         for (i = 0; i < stadium.pubs.length; i++) {
           var li1 = document.createElement('li');
           var li1Return = createCheckbox(stadium.pubs[0].name)
@@ -148,10 +149,6 @@ var getHotspots = function(homeTeam, fixture) {
 
           var li3 = document.createElement('li');
           var li3Return = createCheckbox(stadium.pubs[2].name);
-          
-          // li1.innerText = stadium.pubs[0].name;
-          // li2.innerText = stadium.pubs[1].name;
-          // li3.innerText = stadium.pubs[2].name;
         }
         for (i = 0; i < stadium.foodOutlets.length; i++) {
           var li4 = document.createElement('li');
@@ -159,9 +156,6 @@ var getHotspots = function(homeTeam, fixture) {
 
           var li5 = document.createElement('li');
           var li5Return = createCheckbox(stadium.foodOutlets[1].name);
-
-          // li4.innerText = stadium.foodOutlets[0].name;
-          // li5.innerText = stadium.foodOutlets[1].name;
         }
         for (i = 0; i < stadium.hotels.length; i++) {
           var li6 = document.createElement('li');
@@ -169,9 +163,6 @@ var getHotspots = function(homeTeam, fixture) {
 
           var li7 = document.createElement('li');
           var li7Return = createCheckbox(stadium.hotels[1].name);
-
-          // li6.innerText = stadium.hotels[0].name;
-          // li7.innerText = stadium.hotels[1].name;
         }
       }
     }
@@ -235,4 +226,36 @@ var viewButton = function() {
     var popup = document.getElementById('myPopup');
         popup.classList.toggle('show');;
 }
+
+var showHotspots = function(homeTeam) {
+  var url = 'http://localhost:3000/api/accounts';
+  makeRequest(url, function() {
+    if (this.status !== 200) return;
+    var jsonString = this.responseText;
+    var stadiums = JSON.parse(jsonString);
+
+    var container = document.getElementById('itinerary-map');
+
+    for (var stadium of stadiums) {
+      if (stadium.name == homeTeam) {
+        var coords = {lat: stadium.latlng[0], lng: stadium.latlng[1]};
+        var pubsArray = []
+        var foodOutletsArray = []
+        var hotelsArray = []
+        var itineraryMap = new MapWrapper(container, coords, 11);
+
+        for (i = 0; i < stadium.pubs.length; i++) {
+          itineraryMap.itineraryMarker({lat: stadium.pubs[i].latlng[0], lng: stadium.pubs[i].latlng[1]});
+        }
+        for (i = 0; i < stadium.foodOutlets.length; i++) {
+          itineraryMap.itineraryMarker({lat: stadium.foodOutlets[i].latlng[0], lng: stadium.foodOutlets[i].latlng[1]});
+        }
+        for (i = 0; i < stadium.hotels.length; i++) {
+          itineraryMap.itineraryMarker({lat: stadium.hotels[i].latlng[0], lng: stadium.hotels[i].latlng[1]});
+        }
+      }
+    }
+  })
+}
+
 

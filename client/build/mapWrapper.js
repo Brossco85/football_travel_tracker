@@ -54,6 +54,13 @@ MapWrapper.prototype = {
 satelliteCloseUp: function(){
   this.googleMap.setMapTypeId('satellite');
   this.googleMap.setZoom(17);
+},
+
+itineraryMarker: function(coords) {
+  var marker = new google.maps.Marker({
+    position: coords,
+    map: this.googleMap
+  })
 }
 
 }
