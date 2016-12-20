@@ -94,8 +94,9 @@ var assignOnClick =function (){
     cells[i].onclick = function(){
       var home = this.children[4].innerText;
       var away = this.children[6].innerText;
+      var fixture = this.innerText;
       getFixtureDirections(home, away);
-      getHotspots(home);
+      getHotspots(home, fixture);
     }
   }
 }
@@ -121,7 +122,7 @@ var createCheckbox = function(name) {
   return [checkbox, label];
 }
 
-var getHotspots = function(homeTeam) {
+var getHotspots = function(homeTeam, fixture) {
     var url = 'http://localhost:3000/api/accounts';
     makeRequest(url, function(){
     if (this.status !== 200) return;
@@ -133,7 +134,8 @@ var getHotspots = function(homeTeam) {
     var bars = document.getElementById('bars');
     var foodOutlets = document.getElementById('food');
     var hotels = document.getElementById('hotels');
-    // var container = document.getElementById('itinerary-list');
+    var container = document.getElementById('itinerary-list');
+    container.innerText = fixture;
     
     for (var stadium of stadiums) {
       if (stadium.name == homeTeam) { 
@@ -227,5 +229,9 @@ var getFixtureDirections = function(homeTeam, awayTeam){
 
     mainMap.initDirections(awayCoords, homeCoords);
   })
+}
+
+var viewButton = function() {
+      // alert("I am an alert box!");
 }
 
