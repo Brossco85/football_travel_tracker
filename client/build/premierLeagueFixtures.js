@@ -78,6 +78,7 @@ var createFixturesTable = function(fixturesData, callback){
     tr.value = fixture.awayTeamName;
     callback();
   }
+
 }
 
 var assignOnClick =function (){
@@ -89,41 +90,173 @@ var assignOnClick =function (){
       var home = this.children[4].innerText;
       var away = this.children[6].innerText;
       getFixtureDirections(home, away);
-      }
+      getHotspots(home);
     }
   }
+}
 
-  var makeRequest = function(url, callback){
-    var request = new XMLHttpRequest();
-    request.open("GET", url);
-    request.onload = callback;
-    request.send();
-  }
+var makeRequest = function(url, callback){
+  var request = new XMLHttpRequest();
+  request.open("GET", url);
+  request.onload = callback;
+  request.send();
+}
 
-  var getFixtureDirections = function(homeTeam, awayTeam){
+
+var getHotspots = function(homeTeam) {
     var url = 'http://localhost:3000/api/accounts';
     makeRequest(url, function(){
-      if (this.status !== 200) return;
-      var jsonString = this.responseText;
-      var stadiums = JSON.parse(jsonString);
-      var allStadiums = getStadiumData(stadiums);
-      var homeCoords = {};
-      var awayCoords = {};
-      for (var stadium of allStadiums){  
-        if (stadium.name === homeTeam){
-          var homeCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
-        } else if (stadium.name === awayTeam){
-          var awayCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
+    if (this.status !== 200) return;
+    var jsonString = this.responseText;
+    var stadiums = JSON.parse(jsonString);
+    document.getElementById('bars').innerHTML = "";
+    document.getElementById('food').innerHTML = "";
+    document.getElementById('hotels').innerHTML = "";
+    var bars = document.getElementById('bars');
+    var foodOutlets = document.getElementById('food');
+    var hotels = document.getElementById('hotels');
+    // var container = document.getElementById('itinerary-list');
+    for (var stadium of stadiums) {
+      if (stadium.name == homeTeam) { 
+        for (i = 0; i < stadium.pubs.length; i++) {
+          var li1 = document.createElement('li');
+          var li2 = document.createElement('li');
+          var li3 = document.createElement('li');
+          console.log(stadium.pubs[i].name); 
+          li1.innerText = stadium.pubs[0].name;
+          li2.innerText = stadium.pubs[1].name;
+          li3.innerText = stadium.pubs[2].name;
+        }
+        for (i = 0; i < stadium.foodOutlets.length; i++) {
+          var li4 = document.createElement('li');
+          var li5 = document.createElement('li');
+          li4.innerText = stadium.foodOutlets[0].name;
+          li5.innerText = stadium.foodOutlets[1].name;
+        }
+        for (i = 0; i < stadium.hotels.length; i++) {
+          var li6 = document.createElement('li');
+          var li7 = document.createElement('li');
+          li6.innerText = stadium.hotels[0].name;
+          li7.innerText = stadium.hotels[1].name;
         }
       }
-      var container = document.getElementById('map');
-      var coords = {lat: 51.6032, lng: 0.0657};  
-      var mainMap = new MapWrapper(container, coords, 6);
-  
-      mainMap.initDirections(awayCoords, homeCoords);
-    })
+    }
+    bars.appendChild(li1);
+    bars.appendChild(li2);
+    bars.appendChild(li3);
+    foodOutlets.appendChild(li4);
+    foodOutlets.appendChild(li5);
+    hotels.appendChild(li6);
+    hotels.appendChild(li7);
+  })
   }
 
 
-  
 
+
+
+
+
+
+
+
+
+
+
+var getFixtureDirections = function(homeTeam, awayTeam){
+  var url = 'http://localhost:3000/api/accounts';
+  makeRequest(url, function(){
+    if (this.status !== 200) return;
+    var jsonString = this.responseText;
+    var stadiums = JSON.parse(jsonString);
+// <<<<<<< HEAD
+    var allStadiums = getStadiumData(stadiums);
+    var homeCoords = {};
+    var awayCoords = {};
+    for (var stadium of allStadiums){  
+      if (stadium.name === homeTeam){
+        var homeCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
+      } else if (stadium.name === awayTeam){
+        var awayCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
+      }
+    }
+    var container = document.getElementById('map');
+    var coords = {lat: 51.6032, lng: 0.0657};  
+    var mainMap = new MapWrapper(container, coords, 6);
+
+    mainMap.initDirections(awayCoords, homeCoords);
+  })
+}
+
+
+
+
+// =======
+
+//     document.getElementById('bars').innerHTML = "";
+//     document.getElementById('food').innerHTML = "";
+//     document.getElementById('hotels').innerHTML = "";
+
+//     var bars = document.getElementById('bars');
+//     var foodOutlets = document.getElementById('food');
+//     var hotels = document.getElementById('hotels');
+//     // var container = document.getElementById('itinerary-list');
+//     for (var stadium of stadiums) {
+//       if (stadium.name == homeTeam) { 
+//         for (i = 0; i < stadium.pubs.length; i++) {
+//           var li1 = document.createElement('li');
+//           var li2 = document.createElement('li');
+//           var li3 = document.createElement('li');
+//           console.log(stadium.pubs[i].name); 
+//           li1.innerText = stadium.pubs[0].name;
+//           li2.innerText = stadium.pubs[1].name;
+//           li3.innerText = stadium.pubs[2].name;
+//         }
+//         for (i = 0; i < stadium.foodOutlets.length; i++) {
+//           var li4 = document.createElement('li');
+//           var li5 = document.createElement('li');
+//           li4.innerText = stadium.foodOutlets[0].name;
+//           li5.innerText = stadium.foodOutlets[1].name;
+//         }
+//         for (i = 0; i < stadium.hotels.length; i++) {
+//           var li6 = document.createElement('li');
+//           var li7 = document.createElement('li');
+//           li6.innerText = stadium.hotels[0].name;
+//           li7.innerText = stadium.hotels[1].name;
+//         }
+//       }
+//     }
+//     bars.appendChild(li1);
+//     bars.appendChild(li2);
+//     bars.appendChild(li3);
+//     foodOutlets.appendChild(li4);
+//     foodOutlets.appendChild(li5);
+//     hotels.appendChild(li6);
+//     hotels.appendChild(li7);
+//   })
+// }
+
+//   var getFixtureDirections = function(homeTeam, awayTeam){
+//     var url = 'http://localhost:3000/api/accounts';
+//     makeRequest(url, function(){
+//       if (this.status !== 200) return;
+//       var jsonString = this.responseText;
+//       var stadiums = JSON.parse(jsonString);
+//       var allStadiums = getStadiumData(stadiums);
+//       var homeCoords = {};
+//       var awayCoords = {};
+//       for (var stadium of allStadiums){  
+//         if (stadium.name === homeTeam){
+//           var homeCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
+//         } else if (stadium.name === awayTeam){
+//           var awayCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
+//         }
+//       }
+//       var container = document.getElementById('map');
+//       var coords = {lat: 51.6032, lng: 0.0657};  
+//       var mainMap = new MapWrapper(container, coords, 6);
+  
+//       mainMap.initDirections(awayCoords, homeCoords);
+//     })
+//   }
+// >>>>>>> develop

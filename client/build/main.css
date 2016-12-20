@@ -135,6 +135,8 @@ a:active{
   padding: 20px;
   background-color: #F9F9F9;
   flex: 1 1 auto;
+  font-family: Zapf Chancery, cursive;
+  font-size: 20px;
 }
 
 #table {
