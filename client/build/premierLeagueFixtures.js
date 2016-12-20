@@ -137,16 +137,18 @@ var getHotspots = function(homeTeam, fixture) {
     var bars = document.getElementById('bars');
     var foodOutlets = document.getElementById('food');
     var hotels = document.getElementById('hotels');
-    var location = document.getElementById('location-button');
+    var locationButton = document.getElementById('location-button');
     var tickets = document.getElementById('tickets');
     var container = document.getElementById('itinerary-list');
     container.innerText = fixture;
     
     for (var stadium of stadiums) {
       if (stadium.name == homeTeam) {
-      location.value = stadium.latlng;
+      var latitude  = stadium.latlng[0];
+      var longitude = stadium.latlng[1];
+      var location = {lat: latitude, lng: longitude};
+      locationButton.data = JSON.stringify(location);
       tickets.setAttribute("onclick", "window.open(" + "'" + stadium.website + "'" + ")");
-      console.log(tickets);
 
         for (i = 0; i < stadium.pubs.length; i++) {
           var li1 = document.createElement('li');
