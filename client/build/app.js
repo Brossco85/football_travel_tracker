@@ -18,6 +18,39 @@ var app = function() {
 
     for(var stadium of allStadiums){
       var icon = {
+      url: stadium.crest, // url
+      scaledSize: new google.maps.Size(20, 30), // scaled size
+      origin: new google.maps.Point(0,0), // origin
+      anchor: new google.maps.Point(0, 0) // anchor
+      };
+      mainMap.addMarker(stadium.latlng, icon);
+      };
+      })
+
+  var refreshButton = document.querySelector('#refresh-map');
+  refreshButton.onclick = handleRefreshClick;
+
+  var select = document.querySelector('#team');
+  select.addEventListener('change', function(e){
+    getStadiumCoords(e.target.value, mainMap);
+  })
+}
+
+var handleRefreshClick = function() {
+  var container = document.getElementById('map');
+  var coords = {lat: 51.6032, lng: 0.0657};  
+  var mainMap = new MapWrapper(container, coords, 6);
+
+  var url = 'http://localhost:3000/api/accounts';
+  makeRequest(url, function(){
+    if (this.status !== 200) return;
+    var jsonString = this.responseText;
+    var stadiums = JSON.parse(jsonString);
+    var allStadiums = getStadiumData(stadiums);
+    getClubNames(allStadiums);
+
+    for(var stadium of allStadiums){
+      var icon = {
                   url: stadium.crest, // url
                   scaledSize: new google.maps.Size(20, 30), // scaled size
                   origin: new google.maps.Point(0,0), // origin
@@ -27,18 +60,6 @@ var app = function() {
               };
 
             })
-
-
-  // var select = document.querySelector('#team');
-  // select.addEventListener('change', function(e){
-  //   getStadiumCoords(e.target.value, mainMap);
-  // })
-
-  var select = document.querySelector('#team');
-  select.addEventListener('change', function(e){
-    getStadiumCoords(e.target.value, mainMap);
-  })
-
 }
 
 
@@ -90,12 +111,11 @@ var getStadiumCoords = function(index, map){
     coords = {lat: allStadiums[index].latlng.lat, lng: allStadiums[index].latlng.lng};
     map.setCenter(coords);
     map.satelliteCloseUp();
-    // var origin = {lat: 51.6032, lng: 0.0657};
+    // var origin = {lat: 51.6032, lng: 0.0657}; 
     // var destination = coords;
     // map.initDirections(origin, destination);
   })
 }
-
 
 window.onload = app;
 
