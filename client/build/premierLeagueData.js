@@ -14,7 +14,6 @@ var makeRequest = function(url, callback){
 var requestComplete = function(){
   if (this.status !== 200) return;
   var jsonString = this.responseText;
-  console.log(jsonString);
   var league = JSON.parse(jsonString);
   createLeagueTable(league);
 }
