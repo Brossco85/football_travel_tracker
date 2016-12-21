@@ -59,6 +59,29 @@ a:active{
   margin: 20px;
 }
 
+#refresh-button {
+
+  padding: 30px;
+}
+#refresh-map {
+  font-size: 10px;
+  border: none;
+  padding: 5px;
+  background-color: #dddddd
+}
+
+#refresh-map {
+  cursor: pointer;
+}
+
+#refresh-map:hover {
+  background-color: yellow;
+}
+
+.itinerary-button:active {
+  background-color: #B0B0B0;
+}
+
 .itinerary-button {
   font-size: 20px;
   border: none;

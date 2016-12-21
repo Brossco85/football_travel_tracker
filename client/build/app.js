@@ -38,8 +38,8 @@ var app = function() {
 
 var handleRefreshClick = function() {
   var container = document.getElementById('map');
-  var coords = {lat: 51.6032, lng: 0.0657};  
-  var mainMap = new MapWrapper(container, coords, 6);
+  var coords = {lat: 52.95, lng: -1.133333};  
+  var mainMap = new MapWrapper(container, coords, 7);
 
   var url = 'http://localhost:3000/api/accounts';
   makeRequest(url, function(){
