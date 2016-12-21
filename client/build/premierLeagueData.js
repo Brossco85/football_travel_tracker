@@ -6,7 +6,7 @@ var PremierLeagueTable = function(){
 var makeRequest = function(url, callback){
   var request = new XMLHttpRequest();
   request.open("GET", url);
-  request.setRequestHeader("X-Auth-Token", "795581b721014c898569d2bee06c9012");
+  request.setRequestHeader("X-Auth-Token", "c43906ecbd1f400694c3adb3fcb9b58f");
   request.onload = callback;
   request.send();
 }
