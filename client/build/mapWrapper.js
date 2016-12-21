@@ -15,7 +15,6 @@ directionsService = new google.maps.DirectionsService;
     this.googleMap.setCenter(center);
   }.bind(this));
 
-
 }
 
 
@@ -27,7 +26,19 @@ MapWrapper.prototype = {
      icon: icon,
      map: this.googleMap
    })
+   marker.addListener('click', function() {
+    this.setCenter(coords);
+    this.satelliteCloseUp();
+   }.bind(this));
  },
+
+ // addClickEvent: function(coords, icon) {
+ //   google.maps.Marker.event.addListener(this.googleMap, 'click', function(event) {
+ //   var position = coords;
+ //    this.addMarker(coords, icon);
+ //   }.bind(this));
+ // },
+
  setCenter: function(coords){
    this.googleMap.setCenter(coords);
  },
@@ -70,7 +81,7 @@ addInfoWindow: function(place, address, phone) {
     content: contentString
   });
   return window;
-}
+},
 
 }
 

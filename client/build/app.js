@@ -4,7 +4,7 @@ var app = function() {
   var mainMap = new MapWrapper(container, coords, 6);
 
 
-  var table = new PremierLeagueTable();
+  // var table = new PremierLeagueTable();
   var fixtures = new PremierLeagueFixtures();
   var feed = new FootballFeed();
 
@@ -28,6 +28,11 @@ var app = function() {
 
             })
 
+
+  // var select = document.querySelector('#team');
+  // select.addEventListener('change', function(e){
+  //   getStadiumCoords(e.target.value, mainMap);
+  // })
 
   var select = document.querySelector('#team');
   select.addEventListener('change', function(e){
@@ -84,10 +89,10 @@ var getStadiumCoords = function(index, map){
     var coords = {};
     coords = {lat: allStadiums[index].latlng.lat, lng: allStadiums[index].latlng.lng};
     map.setCenter(coords);
-    // map.satelliteCloseUp();
-    var origin = {lat: 51.6032, lng: 0.0657};
-    var destination = coords;
-    map.initDirections(origin, destination);
+    map.satelliteCloseUp();
+    // var origin = {lat: 51.6032, lng: 0.0657};
+    // var destination = coords;
+    // map.initDirections(origin, destination);
   })
 }
 
