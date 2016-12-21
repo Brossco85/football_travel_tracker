@@ -17,8 +17,6 @@ directionsService = new google.maps.DirectionsService;
 
 }
 
-
-
 MapWrapper.prototype = {
  addMarker: function(coords, icon){
    var marker = new google.maps.Marker({
