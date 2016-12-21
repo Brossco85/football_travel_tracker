@@ -21,9 +21,23 @@ Planner.prototype = {
   persistItinerary: = function(){
 
 
-    var form = document.getElementById('add-account');
+    var ul = document.getElementById('pubs');
+    var li = pubs.getElementsByTagName('li');
+
     form.onsubmit = function(e){
       e.preventDefault();
+
+      var getSelectedChbox = function (ul) {
+        var selchbox = [];// array that will store the value of selected checkboxes
+        // gets all the input tags in frm, and their number
+        var inpfields = ul.getElementsByTagName('input');
+        var nr_inpfields = inpfields.length;
+        // traverse the inpfields elements, and adds the value of selected (checked) checkbox in selchbox
+        for(var i=0; i<nr_inpfields; i++) {
+          if(inpfields[i].type == 'checkbox' && inpfields[i].checked == true) selchbox.push(inpfields[i].value);
+        }
+        return selchbox;
+      }  
 
       
 

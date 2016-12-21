@@ -34,6 +34,7 @@ var app = function() {
     getStadiumCoords(e.target.value, mainMap);
   })
 
+
 }
 
 
@@ -92,5 +93,9 @@ var getStadiumCoords = function(index, map){
 }
 
 
+
+
 window.onload = app;
+
+
 
