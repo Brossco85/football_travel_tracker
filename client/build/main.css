@@ -260,7 +260,7 @@ tr:nth-child(even) {
   margin: 10px;
   height: 200px;
   width: 100%;
-  max-width: 480px;
+  max-width: 630px;
   min-width: 0px;
   overflow: auto;
   padding: 10px;

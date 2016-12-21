@@ -20,12 +20,12 @@
 //   request.send();
 // }
 
-// // var requestComplete = function(){
-// //   if (this.status !== 200) return;
-// //   var jsonString = this.responseText;
-// //   var stadiums = JSON.parse(jsonString);
-// //   getStadiumData(stadiums);
-// // }
+// var requestComplete = function(){
+//   if (this.status !== 200) return;
+//   var jsonString = this.responseText;
+//   var stadiums = JSON.parse(jsonString);
+//   getStadiumData(stadiums);
+// }
 
 // var getStadiumData = function(stadiums){
 //   var data = [];
