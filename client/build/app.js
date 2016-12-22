@@ -30,10 +30,10 @@ var app = function() {
   var refreshButton = document.querySelector('#refresh-map');
   refreshButton.onclick = handleRefreshClick;
 
-  var select = document.querySelector('#team');
-  select.addEventListener('change', function(e){
-    getStadiumCoords(e.target.value, mainMap);
-  })
+  // var select = document.querySelector('#team');
+  // select.addEventListener('change', function(e){
+  //   getStadiumCoords(e.target.value, mainMap);
+  // })
 }
 
 var handleRefreshClick = function() {
@@ -95,7 +95,7 @@ var getClubNames = function(stadiums){
     option.innerText = stadiums[i].name;
     option.value = i;
     // console.log(option.value)
-    select.appendChild(option); 
+    // select.appendChild(option); 
   }
 }
 
