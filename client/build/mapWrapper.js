@@ -4,16 +4,16 @@ var MapWrapper = function(container, center, zoom){
    zoom: zoom
  });
 
-directionsService = new google.maps.DirectionsService;
-  directionsDisplay = new google.maps.DirectionsRenderer;
-   directionsDisplay.setMap(this.googleMap);
-   directionsDisplay.setPanel(document.getElementById('directions'));
+ directionsService = new google.maps.DirectionsService;
+ directionsDisplay = new google.maps.DirectionsRenderer;
+ directionsDisplay.setMap(this.googleMap);
+ directionsDisplay.setPanel(document.getElementById('directions'));
 
-  google.maps.event.addDomListener(window, "resize", function() {
-    var center = this.googleMap.getCenter();
-    google.maps.event.trigger(this.googleMap, "resize");
-    this.googleMap.setCenter(center);
-  }.bind(this));
+ google.maps.event.addDomListener(window, "resize", function() {
+  var center = this.googleMap.getCenter();
+  google.maps.event.trigger(this.googleMap, "resize");
+  this.googleMap.setCenter(center);
+}.bind(this));
 
 }
 
@@ -27,15 +27,8 @@ MapWrapper.prototype = {
    marker.addListener('click', function() {
     this.setCenter(coords);
     this.satelliteCloseUp();
-   }.bind(this));
+  }.bind(this));
  },
-
- // addClickEvent: function(coords, icon) {
- //   google.maps.Marker.event.addListener(this.googleMap, 'click', function(event) {
- //   var position = coords;
- //    this.addMarker(coords, icon);
- //   }.bind(this));
- // },
 
  setCenter: function(coords){
    this.googleMap.setCenter(coords);
@@ -46,7 +39,7 @@ MapWrapper.prototype = {
  },
  initDirections: function(origin, destination){
 
-  
+
   var markerArray = [];
   // var directionsService = new google.maps.DirectionsService;
   // var directionsDisplay = null;
@@ -111,39 +104,37 @@ function getLocation() {
 
 
 function calculateAndDisplayRoute(markerArray, stepDisplay, map, origin, destination) {
- directionsService.route({origin: origin, destination: destination,
-   travelMode: 'DRIVING'
- }, function(response, status) {
-  if (status === 'OK') {
-    document.getElementById('warnings-panel').innerHTML =
-    '<b>' + response.routes[0].warnings + '</b>';
-    document.getElementById("directions").innerHTML = "";
-    directionsDisplay.setDirections(response);
-  } else {
-    window.alert('Directions request failed due to ' + status);
+  directionsService.route({origin: origin, destination: destination,
+   travelMode: 'DRIVING'}, function(response, status) {
+    if (status === 'OK') {
+      document.getElementById('warnings-panel').innerHTML =
+      '<b>' + response.routes[0].warnings + '</b>';
+      document.getElementById("directions").innerHTML = "";
+      directionsDisplay.setDirections(response);
+    } else {
+      window.alert('Directions request failed due to ' + status);
+    }
+  });
+}
+
+function showSteps(directionResult, markerArray, stepDisplay, map) {
+  // For each step, place a marker, and add the text to the marker's infowindow.
+  // Also attach the marker to an array so we can keep track of it and remove it
+  // when calculating new routes.
+  var myRoute = directionResult.routes[0].legs[0];
+  for (var i = 0; i < myRoute.steps.length; i++) {
+    var marker = markerArray[i] = markerArray[i] || new google.maps.Marker;
+    marker.setMap(map);
+    marker.setPosition(myRoute.steps[i].start_location);
+    attachInstructionText(stepDisplay, marker, myRoute.steps[i].instructions, map);
   }
+}
+
+function attachInstructionText(stepDisplay, marker, text, map) {
+  google.maps.event.addListener(marker, 'click', function() {
+  // Open an info window when the marker is clicked on, containing the text
+  // of the step.
+  stepDisplay.setContent(text);
+  stepDisplay.open(map, marker);
 });
 }
-function showSteps(directionResult, markerArray, stepDisplay, map) {
-      // For each step, place a marker, and add the text to the marker's infowindow.
-      // Also attach the marker to an array so we can keep track of it and remove it
-      // when calculating new routes.
-      var myRoute = directionResult.routes[0].legs[0];
-      for (var i = 0; i < myRoute.steps.length; i++) {
-        var marker = markerArray[i] = markerArray[i] || new google.maps.Marker;
-        marker.setMap(map);
-        marker.setPosition(myRoute.steps[i].start_location);
-        attachInstructionText(stepDisplay, marker, myRoute.steps[i].instructions, map);
-      }
-    }
-
-    function attachInstructionText(stepDisplay, marker, text, map) {
-      google.maps.event.addListener(marker, 'click', function() {
-        // Open an info window when the marker is clicked on, containing the text
-        // of the step.
-        stepDisplay.setContent(text);
-        stepDisplay.open(map, marker);
-      });
-    }
-
-    

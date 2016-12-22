@@ -51,7 +51,7 @@ app.post('/itineraries', function(req, res){
     // "amount": req.body.amount,
     // "type": req.body.type
 
-  );
+    );
   res.status(200).end();
 });
 })

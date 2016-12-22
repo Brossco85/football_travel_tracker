@@ -22,10 +22,10 @@ var app = function() {
       scaledSize: new google.maps.Size(20, 30), // scaled size
       origin: new google.maps.Point(0,0), // origin
       anchor: new google.maps.Point(0, 0) // anchor
-      };
-      mainMap.addMarker(stadium.latlng, icon);
-      };
-      })
+    };
+    mainMap.addMarker(stadium.latlng, icon);
+  };
+})
 
   var refreshButton = document.querySelector('#refresh-map');
   refreshButton.onclick = handleRefreshClick;
@@ -51,15 +51,15 @@ var handleRefreshClick = function() {
 
     for(var stadium of allStadiums){
       var icon = {
-                  url: stadium.crest, // url
-                  scaledSize: new google.maps.Size(20, 30), // scaled size
-                  origin: new google.maps.Point(0,0), // origin
-                  anchor: new google.maps.Point(0, 0) // anchor
-                };
-                mainMap.addMarker(stadium.latlng, icon);
-              };
+      url: stadium.crest, // url
+      scaledSize: new google.maps.Size(20, 30), // scaled size
+      origin: new google.maps.Point(0,0), // origin
+      anchor: new google.maps.Point(0, 0) // anchor
+    };
+    mainMap.addMarker(stadium.latlng, icon);
+  };
 
-            })
+})
 }
 
 var makeRequest = function(url, callback){

@@ -5,83 +5,83 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <!-- <script src='https://maps.googleapis.com/maps/api/js'></script> -->
   <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLvACi91tcdtNd9BFtYe2aW_xyEOhFamQ">
-      </script>
-  <script src ="app.js"></script>
-  <script src ="premierLeagueData.js"></script>
-  <script src ="PLStadiums.js"></script>
-  <script src ="premierLeagueFixtures.js"></script>
-  <script src ="footballFeed.js"></script>
-  <script src ="mapWrapper.js"></script>
-  <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
-  
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLvACi91tcdtNd9BFtYe2aW_xyEOhFamQ">
+</script>
+<script src ="app.js"></script>
+<script src ="premierLeagueData.js"></script>
+<script src ="PLStadiums.js"></script>
+<script src ="premierLeagueFixtures.js"></script>
+<script src ="footballFeed.js"></script>
+<script src ="mapWrapper.js"></script>
+<script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+
 </head>
 
 <body>
 
   <div class="container">
 
-  <div class="main">
+    <div class="main">
 
-    <div class="header">
+      <div class="header">
 
-      <h1>Premier Planner</h1>
+        <h1>Premier Planner</h1>
 
-    </div>
+      </div>
 
-    <div class="nav">
-      <ul id="nav-bar">
-        <li class="nav-item"><a class="nav-label" href="#football">Football</a></li>
-        <li class="nav-item"><a class="nav-label" href="#rugby">Rugby</a></li>
-        <li class="nav-item"><a class="nav-label" href="#formula1">Formula 1</a></li>
-        <li class="nav-item"><a class="nav-label" href="#golf">Golf</a></li>
-      </ul>
-    </div>
+      <div class="nav">
+        <ul id="nav-bar">
+          <li class="nav-item"><a class="nav-label" href="#football">Football</a></li>
+          <li class="nav-item"><a class="nav-label" href="#rugby">Rugby</a></li>
+          <li class="nav-item"><a class="nav-label" href="#formula1">Formula 1</a></li>
+          <li class="nav-item"><a class="nav-label" href="#golf">Golf</a></li>
+        </ul>
+      </div>
 
-    <div id"refresh-button">
-    
-      <button id="refresh-map" onclick="mapRefresh()">Refresh map</button>
+      <div id"refresh-button">
+        
+        <button id="refresh-map" onclick="mapRefresh()">Refresh map</button>
 
-    </div>
+      </div>
 
-    <div id="map">
+      <div id="map">
 
-      <p>This is a map</p>
+        <p>This is a map</p>
 
-    </div>
+      </div>
 
-    <!-- BR Added -->
-    <div id="directions">
+      <!-- BR Added -->
+      <div id="directions">
 
-      <p>Directions will appear here...</p>
+        <p>Directions will appear here...</p>
 
-    </div>
-    <!-- BR Added -->
-    <div id="warnings-panel"></div>
+      </div>
+      <!-- BR Added -->
+      <div id="warnings-panel"></div>
 
-    <div id="fixtures">
+      <div id="fixtures">
 
-      <h1 id="fixtures-heading">Fixtures this week</h1>
+        <h1 id="fixtures-heading">Fixtures this week</h1>
 
-      <table id="fixture-elements">
-        <tr>
-          <th>Week</th>
-          <th></th>
-          <th>Date</th>
-          <th></th>
-          <th>Home</th>
-          <th></th>
-          <th>Away</th>
-          <th></th>
-          <th>Time</th>
-        </tr>
-      </table>
+        <table id="fixture-elements">
+          <tr>
+            <th>Week</th>
+            <th></th>
+            <th>Date</th>
+            <th></th>
+            <th>Home</th>
+            <th></th>
+            <th>Away</th>
+            <th></th>
+            <th>Time</th>
+          </tr>
+        </table>
 
-    </div>
+      </div>
 
-    <div id="itinerary">
+      <div id="itinerary">
 
-      <h5 id="itinerary-list"></h5>
+        <h5 id="itinerary-list"></h5>
         <button class="itinerary-button" id='location-button' onclick="locationButton()">Show ground from my location</button>
         <button class="itinerary-button" id='tickets'>Buy tickets</button>
         <button class="itinerary-button" id='add'>Add</button>
@@ -96,40 +96,40 @@
         <h5>Hotels</h5>
         <ul id="hotels"></ul>
 
-      <div id="itinerary-map"></div>
+        <div id="itinerary-map"></div>
+
+      </div>
+
+      <div id="table">
+
+        <h1 id="fixtures-heading">Premier League Table</h1>
+
+        <table id="table-elements">
+          <tr>
+            <th>Position</th>
+            <th></th>
+            <th>Club</th>
+            <th>Played</th>
+            <th>Won</th>
+            <th>Drawn</th>
+            <th>Lost</th>
+            <th>GF</th>
+            <th>GA</th>
+            <th>GD</th>
+            <th>Points</th>
+          </tr>
+        </table>
+
+      </div>
+
+      <div id="feeds">
+
+        <table id="feed-list"></table>
+
+      </div>
 
     </div>
-
-    <div id="table">
-
-      <h1 id="fixtures-heading">Premier League Table</h1>
-
-      <table id="table-elements">
-        <tr>
-          <th>Position</th>
-          <th></th>
-          <th>Club</th>
-          <th>Played</th>
-          <th>Won</th>
-          <th>Drawn</th>
-          <th>Lost</th>
-          <th>GF</th>
-          <th>GA</th>
-          <th>GD</th>
-          <th>Points</th>
-        </tr>
-      </table>
-
-    </div>
-
-    <div id="feeds">
-
-      <table id="feed-list"></table>
-
-    </div>
-
   </div>
-  </div>
 
-  </body>
-  </html>
+</body>
+</html>

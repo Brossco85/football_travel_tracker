@@ -127,8 +127,8 @@ var createCheckbox = function(name) {
 }
 
 var getHotspots = function(homeTeam, fixture) {
-    var url = 'http://localhost:3000/api/accounts';
-    makeRequest(url, function(){
+  var url = 'http://localhost:3000/api/accounts';
+  makeRequest(url, function(){
     if (this.status !== 200) return;
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
@@ -145,11 +145,11 @@ var getHotspots = function(homeTeam, fixture) {
     
     for (var stadium of stadiums) {
       if (stadium.name == homeTeam) {
-      var latitude  = stadium.latlng[0];
-      var longitude = stadium.latlng[1];
-      var location = {lat: latitude, lng: longitude};
-      locationButton.data = JSON.stringify(location);
-      tickets.setAttribute("onclick", "window.open(" + "'" + stadium.website + "'" + ")");
+        var latitude  = stadium.latlng[0];
+        var longitude = stadium.latlng[1];
+        var location = {lat: latitude, lng: longitude};
+        locationButton.data = JSON.stringify(location);
+        tickets.setAttribute("onclick", "window.open(" + "'" + stadium.website + "'" + ")");
 
         for (i = 0; i < stadium.pubs.length; i++) {
           var li1 = document.createElement('li');
@@ -198,7 +198,7 @@ var getHotspots = function(homeTeam, fixture) {
 
     li7.appendChild(li7Return[0]);
     li7.appendChild(li7Return[1]);
-   
+    
     bars.appendChild(li1);
     bars.appendChild(li2);
     bars.appendChild(li3);
@@ -207,7 +207,7 @@ var getHotspots = function(homeTeam, fixture) {
     hotels.appendChild(li6);
     hotels.appendChild(li7);
   })
-  }
+}
 
 var getFixtureDirections = function(homeTeam, awayTeam){
   var url = 'http://localhost:3000/api/accounts';
@@ -235,8 +235,8 @@ var getFixtureDirections = function(homeTeam, awayTeam){
 
 
 var viewButton = function() {
-    var popup = document.getElementById('myPopup');
-        popup.classList.toggle('show');;
+  var popup = document.getElementById('myPopup');
+  popup.classList.toggle('show');;
 }
 
 var showHotspots = function(homeTeam) {
