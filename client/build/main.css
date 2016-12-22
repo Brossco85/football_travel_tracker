@@ -139,6 +139,7 @@ a:active{
 /*Bobby Added*/
 #directions {
 /*  display: none;*/
+  text-align: center;
   justify-content: center;
   margin: 10px;
   height: 800px;
