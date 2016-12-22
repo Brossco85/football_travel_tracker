@@ -14,7 +14,7 @@ var app = function() {
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
     var allStadiums = getStadiumData(stadiums);
-    getClubNames(allStadiums);
+    // getClubNames(allStadiums);
 
     for(var stadium of allStadiums){
       var icon = {
@@ -47,7 +47,7 @@ var handleRefreshClick = function() {
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
     var allStadiums = getStadiumData(stadiums);
-    getClubNames(allStadiums);
+    // getClubNames(allStadiums);
 
     for(var stadium of allStadiums){
       var icon = {
@@ -61,7 +61,6 @@ var handleRefreshClick = function() {
 
             })
 }
-
 
 var makeRequest = function(url, callback){
   var request = new XMLHttpRequest();
@@ -88,16 +87,16 @@ var getStadiumData = function(stadiums){
   return data;
 }
 
-var getClubNames = function(stadiums){
-  var select = document.querySelector('#team');
-  for (var i = 0; i < stadiums.length; i++) {
-    var option = document.createElement('option') ;
-    option.innerText = stadiums[i].name;
-    option.value = i;
-    // console.log(option.value)
-    // select.appendChild(option); 
-  }
-}
+// var getClubNames = function(stadiums){
+//   var select = document.querySelector('#team');
+//   for (var i = 0; i < stadiums.length; i++) {
+//     var option = document.createElement('option') ;
+//     option.innerText = stadiums[i].name;
+//     option.value = i;
+//     // console.log(option.value)
+//     select.appendChild(option); 
+//   }
+// }
 
 var getStadiumCoords = function(index, map){
   var url = 'http://localhost:3000/api/accounts';
