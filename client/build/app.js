@@ -1,7 +1,7 @@
 var app = function() {
   var container = document.getElementById('map');
-  var coords = {lat: 51.6032, lng: 0.0657};  
-  var mainMap = new MapWrapper(container, coords, 6);
+  var coords = {lat: 52.9548, lng: -1.1581};  
+  var mainMap = new MapWrapper(container, coords, 7);
 
 
   // var table = new PremierLeagueTable();

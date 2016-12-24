@@ -35,21 +35,9 @@ MapWrapper.prototype = {
    this.addMarker(coords);
    this.setCenter(coords);
  },
- initDirections: function(origin, destination){
-
-  
+ initDirections: function(origin, destination){ 
   var markerArray = [];
-  // var directionsService = new google.maps.DirectionsService;
-  // var directionsDisplay = null;
-  var stepDisplay = new google.maps.InfoWindow;
-  calculateAndDisplayRoute(markerArray, stepDisplay, this.googleMap, origin, destination);
-
-// var onChangeHandler = function() {
-//   calculateAndDisplayRoute(directionsDisplay, directionsService, markerArray, stepDisplay, map);
-// };
-// document.getElementById('start').addEventListener('change', onChangeHandler);
-// document.getElementById('end').addEventListener('change', onChangeHandler);
-
+  calculateAndDisplayRoute(markerArray, this.googleMap, origin, destination);
 },
 satelliteCloseUp: function(){
   this.googleMap.setMapTypeId('satellite');
@@ -101,7 +89,7 @@ function getLocation() {
 }
 
 
-function calculateAndDisplayRoute(markerArray, stepDisplay, map, origin, destination) {
+function calculateAndDisplayRoute(markerArray, map, origin, destination) {
  directionsService.route({origin: origin, destination: destination,
    travelMode: 'DRIVING'
  }, function(response, status) {
@@ -115,26 +103,7 @@ function calculateAndDisplayRoute(markerArray, stepDisplay, map, origin, destina
   }
 });
 }
-function showSteps(directionResult, markerArray, stepDisplay, map) {
-      // For each step, place a marker, and add the text to the marker's infowindow.
-      // Also attach the marker to an array so we can keep track of it and remove it
-      // when calculating new routes.
-      var myRoute = directionResult.routes[0].legs[0];
-      for (var i = 0; i < myRoute.steps.length; i++) {
-        var marker = markerArray[i] = markerArray[i] || new google.maps.Marker;
-        marker.setMap(map);
-        marker.setPosition(myRoute.steps[i].start_location);
-        attachInstructionText(stepDisplay, marker, myRoute.steps[i].instructions, map);
-      }
-    }
 
-    function attachInstructionText(stepDisplay, marker, text, map) {
-      google.maps.event.addListener(marker, 'click', function() {
-        // Open an info window when the marker is clicked on, containing the text
-        // of the step.
-        stepDisplay.setContent(text);
-        stepDisplay.open(map, marker);
-      });
-    }
+
 
     
