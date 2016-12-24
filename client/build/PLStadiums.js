@@ -1,6 +1,6 @@
 // var PLStadiums = function(){
 
-//   var url = 'http://localhost:3000/api/accounts';
+//   var url = 'http://localhost:3000/api/stadiums';
 //   makeRequest(url, function(){
 //     if (this.status !== 200) return;
 //   var jsonString = this.responseText;

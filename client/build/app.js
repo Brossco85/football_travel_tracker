@@ -4,11 +4,11 @@ var app = function() {
   var mainMap = new MapWrapper(container, coords, 6);
 
 
-  var table = new PremierLeagueTable();
+  // var table = new PremierLeagueTable();
   var fixtures = new PremierLeagueFixtures();
   var feed = new FootballFeed();
 
-  var url = 'http://localhost:3000/api/accounts';
+  var url = 'http://localhost:3000/api/stadiums';
   makeRequest(url, function(){
     if (this.status !== 200) return;
     var jsonString = this.responseText;
@@ -75,7 +75,7 @@ var getClubNames = function(stadiums){
 }
 
 var getStadiumCoords = function(index, map){
-  var url = 'http://localhost:3000/api/accounts';
+  var url = 'http://localhost:3000/api/stadiums';
   makeRequest(url, function(){
     if (this.status !== 200) return;
     var jsonString = this.responseText;

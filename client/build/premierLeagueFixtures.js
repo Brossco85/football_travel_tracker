@@ -5,10 +5,37 @@ var PremierLeagueFixtures = function(){
   var locationButton = document.querySelector('#location-button');
   locationButton.onclick = getLocation;
 
-  var pubs = document.getElementById('hotspots')
-  pubs.addEventListener('change', function(e){
-    console.log(e.target.value);
+  var hotspots = document.getElementById('hotspots')
+  hotspots.addEventListener('change', function(e){
+    if(e.target.checked){
+    console.log(e.target.checked);
+
+  } else{
+    console.log(false);
+  }
   })
+
+  var form = document.getElementById('hotspots');
+  form.onsubmit = function(e){
+    e.preventDefault();
+    var places = [];
+    var checkBox = form.getElementsByTagName('input');
+    for (var i = 0; i < checkBox.length; i++) {
+      if(checkBox[i].checked){
+        places.push(checkBox[i].value);
+      }
+    }
+
+    var itinerary = {
+      user: "Euan",
+      match: parseFloat(e.target.amount.value),
+      startTime: e.target.type.value,
+      hotspots: e.target
+    }
+    console.log(places);
+  }
+
+
 
 }
 
@@ -71,7 +98,7 @@ var createFixturesTable = function(fixturesData, callback){
 }
 
 var getDirectionsLocation = function(homeTeam, awayTeam){
-  var url = 'http://localhost:3000/api/accounts';
+  var url = 'http://localhost:3000/api/stadiums';
   makeRequest(url, function(){
     if (this.status !== 200) return;
     var jsonString = this.responseText;
@@ -132,7 +159,7 @@ var createCheckbox = function(name) {
 }
 
 var getHotspots = function(homeTeam, fixture) {
-  var url = 'http://localhost:3000/api/accounts';
+  var url = 'http://localhost:3000/api/stadiums';
   makeRequest(url, function(){
     if (this.status !== 200) return;
     var jsonString = this.responseText;
@@ -153,22 +180,27 @@ var getHotspots = function(homeTeam, fixture) {
         tickets.setAttribute("onclick", "window.open(" + "'" + stadium.website + "'" + ")");
 
 
-        for (i = 0; i < stadium.pubs.length; i++) {
-          var liReturn = createCheckbox(stadium.pubs[i].name)
-          hotspots.appendChild(liReturn[0]);
-          hotspots.appendChild(liReturn[1]);
-        }
+        doStuff('pubs')
+        function doStuff(things){
 
-        for (i = 0; i < stadium.foodOutlets.length; i++) {
-          var liReturn = createCheckbox(stadium.foodOutlets[i].name)
-          hotspots.appendChild(liReturn[0]);
-          hotspots.appendChild(liReturn[1]);
-        }
+          for (i = 0; i < stadium[things].length; i++) {
+            var liReturn = createCheckbox(stadium.pubs[i].name)
+            hotspots.appendChild(liReturn[0]);
+            hotspots.appendChild(liReturn[1]);
+          }
 
-        for (i = 0; i < stadium.hotels.length; i++) {
-          var liReturn = createCheckbox(stadium.hotels[i].name)
-          hotspots.appendChild(liReturn[0]);
-          hotspots.appendChild(liReturn[1]);
+          for (i = 0; i < stadium.foodOutlets.length; i++) {
+            var liReturn = createCheckbox(stadium.foodOutlets[i].name)
+            hotspots.appendChild(liReturn[0]);
+            hotspots.appendChild(liReturn[1]);
+          }
+
+          for (i = 0; i < stadium.hotels.length; i++) {
+            var liReturn = createCheckbox(stadium.hotels[i].name)
+            hotspots.appendChild(liReturn[0]);
+            hotspots.appendChild(liReturn[1]);
+          }
+
         }
       }
     }
@@ -176,7 +208,7 @@ var getHotspots = function(homeTeam, fixture) {
 }
 
 var getFixtureDirections = function(homeTeam, awayTeam){
-  var url = 'http://localhost:3000/api/accounts';
+  var url = 'http://localhost:3000/api/stadiums';
   makeRequest(url, function(){
     if (this.status !== 200) return;
     var jsonString = this.responseText;
@@ -206,7 +238,7 @@ var viewButton = function() {
 }
 
 var showHotspots = function(homeTeam) {
-  var url = 'http://localhost:3000/api/accounts';
+  var url = 'http://localhost:3000/api/stadiums';
   makeRequest(url, function() {
     if (this.status !== 200) return;
     var jsonString = this.responseText;
@@ -231,9 +263,9 @@ var showHotspots = function(homeTeam) {
       }
     }
   })
-
-  
 }
+
+
 
 
 

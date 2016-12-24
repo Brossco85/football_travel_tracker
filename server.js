@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 
 var ACCOUNTS_FILE = path.join(__dirname + '/stadi_api.json');
 
-app.get('/api/accounts', function(req,res) {
+app.get('/api/stadiums', function(req,res) {
   fs.readFile(ACCOUNTS_FILE, function(err, data){
     if(err){
       console.error(err)
@@ -43,9 +43,7 @@ app.post('/itineraries', function(req, res){
     user: req.body.user,
     match:req.body.match,
     startTime: req.body.start,
-    pubs: req.body.pubs,
-    eateries: req.body.eateries,
-    hotels: req.body.hotels
+    hotspots: req.body.hotspots,
   }
     // "owner": req.body.owner,
     // "amount": req.body.amount,

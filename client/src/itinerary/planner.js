@@ -18,27 +18,12 @@ Planner.prototype = {
     }
     return foundItinerary;
   },
-  persistItinerary: = function(){
-
-
-    var ul = document.getElementById('pubs');
-    var li = pubs.getElementsByTagName('li');
-
+  persistItinerary: function(){
+    var form = document.getElementById('hotspots');
     form.onsubmit = function(e){
       e.preventDefault();
-
-      var getSelectedChbox = function (ul) {
-        var selchbox = [];// array that will store the value of selected checkboxes
-        // gets all the input tags in frm, and their number
-        var inpfields = ul.getElementsByTagName('input');
-        var nr_inpfields = inpfields.length;
-        // traverse the inpfields elements, and adds the value of selected (checked) checkbox in selchbox
-        for(var i=0; i<nr_inpfields; i++) {
-          if(inpfields[i].type == 'checkbox' && inpfields[i].checked == true) selchbox.push(inpfields[i].value);
-        }
-        return selchbox;
-      }  
-
+      console.log(e);
+    }
       
 
       var itinerary = {
@@ -49,24 +34,17 @@ Planner.prototype = {
         user: "Euan",
         match:req.body.match,
         startTime: req.body.start,
-        pubs: req.body.pubs,
-        eateries: req.body.eateries,
-        hotels: req.body.hotels
+        hotspots: req.body.hotspots,
       }
 
       this.planner.addItinerary(new Itinerary(itinerary));
-      this.render();
-      this.saveAccount(account);
+      this.saveItinerary(itinerary);
     }.bind(this);
 
-    var interestButton = document.getElementById('interest-button');
-    interestButton.onclick = function() {
-      this.bank.payInterest(10);
-      this.render();
-    }.bind(this);
+
   },
 
-  saveAccount: function(itinerary){
+  saveItinerary: function(itinerary){
     var url = "http://localhost:3000/itineraries";
     var request = new XMLHttpRequest();
     request.open("POST", url);
