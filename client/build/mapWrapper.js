@@ -36,8 +36,7 @@ MapWrapper.prototype = {
    this.setCenter(coords);
  },
  initDirections: function(origin, destination){ 
-  var markerArray = [];
-  calculateAndDisplayRoute(markerArray, this.googleMap, origin, destination);
+  calculateAndDisplayRoute(this.googleMap, origin, destination);
 },
 satelliteCloseUp: function(){
   this.googleMap.setMapTypeId('satellite');
@@ -89,7 +88,7 @@ function getLocation() {
 }
 
 
-function calculateAndDisplayRoute(markerArray, map, origin, destination) {
+function calculateAndDisplayRoute(map, origin, destination) {
  directionsService.route({origin: origin, destination: destination,
    travelMode: 'DRIVING'
  }, function(response, status) {

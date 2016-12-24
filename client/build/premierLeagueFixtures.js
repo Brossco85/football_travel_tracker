@@ -1,6 +1,6 @@
 var PremierLeagueFixtures = function(){
-  var url2 = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=18';
-  makeRequest2(url2, requestComplete2);
+  var url = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=18';
+  makeRequest(url, requestComplete);
 
   var locationButton = document.querySelector('#location-button');
   locationButton.onclick = getLocation;
@@ -8,11 +8,11 @@ var PremierLeagueFixtures = function(){
   var hotspots = document.getElementById('hotspots')
   hotspots.addEventListener('change', function(e){
     if(e.target.checked){
-    console.log(e.target.checked);
+      console.log(e.target.checked);
 
-  } else{
-    console.log(false);
-  }
+    } else{
+      console.log(false);
+    }
   })
 
   var form = document.getElementById('hotspots');
@@ -39,7 +39,7 @@ var PremierLeagueFixtures = function(){
 
 }
 
-var makeRequest2 = function(url, callback){
+var makeRequest = function(url, callback){
   var request = new XMLHttpRequest();
   request.open("GET", url);
   request.setRequestHeader("X-Auth-Token", "795581b721014c898569d2bee06c9012");
@@ -47,7 +47,7 @@ var makeRequest2 = function(url, callback){
   request.send();
 }
 
-var requestComplete2 = function(){
+var requestComplete = function(){
   if (this.status !== 200) return;
   var jsonString = this.responseText;
   var fixturesData = JSON.parse(jsonString);
@@ -97,29 +97,29 @@ var createFixturesTable = function(fixturesData, callback){
   }
 }
 
-var getDirectionsLocation = function(homeTeam, awayTeam){
-  var url = 'http://localhost:3000/api/stadiums';
-  makeRequest(url, function(){
-    if (this.status !== 200) return;
-    var jsonString = this.responseText;
-    var stadiums = JSON.parse(jsonString);
-    var allStadiums = getStadiumData(stadiums);
-    var homeCoords = {};
-    var awayCoords = {};
-    for (var stadium of allStadiums){  
-      if (stadium.name === homeTeam){
-        var homeCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
-      } else if (stadium.name === awayTeam){
-        var awayCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
-      }
-    }
-    var container = document.getElementById('map');
-    var coords = {lat: 51.6032, lng: 0.0657};  
-    var mainMap = new MapWrapper(container, coords, 6);
+// var getDirectionsLocation = function(homeTeam, awayTeam){
+//   var url = 'http://localhost:3000/api/stadiums';
+//   makeRequest(url, function(){
+//     if (this.status !== 200) return;
+//     var jsonString = this.responseText;
+//     var stadiums = JSON.parse(jsonString);
+//     var allStadiums = getStadiumData(stadiums);
+//     // var homeCoords = {};
+//     // var awayCoords = {};
+//     for (var stadium of allStadiums){  
+//       if (stadium.name === homeTeam){
+//         var homeCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
+//       } else if (stadium.name === awayTeam){
+//         var awayCoords = {lat: stadium.latlng.lat, lng: stadium.latlng.lng};
+//       }
+//     }
+//     var container = document.getElementById('map');
+//     var coords = {lat: 51.6032, lng: 0.0657};  
+//     var mainMap = new MapWrapper(container, coords, 6);
 
-    mainMap.initDirections(awayCoords, homeCoords);
-  })
-}
+//     mainMap.initDirections(awayCoords, homeCoords);
+//   })
+// }
 
 
 var assignOnClick =function (){
@@ -165,7 +165,7 @@ var getHotspots = function(homeTeam, fixture) {
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
     document.getElementById('hotspots').innerHTML = "";
-    document.getElementById('hotspots');
+    // document.getElementById('hotspots');
     var locationButton = document.getElementById('location-button');
     var tickets = document.getElementById('tickets');
     var itineraryList = document.getElementById('itinerary-list');
@@ -178,30 +178,10 @@ var getHotspots = function(homeTeam, fixture) {
         var location = {lat: latitude, lng: longitude};
         locationButton.data = JSON.stringify(location);
         tickets.setAttribute("onclick", "window.open(" + "'" + stadium.website + "'" + ")");
+        getStadiumSpots(stadium, 'pubs')
+        getStadiumSpots(stadium, 'foodOutlets')
+        getStadiumSpots(stadium, 'hotels')
 
-
-        doStuff('pubs')
-        function doStuff(things){
-
-          for (i = 0; i < stadium[things].length; i++) {
-            var liReturn = createCheckbox(stadium.pubs[i].name)
-            hotspots.appendChild(liReturn[0]);
-            hotspots.appendChild(liReturn[1]);
-          }
-
-          for (i = 0; i < stadium.foodOutlets.length; i++) {
-            var liReturn = createCheckbox(stadium.foodOutlets[i].name)
-            hotspots.appendChild(liReturn[0]);
-            hotspots.appendChild(liReturn[1]);
-          }
-
-          for (i = 0; i < stadium.hotels.length; i++) {
-            var liReturn = createCheckbox(stadium.hotels[i].name)
-            hotspots.appendChild(liReturn[0]);
-            hotspots.appendChild(liReturn[1]);
-          }
-
-        }
       }
     }
   })
@@ -263,6 +243,14 @@ var showHotspots = function(homeTeam) {
       }
     }
   })
+}
+
+var getStadiumSpots = function (stadium, hotspot){
+  for (i = 0; i < stadium[hotspot].length; i++) {
+    var liReturn = createCheckbox(stadium[hotspot][i].name)
+    hotspots.appendChild(liReturn[0]);
+    hotspots.appendChild(liReturn[1]);
+  }
 }
 
 
