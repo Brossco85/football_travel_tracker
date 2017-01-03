@@ -230,16 +230,9 @@ var showHotspots = function(homeTeam) {
       if (stadium.name == homeTeam) {
         var coords = {lat: stadium.latlng[0], lng: stadium.latlng[1]};
         var itineraryMap = new MapWrapper(container, coords, 11);
-
-        for (i = 0; i < stadium.pubs.length; i++) {
-          itineraryMap.itineraryMarker({lat: stadium.pubs[i].latlng[0], lng: stadium.pubs[i].latlng[1]}, stadium.pubs[i].name, stadium.pubs[i].address, stadium.pubs[i].phoneNumber);
-        }
-        for (i = 0; i < stadium.foodOutlets.length; i++) {
-          itineraryMap.itineraryMarker({lat: stadium.foodOutlets[i].latlng[0], lng: stadium.foodOutlets[i].latlng[1]}, stadium.foodOutlets[i].name, stadium.foodOutlets[i].address, stadium.foodOutlets[i].phoneNumber);
-        }
-        for (i = 0; i < stadium.hotels.length; i++) {
-          itineraryMap.itineraryMarker({lat: stadium.hotels[i].latlng[0], lng: stadium.hotels[i].latlng[1]}, stadium.hotels[i].name, stadium.hotels[i].address, stadium.hotels[i].phoneNumber);
-        }
+        getItineraryMarkers(itineraryMap, stadium, 'pubs')
+        getItineraryMarkers(itineraryMap, stadium, 'foodOutlets')
+        getItineraryMarkers(itineraryMap, stadium, 'hotels')
       }
     }
   })
@@ -252,6 +245,13 @@ var getStadiumSpots = function (stadium, hotspot){
     hotspots.appendChild(liReturn[1]);
   }
 }
+
+var getItineraryMarkers = function(map, stadium, hotspot){
+  for (i = 0; i < stadium[hotspot].length; i++) {
+    map.itineraryMarker({lat: stadium[hotspot][i].latlng[0], lng: stadium[hotspot][i].latlng[1]}, stadium[hotspot][i].name, stadium[hotspot][i].address, stadium[hotspot][i].phoneNumber);
+  }
+}
+
 
 
 

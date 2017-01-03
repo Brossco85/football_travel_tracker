@@ -25,7 +25,6 @@ var app = function() {
                 };
                 mainMap.addMarker(stadium.latlng, icon);
               };
-
             })
 
 
@@ -45,12 +44,6 @@ var makeRequest = function(url, callback){
   request.send();
 }
 
-// var requestComplete = function(){
-//   if (this.status !== 200) return;
-//   var jsonString = this.responseText;
-//   var stadiums = JSON.parse(jsonString);
-//   getStadiumData(stadiums);
-// }
 
 var getStadiumData = function(stadiums){
   var data = [];
@@ -69,7 +62,6 @@ var getClubNames = function(stadiums){
     var option = document.createElement('option') ;
     option.innerText = stadiums[i].name;
     option.value = i;
-    // console.log(option.value)
     select.appendChild(option); 
   }
 }
@@ -81,7 +73,6 @@ var getStadiumCoords = function(index, map){
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
     var allStadiums = getStadiumData(stadiums);
-    // console.log(allStadiums[index].latlng.lat)
     var coords = {};
     coords = {lat: allStadiums[index].latlng.lat, lng: allStadiums[index].latlng.lng};
     map.setCenter(coords);
@@ -91,8 +82,6 @@ var getStadiumCoords = function(index, map){
     map.initDirections(origin, destination);
   })
 }
-
-
 
 
 window.onload = app;
