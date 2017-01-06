@@ -4,17 +4,19 @@ var MapWrapper = function(container, center, zoom){
    zoom: zoom
  });
 
-directionsService = new google.maps.DirectionsService;
-  directionsDisplay = new google.maps.DirectionsRenderer;
-   directionsDisplay.setMap(this.googleMap);
-   directionsDisplay.setPanel(document.getElementById('directions'));
+ directionsService = new google.maps.DirectionsService;
+ directionsDisplay = new google.maps.DirectionsRenderer;
+ directionsDisplay.setMap(this.googleMap);
+ directionsDisplay.setPanel(document.getElementById('directions'));
 
-  google.maps.event.addDomListener(window, "resize", function() {
-    var center = this.googleMap.getCenter();
-    google.maps.event.trigger(this.googleMap, "resize");
-    this.googleMap.setCenter(center);
-  }.bind(this));
+ google.maps.event.addDomListener(window, "resize", function() {
+  var center = this.googleMap.getCenter();
+  google.maps.event.trigger(this.googleMap, "resize");
+  this.googleMap.setCenter(center);
+}.bind(this));
 
+ var locationButton = document.querySelector('#location-button');
+ locationButton.onclick = getLocation;
 
 }
 
@@ -103,6 +105,8 @@ function calculateAndDisplayRoute(map, origin, destination) {
 });
 }
 
+module.exports = MapWrapper;
 
 
-    
+
+

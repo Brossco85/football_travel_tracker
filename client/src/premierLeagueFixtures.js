@@ -1,9 +1,10 @@
+var MapWrapper = require('./mapWrapper.js');
+
+
 var PremierLeagueFixtures = function(){
   var url = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=18';
   makeRequest(url, requestComplete);
 
-  var locationButton = document.querySelector('#location-button');
-  locationButton.onclick = getLocation;
 
   var hotspots = document.getElementById('hotspots')
   hotspots.addEventListener('change', function(e){
@@ -223,9 +224,7 @@ var showHotspots = function(homeTeam) {
     if (this.status !== 200) return;
     var jsonString = this.responseText;
     var stadiums = JSON.parse(jsonString);
-
     var container = document.getElementById('itinerary-map');
-
     for (var stadium of stadiums) {
       if (stadium.name == homeTeam) {
         var coords = {lat: stadium.latlng[0], lng: stadium.latlng[1]};
@@ -251,6 +250,19 @@ var getItineraryMarkers = function(map, stadium, hotspot){
     map.itineraryMarker({lat: stadium[hotspot][i].latlng[0], lng: stadium[hotspot][i].latlng[1]}, stadium[hotspot][i].name, stadium[hotspot][i].address, stadium[hotspot][i].phoneNumber);
   }
 }
+
+var getStadiumData = function(stadiums){
+  var data = [];
+  stadiums.forEach(function(stadium){
+    var stadiData = {};
+    stadiData = {name: stadium.name, crest: stadium.crestURL, stadium: stadium.stadium, latlng: {lat: stadium.latlng[0], lng: stadium.latlng[1]}};
+    data.push(stadiData);
+
+  })
+  return data;
+}
+
+module.exports = PremierLeagueFixtures;
 
 
 

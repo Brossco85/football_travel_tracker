@@ -36,3 +36,5 @@ var FootballFeed = function(){
         }
       })
 }
+
+module.exports = FootballFeed;
