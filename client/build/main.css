@@ -1,14 +1,14 @@
 body {
   font-family: helvetica;
-  /*  background-color: #FFE4BC;*/
-  background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2015/12/soccer-field-wallpaper-48947-50584-hd-wallpapers.jpg");
+    background-color: #2AFC8C;
+  /*background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2015/12/soccer-field-wallpaper-48947-50584-hd-wallpapers.jpg");*/
 }
 
 h1 {
-  color: black;
+  color: #37033C;
   font-size: 80px;
   font-style: bold;
-  margin: 30px;
+  margin: 20px;
 }
 
 p {
@@ -52,35 +52,34 @@ a:active{
 
 .header {
   font-family: 'Quicksand', sans-serif;
-  /*float: left;*/
-  border-radius: 25px;
-  background-color: white;
+  /* float: left; */
+  /* border-radius: 25px; */
+  /*background-color: white;*/
   width: 100%;
-  max-width: 900px;
+  max-width: 1050px;
   padding: 5px;
   margin: 20px;
+  margin: 0 auto;
 }
 
-/*.header img {
+.header img {
   float: left;
   width: 33.3333%;
-  max-width: 300px;
-
+  max-width: 250px;
   height: 100px;
-  background: #555;
-}*/
+  /* background: #555; */
+}
 
 .header h1 {
   position: relative;
-  width: 100%;
-  max-width: 900px;
-  font-size: 80px;
+  width: auto;
+  max-width: 400px;
+  font-size: 100px;
   float: left;
- /*width: 200px;*/
- /*top: 85px;*/
- padding: 5px;
-/* margin: 20px;
-  border-radius: 25px;*/
+  /* border: none; */
+  /* width: 200px; */
+  /* top: 85px; */
+  /* padding: 5px; */
 
 }
 
@@ -321,8 +320,8 @@ tr:nth-child(even) {
 }
 
 #logo {
-    height: auto; 
-    width: auto; 
-    max-width: 200px; 
-    max-height: 200px;
+ height: auto;
+ width: auto;
+ max-width: 400px;
+ max-height: 200px;
 }
