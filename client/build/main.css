@@ -171,11 +171,14 @@ a:active{
   overflow: auto;
   padding: 10px;
   flex: 1 1 auto;
+  border: 10px;
+  border-style: solid;
+  border-color: #37033C;
 }
 
 /*Bobby Added*/
 #directions {
-  /*  display: none;*/
+    display: none;
   text-align: center;
   justify-content: center;
   margin: 10px;

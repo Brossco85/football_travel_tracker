@@ -2,7 +2,7 @@ var MapWrapper = require('./mapWrapper.js');
 
 
 var PremierLeagueFixtures = function(){
-  var url = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=18';
+  var url = 'http://api.football-data.org/v1/competitions/426/fixtures?matchday=21';
   makeRequest(url, requestComplete);
 
 
@@ -129,6 +129,7 @@ var assignOnClick =function (){
   rows = tables.getElementsByTagName('td');
   for (var i=0,len=cells.length; i<len; i++){
     cells[i].onclick = function(){
+document.getElementById("directions").style.display = "block";
       var home = this.children[4].innerText;
       var away = this.children[6].innerText;
       var fixture = this.innerText;

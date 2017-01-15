@@ -67,3 +67,4 @@ var createLeagueTable = function(leagueData){
 
 }
 
+module.exports = PremierLeagueTable;
